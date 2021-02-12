@@ -7,14 +7,18 @@ html {
     height: 100%;
     padding: 0;
     margin: 0;
-    background: #FFF;
-    color: #000;
+    color: #333333;
     font-family: $mainFont;
 }
 
 body {
     overflow: hidden;
     overflow-y: auto;
+}
+
+.wrapper {
+    max-width: 1440px;
+    background: #E5E5E5;
 }
 
 /* h1, h2, h3, h4 {
