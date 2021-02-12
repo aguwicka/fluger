@@ -59,13 +59,14 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-      $: "jquery/dist/jquery.min.js",
-      jQuery: "jquery/dist/jquery.min.js",
-      "window.jQuery": "jquery/dist/jquery.min.js"
+      '$': 'jquery',
+      'jQuery': 'jquery',
+      'window.jQuery': 'jquery'
     }),
     new HtmlWebPackPlugin({
       template: "./src/template/pages/index.pug",
-      filename: "./index.html"
+      filename: "./index.html",
+      noErrorOnMissing: true
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output

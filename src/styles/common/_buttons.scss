@@ -5,6 +5,9 @@
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
+    &:focus, &:active {
+        outline: none;
+    }
 
     &-primary {
         background: #429471;
@@ -26,4 +29,21 @@
 
 button.btn {
     display: inline-block;
+}
+
+.input__primary {
+    padding: 1rem 0 1rem 1.2rem;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    &:focus, &:active {
+        outline: none;
+    }
+    &::placeholder {
+        color: #DDDDDD;
+    }
+}
+.input__label {
+    margin-bottom: 4px;
 }

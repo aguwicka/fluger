@@ -4,20 +4,77 @@ header
             .header__wrap
                 .header__wrap__location
                     img(src="/src/assets/images/Geotag.svg")
-                    a.city.size-5(href="#")
+                    a.city.size-5.location-modal(href="#location")
                         | г. Новосибирск
+                    .white-popup-block.mfp-hide#location
+                        .location__wrapper
+                            .tittle__wrap
+                                h1.size-3
+                                    |Выберите ваш город
+                                a.popup-modal-dismiss
+                                    img(src="/src/assets/images/Close-thick.svg")
+                            .link__wrap
+                                a.link__active.location__item.size-4(href="#")
+                                    | г. Новосибирск
+                                a.location__item.size-4(href="#")
+                                    | г. Москва
+                                a.location__item.size-4(href="#")
+                                    | г. Санкт-Петербург
+                                a.location__item.size-4(href="#")
+                                    | г. Ярославль
                 .header__wrap__info
                     .info__mobile
                         img(src="/src/assets/images/Phone.svg")
                         a.size-5(href="#")
                             | 8 800 214-67-77
                     .info__call
-                        a.call_us.size-5(href="#")
+                        a.call-us-modal.size-5(href="#call-us")
                             | Заказать звонок
+                        .white-popup-block.mfp-hide#call-us
+                            .call__us__wrapper
+                                .tittle__wrap
+                                    h1.size-3
+                                        | Заказать звонок
+                                    a.popup-modal-dismiss
+                                        img(src="/src/assets/images/Close-thick.svg")
+                                form.form__call
+                                    .call__wrapper
+                                        .call__input.name__input__wrap
+                                            p.input__label.size-5
+                                                |Ваше имя
+                                            input.input__primary.size-5(type="text" name="name" placeholder="Имя")
+                                        .call__input
+                                            p.input__label.size-5
+                                                |Телефон
+                                            input.input__primary.size-5(type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __")
+                                    input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
                 .header__wrap__login
                     img(src="/src/assets/images/Person.svg")
-                    a.size-5(href="#")
+                    a.login-modal.size-5(href="#login-modal")
                         | Личный кабинет
+                    .white-popup-block.mfp-hide#login-modal
+                        .login__wrapper
+                            .tittle__wrap
+                                h1.size-3
+                                    | Вход
+                                a.popup-modal-dismiss
+                                    img(src="/src/assets/images/Close-thick.svg")
+                            form.form__login
+                                .login__form__wrapper
+                                    .call__input
+                                        p.input__label.size-5
+                                            | E-mail или телефон
+                                        input.input__primary.input__phone.size-5(type="tel" name="login_tel" placeholder="+7 ( ___ ) ___ - __ - __")
+                                    .call__input
+                                        p.input__label.size-5
+                                            | Пароль
+                                        input.input__primary.size-5(type="password" name="password" placeholder="Пароль")
+                                        a.miss__password.size-6(href="#")
+                                            |Забыли пароль?
+                                .reg__wrapper
+                                    input.btn.btn-primary.btn-call.size-4(type="submit" value="Войти")
+                                    a.size-5.reg__link__form(href="#")
+                                        |Регистрация
         .header__middle
             .middle__wrap
                 .middle__wrap__logo
@@ -28,21 +85,71 @@ header
                             button.search__button
                                 img(src="/src/assets/images/Search.svg")
                             input.search__input(type="search" placeholder="Поиск")
-                .middle__wrap__basket
-                    .basket__logo
-                        img(src="/src/assets/images/Basket.svg")
-                    .basket__info
-                        .basket__info__price.size-5
-                            |21 920 ₽
-                        .basket__info__count.size-5
-                            |3 товара
+                a.basket__link(href="#basket-modal")
+                    .middle__wrap__basket
+                        .basket__logo
+                            img(src="/src/assets/images/Basket.svg")
+                        .basket__info
+                            .basket__info__price.size-5
+                                |21 920 ₽
+                            .basket__info__count.size-5
+                                |3 товара
+                .white-popup-block.mfp-hide#basket-modal
+                    .basket__wrapper
+                        form.form__basket
+                            .basket__form__wrapper
+                                .basket_items__wrapper
+                                    .item__product
+                                        a.item__product__name.size-5
+                                            |Flugger Dekso 25
+                                        span.item__product__desc.size-6
+                                            |3 л, цвет Белый
+                                    .item__price
+                                        span.item__price__value.size-5
+                                            |5 600 ₽
+                                        a.diss__item(href="#")
+                                            img(src="/src/assets/images/Close-thick.svg")
+                                .basket_items__wrapper
+                                    .item__product
+                                        a.item__product__name.size-5
+                                            | Flugger Dekso 25
+                                        span.item__product__desc.size-6
+                                            | 3 л, цвет Белый
+                                    .item__price
+                                        span.item__price__value.size-5
+                                            | 5 600 ₽
+                                        a.diss__item(href="#")
+                                            img(src="/src/assets/images/Close-thick.svg")
+                                .basket_items__wrapper
+                                    .item__product
+                                        a.item__product__name.size-5
+                                            | Flugger Dekso 25
+                                        span.item__product__desc.size-6
+                                            | 3 л, цвет Белый
+                                    .item__price
+                                        span.item__price__value.size-5
+                                            | 5 600 ₽
+                                        a.diss__item(href="#")
+                                            img(src="/src/assets/images/Close-thick.svg")
+                            .basket__submit__wrapper
+                                input.btn.btn-primary.btn-basket.size-3(type="submit" value="Оформить заказ")
+
         .header__bottom
             .bottom__wrap
                 nav
                     ul.nav
                         li
-                            a(href="")
-                            |Каталог товаров
+                            a.size-3(href="#")
+                                |Каталог товаров
                         li
-                            a(href="")
-                            |Подбор цвета
+                            a.size-3(href="#")
+                                |Подбор цвета
+                        li
+                            a.size-3(href="#")
+                                | Магазины
+                        li
+                            a.size-3(href="#")
+                                | Оплата и доставка
+                        li
+                            a.size-3(href="#")
+                                | Контакты
