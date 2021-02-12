@@ -1,5 +1,48 @@
 header
     .header
-        .header__wrap
-            .header__wrap__location
-                img(src="/src/assets/fonts/img/Geotag.svg")
+        .header__top
+            .header__wrap
+                .header__wrap__location
+                    img(src="/src/assets/images/Geotag.svg")
+                    a.city.size-5(href="#")
+                        | г. Новосибирск
+                .header__wrap__info
+                    .info__mobile
+                        img(src="/src/assets/images/Phone.svg")
+                        a.size-5(href="#")
+                            | 8 800 214-67-77
+                    .info__call
+                        a.call_us.size-5(href="#")
+                            | Заказать звонок
+                .header__wrap__login
+                    img(src="/src/assets/images/Person.svg")
+                    a.size-5(href="#")
+                        | Личный кабинет
+        .header__middle
+            .middle__wrap
+                .middle__wrap__logo
+                    img(src="/src/assets/images/Flugger_logo.svg")
+                .middle__wrap__search
+                    form.search__form
+                        .search__wrap
+                            button.search__button
+                                img(src="/src/assets/images/Search.svg")
+                            input.search__input(type="search" placeholder="Поиск")
+                .middle__wrap__basket
+                    .basket__logo
+                        img(src="/src/assets/images/Basket.svg")
+                    .basket__info
+                        .basket__info__price.size-5
+                            |21 920 ₽
+                        .basket__info__count.size-5
+                            |3 товара
+        .header__bottom
+            .bottom__wrap
+                nav
+                    ul.nav
+                        li
+                            a(href="")
+                            |Каталог товаров
+                        li
+                            a(href="")
+                            |Подбор цвета
