@@ -2,12 +2,13 @@
 .footer{
 	background: $color1;
 	color: $color4;
-	padding-top: 40px;
+	padding-top: 4rem;
 	font-size: 1.4rem;
 }
 .footer__wrap{
 	max-width: 1440px;
 	margin: auto;
+	padding: 0 12rem;
 }
 .footer__row{
 	display: flex;
@@ -19,7 +20,7 @@
 .footer__title{
 	font-size: 2rem;
 	color: $color6;
-	padding-bottom: 18px;
+	padding-bottom: 1.8rem;
 }
 .footer__menu-list{
 	padding: 0;
@@ -27,48 +28,52 @@
 	list-style-type: none;
 }
 .footer__menu-item{
-	padding-bottom: 16px;
+	padding-bottom: 1.6rem;
+}
+.footer__col{
+	margin: 1rem;
+	margin-bottom: 0;
 }
 
 //about block
 .footer__about-link--policy,
 .footer__about-link--perdata{
 	display: inline-block;
-		border-bottom: 1px solid $color4;
+	border-bottom: 0.1rem solid $color4;
 }
 .footer__about-link--perdata{
-	margin-bottom: 50px;
+	margin-bottom: 5rem;
 }
 .footer__about-text,
 .footer__about-img--logo{
-	padding-bottom: 8px;
+	padding-bottom: 0.8rem;
 	color: $color6;
 }
 .footer__about-text--copy{
-	padding-bottom: 80px;
+	padding-bottom: 8rem;
 }
 .footer__about-link--policy{
-	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
 }
 
 //ref block
 .footer__ref-link--tel{
 	font-size: 2.4rem;
 	font-family: $boldFont;
-	color: $color6;
+	color: $color6; 
 }
 .footer__ref-text--adress{
-	width: 170px;
-	padding-bottom: 13px;
+	max-width: 17rem;
+	padding-bottom: 1.3rem;
 	font-style: normal;
 }
 .footer__ref-link--que{
-	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
 }
 .footer__ref-link--que,
 .footer__ref-link--call{
 	display: inline-block;
-	border-bottom: 1px dashed $color4;
+	border-bottom: 0.1rem dashed $color4;
 }
 
 //img block
@@ -80,9 +85,38 @@
 //footer-bottom block
 .footer-bottom{
 	background: rgba(0,0,0,0.1);
-	padding: 20px 0;
+	padding: 2rem 0;
 }
 .footer  .footer-bottom__text--dev{
 	display: inline-block;
-	padding-right: 10px;
+	padding-right: 1rem;
+}
+
+//media
+@include bp-md{
+	.footer__row{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__col{
+		margin-bottom: 1rem;
+		width: 22.4rem;
+	}
+	.footer__col-img,
+	.footer .footer__about-text,
+	.footer .footer-bottom__text--age{
+		display: none;
+	}
+	.footer__about-text--copy{
+		padding-bottom: 2em;
+	}
+	.footer__about-link--perdata{
+		margin-bottom: 2rem;
+	}
+	.footer__col-ref .footer__title{
+		display: none;
+	}
+	.footer__about-link--policy{
+		margin-bottom: 1rem;
+	}
 }
