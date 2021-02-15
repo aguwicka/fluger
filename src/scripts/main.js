@@ -23,3 +23,20 @@ $(function () {
 $("body").on('focusin', "input[name='tel'], input[name='login_tel']", function () {
     $(this).inputmask('mask', { mask: "+79{*}", greedy: false});
 });
+
+function sliderOnMainP(){
+ $(".mainpage-carousel").owlCarousel({
+  loop: true,
+  items:1,
+  center: true, 
+  nav: true,
+  dots: true,
+  autoplay: true,
+  autoHeight: true,
+  margin: 20,
+});
+}
+$(function () {
+    //slider on main page
+    sliderOnMainP();
+});

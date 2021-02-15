@@ -100,23 +100,39 @@
 	}
 	.footer__col{
 		margin-bottom: 1rem;
-		width: 22.4rem;
+		width: 26.5rem;
 	}
 	.footer__col-img,
 	.footer .footer__about-text,
-	.footer .footer-bottom__text--age{
-		display: none;
-	}
-	.footer__about-text--copy{
-		padding-bottom: 2em;
-	}
-	.footer__about-link--perdata{
-		margin-bottom: 2rem;
-	}
+	.footer .footer-bottom__text--age,
+	.footer__ref-link--call,
 	.footer__col-ref .footer__title{
 		display: none;
 	}
+	.footer__about-text--copy{
+		padding-bottom: 1.5em;
+	}
+	.footer__about-link--perdata{
+		margin-bottom: 1.5rem;
+	}
 	.footer__about-link--policy{
 		margin-bottom: 1rem;
+	}
+	.footer__ref-text--adress{
+		max-width: 100%;
+		color: $color6;
+	}
+	.footer__ref-link--que{
+		border: 1px solid $color6;
+		text-align: center;
+		color: $color6;
+		padding: 1.2rem;
+		display: block;
+		border-radius: 4px;
+		margin-bottom: 1.5rem;
+		font-size: 1.6rem;
+	}
+	.footer__ref-text--adress{
+		margin-bottom: 2.0rem;
 	}
 }
