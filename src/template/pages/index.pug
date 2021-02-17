@@ -2,13 +2,176 @@ doctype html
 html(lang="en")
     head
         meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
         block title
             title webpack Project
 
     body
         include ../common/mixins
         include ../common/header
-        .wrapper
-          .owl-carousel.owl-carousel-custom.mainpage-carousel
-            img(src="/src/assets/images/main-slider.jpg")
+        .main-wrapper
+          .owl-carousel.owl-carousel-custom.mainpage-carousel.owl-theme
+            div.owl-carousel-custom__img.mainpage-carousel__img(style="background-image: url('/src/assets/images/main-slider.jpg')")
+              .mainpage-carousel__text-wrap
+                h2.owl-carousel-custom__title.mainpage-carousel__title Колеровка продукции
+                span.owl-carousel-custom__text.mainpage-carousel__text В любой из 3000 оттенков
+                a.owl-carousel-custom__btn.mainpage-carousel__btn.btn(href="#") Узнать больше
+            div.owl-carousel-custom__img.mainpage-carousel__img(style="background-image: url('/src/assets/images/main-slider.jpg')")
+              .mainpage-carousel__text-wrap
+                h2.owl-carousel-custom__title.mainpage-carousel__title Колеровка продукции
+                span.owl-carousel-custom__text.mainpage-carousel__text В любой из 3000 оттенков
+                a.owl-carousel-custom__btn.mainpage-carousel__btn.btn(href="#") Узнать больше
+            .owl-carousel-custom__img.mainpage-carousel__img(style="background-image: url('/src/assets/images/main-slider.jpg')")
+              .mainpage-carousel__text-wrap
+                h2.owl-carousel-custom__title.mainpage-carousel__title Колеровка продукции
+                span.owl-carousel-custom__text.mainpage-carousel__text В любой из 3000 оттенков
+                a.owl-carousel-custom__btn.mainpage-carousel__btn.btn(href="#") Узнать больше
+        .all-products-wrapper
+          section.all-products__wrap
+            span.all-products__wrap-title.size-2 Популярное
+            .owl-carousel.owl-theme.mainpage-all-products.all-products.all-products--pop
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products1.jpg")
+                h3.all-products__title.size-3 Flutex 5
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2
+                  span.all-products__price--cross.size-5 2 500  ₽/м
+                    sup 2
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products2.jpg")
+                h3.all-products__title.size-3 Interior 90
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products3.jpg")
+                h3.all-products__title.size-3 Wet Room Paint
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2
+                  span.all-products__price--cross.size-5 2 500  ₽/м
+                    sup 2
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products4.jpg")
+                h3.all-products__title.size-3 Interior Stop Primer
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2   
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products4.jpg")
+                h3.all-products__title.size-3 Interior Stop Primer
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2    
+            .all-products__btn-wrap.btnwrap--green
+              a.btn.all-products__wrap-btn.btn--green(href="#") Посмотреть всё
+        .all-products-wrapper
+          section.all-products__wrap
+            span.all-products__wrap-title.size-2 Новинки
+            .owl-carousel.owl-theme.mainpage-all-products.all-products.all-products--new
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products1.jpg")
+                h3.all-products__title.size-3 Flutex 5
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2
+                  span.all-products__price--cross.size-5 2 500  ₽/м
+                    sup 2
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products2.jpg")
+                h3.all-products__title.size-3 Interior 90
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products3.jpg")
+                h3.all-products__title.size-3 Wet Room Paint
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2
+                  span.all-products__price--cross.size-5 4 640  ₽/м
+                    sup 2
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products4.jpg")
+                h3.all-products__title.size-3 Interior Stop Primer
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2   
+              a.all-products__text-wrap(href="#")
+                img.all-products__img(src="/src/assets/images/all-products4.jpg")
+                h3.all-products__title.size-3 Interior Stop Primer
+                p.all-products__text.size-5 Чрезвычайно крепкое, хорошо моющееся и при этом матовое покрытие. Не меняет степени блеска от прикосновений и...
+                div.all-products__price-wrap
+                  span.all-products__price.size-3 2 500  ₽/м
+                    sup 2
+                  span.all-products__price--cross.size-5 2 280  ₽/м
+                    sup 2
+            .all-products__btn-wrap.btnwrap--green
+              a.btn.all-products__wrap-btn.btn--green(href="#") Посмотреть всё
+        .main-wrapper
+          section.mainpage-products
+            .mainpage-products__item(style="background-image: url(/src/assets/images/main-pr1.jpg);")
+              div.mainpage-products__inner
+                h4.mainpage-products__title Для работы в помещениях
+                a.btn.mainpage-products__link.size-4(href="#") Перейти в каталог
+            .mainpage-products__item(style="background-image: url(/src/assets/images/main-pr2.jpg);")
+              div.mainpage-products__inner
+                h4.mainpage-products__title Для декора и дизайна
+                a.btn.mainpage-products__link.size-4(href="#") Перейти в каталог
+            .mainpage-products__item(style="background-image: url(/src/assets/images/main-pr3.jpg);")
+              div.mainpage-products__inner
+                h4.mainpage-products__title Для работы на улице
+                a.btn.mainpage-products__link.size-4(href="#") Перейти в каталог
+            .mainpage-products__item(style="background-image: url(/src/assets/images/main-pr4.jpg);")
+              div.mainpage-products__inner
+                h4.mainpage-products__title Инструменты и материалы
+                a.btn.mainpage-products__link.size-4(href="#") Перейти в каталог
+          section.mainpage-aboutus__wrap
+            h3.mainpage-aboutus__title.size-2 О компании
+            .mainpage-aboutus
+              .mainpage-aboutus__text-wrap
+                p.mainpage-aboutus__text Наша компания является официальным дилером на территории Сибирского Федерального Округа компании Flugger (Дания), которая производит высококачественные лакокрасочные материалы: краски для стен и потолков, фасадные краски, краски, масла и пропитки по дереву, декоративные материалы, грунтовки, шпатлёвки, герметики, клея и инструменты, современное и высокоточное колеровочное оборудование. Благодаря нашему центру компьютерной колеровки, вы можете воплотить свои идеи и мечты в реальность, в любую палитру цветов. <br><br> Для наших постоянных клиентов разработана система скидок и бонусов. Надеемся на долгосрочное сотрудничество. Ждем Вас в нашем фирменном магазине.
+                a.mainpage-aboutus__link(href="#") Подробнее
+              .mainpage-aboutus__img-wrap
+                img.mainpage-aboutus__img(src="/src/assets/images/mainp-about.jpg")
+        section.mainpage-news
+          .main-wrapper
+            h3.mainpage-news__title.size-2 Статьи
+          .all-products-wrapper
+            div
+              .owl-carousel.mainpage-news__inner
+                article.mainpage-news__item
+                  a.mainpage-news__img(href="#" style="background-image: url(/src/assets/images/mainp-news1.jpg);")
+                    .mainpage-news__img-inner
+                  span.mainpage-news__item-date 2 ноября 2016 г.
+                  a.mainpage-news__item-link(href="#")
+                    h4.mainpage-news__item-title Отношение к ремонту Вашего фасада
+                  p.mainpage-news__item-text Реставрация фасада с уважением к истории!
+                article.mainpage-news__item
+                  a.mainpage-news__img(href="#" style="background-image: url(/src/assets/images/mainp-news2.jpg);")
+                    .mainpage-news__img-inner
+                  span.mainpage-news__item-date 2 ноября 2016 г.
+                  a.mainpage-news__item-link(href="#")
+                    h4.mainpage-news__item-title Новая кухня за небольшие деньги
+                  p.mainpage-news__item-text Получение новой кухни с небольшим количеством ресурсов. Новая кухня не обязательно означает огромный строительный проект и много тысяч крон - мало что может сделать большую разницу.
+                article.mainpage-news__item
+                  a.mainpage-news__img(href="#" style="background-image: url(/src/assets/images/mainp-news3.jpg);")
+                    .mainpage-news__img-inner
+                  span.mainpage-news__item-date 2 ноября 2016 г.
+                  a.mainpage-news__item-link(href="#")
+                    h4.mainpage-news__item-title Инструкция по подготовке к малярным работам
+                  p.mainpage-news__item-text Научиться красить правильно модет каждый, и, как ни странно, даже получать от этого процесса удовольствие.
+              .mainpage-news__btn-wrap.btnwrap--green
+                a.btn.mainpage-news__btn.btn--green Посмотреть всё
+
         include ../common/footer

@@ -47,3 +47,19 @@ button.btn {
 .input__label {
     margin-bottom: 4px;
 }
+
+.btn--green{
+    background: $color3;
+    color: #fff;
+    padding: .9rem 3.2rem;
+    display: inline-flex;
+    font-size: 2rem;
+    @include bp-md{
+        font-size: 1.6rem;
+    }
+}
+.btnwrap--green{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}

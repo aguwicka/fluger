@@ -1,0 +1,63 @@
+.mainpage-carousel__title{
+	margin-top: 0;
+}
+.mainpage-carousel__btn{
+	padding: 1.5rem 3.2rem;
+	font-size: 2rem;
+	display: inline-flex;
+	background: $color2;
+	@include bp-md{
+		font-size: 1.6rem;
+		width: 100%;
+	}
+}
+.mainpage-carousel__text{
+	display: block;
+}
+.mainpage-carousel__text{
+	color: $color7;
+	font-size: 2.4rem;
+	margin-bottom: 7rem;
+	@include bp-md{
+		font-size: 1.6rem;
+	}
+}
+.mainpage-carousel__title{
+	color: #fff;
+	font-size: 6rem;
+	margin-bottom: 0;
+	max-width: 40rem;
+	line-height: 1;
+	margin-bottom: 3rem;
+	@include bp-md{
+		max-width: 100%;
+		font-size: 3.2rem;
+	}
+}
+.mainpage-carousel__img{
+	display: flex;
+	align-items: center;
+	padding: 8rem 10rem;
+	@include bp-md{
+		display: block;
+		padding: 2.5rem 5rem;
+	}
+}
+.owl-theme .owl-dots .owl-dot span{
+	background: #DDDDDD;
+}
+.owl-theme .owl-dots .owl-dot span{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background: $color2;
+}
+.owl-theme .owl-nav.disabled+.owl-dots{
+	margin-top: 1.5rem;
+}
+.owl-carousel-custom__img{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
