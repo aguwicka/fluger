@@ -138,7 +138,7 @@ header
             .bottom__wrap
                 nav
                     ul.nav
-                        li
+                        li.menu__active
                             a.size-3(href="#")
                                 |Каталог товаров
                         li
@@ -153,3 +153,14 @@ header
                         li
                             a.size-3(href="#")
                                 | Контакты
+            .breadcrumbs__wrap
+                ul.breadcrumbs
+                    li.breadcrumbs__item
+                        a.size-6(href="#")
+                            |Главная
+                    li.breadcrumbs__item
+                        a.size-6(href="#")
+                            | Каталог товаров
+                    li.breadcrumbs__item.breadcrumbs__acitve
+                        a.size-6(href="#")
+                            | Для работы в помещениях

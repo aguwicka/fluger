@@ -1,0 +1,95 @@
+.catalog__wrapper {
+  display: flex;
+  padding-bottom: 5.6rem;
+}
+aside {
+  margin-right: 3.2rem;
+  padding: 2.4rem 2rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 2px;
+}
+.catalog__name {
+  margin: 0;
+  padding-right: 1.6rem;
+  color: $color3;
+}
+.menu__catalog {
+  margin-top: 1.5rem;
+  padding-bottom: 2.6rem;
+
+  &__item {
+    padding-bottom: 1rem;
+
+    &:hover a{
+      text-decoration: underline;
+    }
+
+    &:before {
+      content: '•';
+      font-size: 1.4rem;
+      padding-right: 8px;
+      color: $color3;
+    }
+  }
+}
+
+.catalog__link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $color2;
+  border-top: 1px solid #DDDDDD;
+}
+
+.catalog_content__name {
+  margin: 0;
+}
+.catalog__products {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: flex-end;
+    width: 29rem;
+    height: 20rem;
+    border-radius: 2px;
+    background-image: url('/src/assets/images/catalog-image.png');
+    &:nth-child(2) {
+      background-image: url('/src/assets/images/grunt.png');
+    }
+    &:nth-child(3) {
+      background-image: url('/src/assets/images/derevo.png');
+    }
+    &:nth-child(4) {
+      background-image: url('/src/assets/images/metal.png');
+    }
+    &:nth-child(5) {
+      background-image: url('/src/assets/images/pol.png');
+    }
+    &:nth-child(6) {
+      background-image: url('/src/assets/images/catalog-image.png');
+    }
+    &:nth-child(7) {
+      background-image: url('/src/assets/images/sten.png');
+    }
+    &:nth-child(8) {
+      background-image: url('/src/assets/images/shpatle.png');
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 1.4rem;
+    }
+
+    p {
+      margin-left: 1.6rem;
+      margin-bottom: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
