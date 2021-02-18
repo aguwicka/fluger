@@ -1,11 +1,12 @@
 .header__top {
-  margin: 0 auto;
-  padding: 1.6rem 12rem;
-  max-width: 1440px;
   background: $color2;
   color: #fff;
 }
+
 .header__wrap {
+  margin: 0 auto;
+  padding: 1.6rem 12rem;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
 
