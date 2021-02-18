@@ -1,0 +1,80 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+
+    body
+        include ../common/mixins
+        include ../common/header
+        .wrapper
+            .catalog__wrapper
+                section
+                    aside
+                        h4.size-5.catalog__name
+                            |Для работы в помещениях
+                        ul.menu__catalog
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    |Для влажных помещений
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    | Для грунтования
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    | Для дерева и мебели
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    | Для металла
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    | Для пола
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    | Для потолка
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    | Для стен
+                            li.menu__catalog__item
+                                a.size-6(href="#")
+                                    | Для шпатлевания
+                        a.size-5.catalog__link(href="#")
+                            |Для декора и дизайна
+                        a.size-5.catalog__link(href="#")
+                            | Для работы на улице
+                        a.size-5.catalog__link(href="#")
+                            | Инструменты и материалы
+
+                .catalog__content
+                    h2.size-2.catalog_content__name
+                        |Для работы в помещениях
+                    .catalog__products
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                | Для влажных
+                                br
+                                | помещений
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                |Для грунтования
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                |Для дерева и мебели
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                |Для металла
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                |Для пола
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                |Для потолка
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                |Для стен
+                        a(href="#").catalog__products__item
+                            p.size-3
+                                |Для шпатлевания
+        include ../common/footer

@@ -104,5 +104,33 @@
   .nav {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid #DDDDDD;
+    li {
+      padding-bottom: 2.4rem;
+    }
+    .menu__active {
+      border-bottom: 4px solid #192C5A;
+
+      a {
+        color: #192C5A;
+      }
+    }
+  }
+}
+
+.breadcrumbs__wrap {
+  margin-top: 1.6rem;
+}
+.breadcrumbs {
+  display: flex;
+
+  &__item {
+    color: $color4;
+    padding-left: 8px;
+    &:not(:last-child):after {
+      content: '/';
+      font-size: 1.4rem;
+      padding-left: 8px;
+    }
   }
 }

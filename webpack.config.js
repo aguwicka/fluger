@@ -68,6 +68,11 @@ module.exports = {
       filename: "./index.html",
       noErrorOnMissing: true
     }),
+    new HtmlWebPackPlugin({
+      template: "./src/template/pages/catalog.pug",
+      filename: "./catalog.html",
+      noErrorOnMissing: true
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
