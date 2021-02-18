@@ -53,7 +53,7 @@
 .owl-theme .owl-dots .owl-dot{
 	margin: 0.2rem 0.7rem;
 	outline: none;
-	transition: all .2s;
+
 	border: 3px solid rgba(0,0,0,0);
 	border-radius: 50%;
 }
@@ -62,9 +62,11 @@
 	background: $color2;
 }
 .owl-theme .owl-dots .owl-dot.active {
-	animation-duration: 10s;
+	transform: rotate(50deg);
+	border: 3px solid #DDDDDD;
+	animation-duration: 7s;
 	animation-name: circle;
-	animation-iteration-count: 1
+	animation-fill-mode: forwards;
 }
 .owl-theme .owl-dots .owl-dot.active ~ .owl-dot span{
 	background: #DDDDDD;
