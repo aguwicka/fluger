@@ -26,7 +26,7 @@ $("body").on('focusin', "input[name='tel'], input[name='login_tel']", function (
 
 function slidersOnMainP(){
  $(".mainpage-carousel").owlCarousel({
-  loop: true,
+  loop: false,
   items:1,
   center: true, 
   nav: false,
