@@ -132,3 +132,15 @@
 		margin-bottom: 2.0rem;
 	}
 }
+.footer-bottom__wrap{
+	@include bp-md{
+		width: 26.5rem;
+		margin: 0 auto;
+		padding: 0;
+		max-width: 100%;
+		text-align: left;
+		.footer-bottom__row{
+			align-items: normal;
+		}
+	}
+}

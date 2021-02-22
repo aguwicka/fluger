@@ -1,0 +1,128 @@
+.catalogp-menu__row{
+	display: flex;
+	margin: -1.2rem;
+	@include bp-md{
+		flex-direction: column;
+		margin: 0 -1.2rem;
+	}
+}
+.catalogp-menu__item{
+	background: #FFFFFF;
+	border-radius: 2px;
+	width: 100%;
+	@include bp-md{
+		background: none;
+	}
+}
+.catalogp-menu__col{
+	flex: 0 0 calc(25% - 2.4rem);
+	max-width: calc(25% - 2.4rem);
+	margin: 1.2rem;
+	display: flex;
+	@include bp-md{
+		flex: 0 0 calc(100% - 2.4rem);
+		max-width: calc(100% - 2.4rem);
+		margin: 0 1.2rem;
+	}
+}
+.catalogp-menu__item-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	padding: 2.5rem 2.5rem 5.6rem 2.5rem;
+	@include bp-md{
+		padding: 2.1rem 0 3rem;
+	}
+}
+.catalogp-menu__item-title{
+	padding: 2.4rem;
+	margin: 0;
+	color: #fff;
+	font-size: 2.4rem;
+	font-family: 	$boldFont;
+	position: relative;
+	display: flex;
+	@include bp-md{
+		width: 100%;
+	}
+
+	align-items: center;
+	&:after{
+		content: '';
+		width: 2.2rem;
+		height: 2.2rem;
+		background-image: url('/src/assets/images/arrow.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include bp-md{
+			display: none;
+		}
+	}
+}
+.catalogp-menu{
+	margin-bottom: 7.5rem;
+	@include bp-md{
+	}
+}
+.catalogp-menu__item-img{
+	border-radius: 2px 2px 0px 0px;
+	background-size: cover;
+	@include bp-md{
+		border-radius: 2px;
+		margin: 0 0;
+	}
+}
+.catalogp-menu__item-title-link{
+	display: block;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.catalogp-menu__item-img-inner{
+	background: rgba(25, 44, 90, .3);
+	height: 100%;
+	transition: all .2s;
+	&:hover{
+		background: rgba(25, 44, 90, .6);
+	}
+}
+.catalogp-menu__item-link{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&:after{
+		content: '';
+		width: 1.4rem;
+		height: 1.4rem;
+		background-image: url('/src/assets/images/arrow-small.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	position: relative;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+.catalogp-menu__item-li{
+	padding: 1.3rem 0;
+	font-size: 1.6rem;
+	border-bottom: 1px solid #DDDDDD;
+}
+.catalogp-title{
+	display: none;
+	@include bp-md{
+		display: block;
+		font-size: 2.6rem;
+		font-family: 	$boldFont;
+		margin: 1.2rem 0 ;
+	}
+}
+.catalogp-menu__link-bottom{
+	display: none;
+	@include bp-md{
+		margin-bottom: 5.6rem;
+		display: flex;
+	}
+}

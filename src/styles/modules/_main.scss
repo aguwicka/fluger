@@ -2,6 +2,9 @@ body{
 	background: #E5E5E5;
 	line-height: 1.2;
 	letter-spacing: 0.01rem;
+	@include bp-md{
+		background: #F5F5F5;
+	}
 }
 .main-wrapper{
 	max-width: 1440px;
