@@ -1,0 +1,80 @@
+.contacts__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #333333;
+  margin-bottom:15px;
+}
+.contact-info {
+  display:grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-bottom: 64px;
+
+  &__inquiry-office {
+    padding-right: 16.6%;
+
+    &__title {
+      font-family: PT Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 120%;
+      letter-spacing: 0.01em;
+      color: #333333;
+      margin-bottom:19px;
+    }
+    &__text {
+      margin-bottom:16px;
+      &, p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        color: #333333;
+      }
+    }
+    &__timework {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: #429471;
+      margin-bottom:16px;
+    }
+    &__btns {
+      a {
+        border-bottom: 1px dashed rgba(162, 162, 162, .5);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #A2A2A2;
+        margin-right: 28px;
+      }
+    }
+
+  }
+  &__imgblock {
+    padding-top:15px;
+    &__item {
+      &__image{
+        margin-bottom:26px;
+        padding-left:15px;
+        img {
+          width: 91.36px;
+        }
+      }
+      &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.01em;
+        color: #192C5A;
+      }
+    }
+  }
+}
