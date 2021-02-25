@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+
+    body
+        include ../common/mixins
+        include ../common/header
+        .wrapper
+            .wrapper-contacts
+                h1.contacts__title 
+                    |Контакты
+                .contact-info
+                    .contact-info__inquiry-office
+                        .contact-info__inquiry-office__title
+                            |Единая справочная
+                        .contact-info__inquiry-office__text
+                            p 
+                                |Мы поможем вам определиться с выбором товара, проконсультируем по его характеристикам и свойствам, расскажем о способах оплаты и доставки ваших покупок и ответим на любые вопросы о работе нашего магазина.
+                        .contact-info__inquiry-office__timework
+                            span 
+                                |Eжедневно с 10:00 до 20:00 по Новосибирску
+                        .contact-info__inquiry-office__btns
+                            a 
+                                |Заказать звонок
+                            a 
+                                |Задать вопрос
+                    .contact-info__imgblock
+                        .contact-info__imgblock__item
+                            .contact-info__imgblock__item__image
+                                img(src="/src/assets/images/customer-service-icon.svg")
+                            .contact-info__imgblock__item__title
+                                a(href="tel:88002302110")
+                                    |8 800 230-21-10
+                    .contact-info__imgblock
+                        .contact-info__imgblock__item
+                            .contact-info__imgblock__item__image
+                                img(src="/src/assets/images/mailbox-icon.svg")
+                            .contact-info__imgblock__item__title
+                                a(href="mailto:info@asioma.ru")
+                                    |info@asioma.ru
+            include ../common/our-team.pug
+        include ../common/footer

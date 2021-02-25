@@ -182,6 +182,17 @@ function customSelect(){
     //slider on main page
     slidersOnMainP();
 
+<<<<<<< HEAD
     //custom select
     customSelect();
   });
+=======
+  });
+
+//toggle mobile menu
+let toggleButton = document.querySelector('.toggle-menu');
+let navBar = document.querySelector('.nav-bar');
+toggleButton.addEventListener('click', function () {
+    navBar.classList.toggle('toggle');
+});
+>>>>>>> origin/main
