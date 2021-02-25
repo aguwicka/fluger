@@ -9,10 +9,10 @@ html(lang="en")
     body
         include ../common/mixins
         include ../common/header
-        .main-wrapper
+        .main-wrapper.catalog-sec-lev
             .catalog__wrapper
                 section
-                    aside
+                    aside.aside-menu
                         h4.size-5.catalog__name
                             |Для работы в помещениях
                         ul.menu__catalog
@@ -135,6 +135,9 @@ html(lang="en")
                         select(name="select-tag" id="select-tag" class="select")
                           option(val="for-pop") По популярности
                           option(val="for-name") По названию
+                    .catalog-sec-lev-top
+                      a(href="#") Фильтр (4)
+                      a(href="#") По популярности
                     .catalog-products
                       .catalog-products__item
                         .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog1.png')")
@@ -305,7 +308,7 @@ html(lang="en")
                         .catalog-products__text-wrap
                           h4.catalog-products__title HB Expert Yellow
                           span.catalog-products__small-title Кисть из смешанной белой щетины
-                          p.catalog-products__text Смешанная щетина предназначена для работы со всеми типами красок и лаков. Двухкомпонентная ручка предназначена для удобства работы. Ободок из нержавеющей стали.
+                          p.catalog-products__text Смешанная щетина предназначена для работы со всеми типами красок и лаков.
                         .catalog-products__price-wrap
                           .catalog-products__price-inner
                             .catalog-products__price 250  ₽
