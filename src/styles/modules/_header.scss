@@ -142,11 +142,46 @@
 .header__mobile {
   display: none;
 }
+.search__mobile {
+  display: none;
+}
 //mobile
 @include bp-md {
   .header {
     display: none;
   }
+  .search__mobile {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem ;
+  }
+  .search__wrap {
+    margin-top: 1.2rem;
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #EBEBEB;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+  }
+  .search__button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .search__input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    width: 90%;
+  }
+  .search__mobile {
+    display: block;
+  }
+
   .header__mobile {
     background: $color2;
     padding: 1.5rem 1.9rem;
