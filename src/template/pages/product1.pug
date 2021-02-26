@@ -1,0 +1,225 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+
+    body
+        include ../common/mixins
+        include ../common/header
+        .wrapper
+            h2.size-2
+                | FLUGGER Interior High Finish 90
+            .product__wrapper
+                .product__content
+                    .product__slider
+                        .slider-nav
+                            .thumbs
+                                .thumb
+                                    img(src="/src/assets/images/sub1.png")
+                                .thumb
+                                    img(src="/src/assets/images/sub2.png")
+                                .thumb
+                                    img(src="/src/assets/images/sub3.png")
+                        #product__carousel.owl-carousel.product__slid
+                            .slide
+                                img(src="/src/assets/images/product-image.png")
+                            .slide.slide2
+                                img(src="/src/assets/images/product-image.png")
+                            .slide.slide3
+                                img(src="/src/assets/images/product-image.png")
+                    .content__wrap
+                        .content__title
+                            h2.size-3
+                                |Стоимость 267 ₽ / м
+                            .badge__img
+                                img(src="/src/assets/images/badge1.svg")
+                                img(src="/src/assets/images/badge2.svg")
+                                img(src="/src/assets/images/badge3.svg")
+                        .content__text.size-5
+                            p
+                                | Акриловая эмаль на водной основе INTERIOR High Finish 50, обеспечивает жёсткую и прочную поверхность, создавая легко моющееся покрытие. Окрашиваемая поверхность приобретает красивый внешний вид.
+                                |
+                                | Степень блеска краски: глянцевая-90
+                                |
+                                | Interior High Finish 50 маркирована европейским знаком ECO.
+                                |
+                                | Рекомендуется для внутренних работ по дереву, загрунтованному металлу, в случаях, когда необходимо получить стойкую к механическим воздействиям, хорошо моющуюся поверхность. Например: кухонные фасады, мебель, подоконники, плинтуса, панели, фурнитура, внутренние элементы окон.
+                        a.size-5.button__close(href="#")
+                            |Свернуть
+                        .characteristics__wrap
+                            .char__left
+                                h4.size-3
+                                    |Характеристики
+                                .table__wrap
+                                    .table__item.size-5
+                                        .table__item__name
+                                            |Расход
+                                        .table__item__desc
+                                            |167 ₽ / м
+                                    .table__item.size-5
+                                        .table__item__name
+                                            | Время высыхания
+                                        .table__item__desc
+                                            | 6 ч.
+                                    .table__item.size-5
+                                        .table__item__name
+                                            | Степень глянца
+                                        .table__item__desc
+                                            | Глянцевая
+                                    .table__item.size-5
+                                        .table__item__name
+                                            | Основа
+                                        .table__item__desc
+                                            | Акриловая
+                                    .table__item.size-5
+                                        .table__item__name
+                                            | Свойства
+                                        .table__item__desc
+                                            | Декоративная
+                                    .table__item.size-5
+                                        .table__item__name
+                                            | Артикулы
+                                        .table__item__desc
+                                            p
+                                                | 74710 — BASE 1 (0,35L)
+                                            a(href="#")
+                                                |Смотреть все
+
+                            .char__right
+                                h4.size-3
+                                    |Подходит для
+                                .accessories__wrap
+                                    img(src="/src/assets/images/vanna.svg")
+                                    img(src="/src/assets/images/spal.svg")
+                                    img(src="/src/assets/images/ulica.svg")
+                        .product__document
+                            h2.size-3
+                                |Документация к товару
+                            .all__docs
+                                .docs__item
+                                    img(src="/src/assets/images/pdf.svg")
+                                    a.size-5(href="#")
+                                        |Технический паспорт.pdf
+                                .docs__item
+                                    img(src="/src/assets/images/word.svg")
+                                    a.size-5(href="#")
+                                        | Интерьерная акриловая краска.docx
+
+                .product__asside
+                    .aside__wrap
+                        .product__title__wrap
+                            p.size-4
+                                |Цвет
+                            .product__palette
+                                img(src="/src/assets/images/Palette.svg")
+                                a.size-5(href="#")
+                                    |Палитра
+                        .product__color
+                            img(src="/src/assets/images/white-circle.svg")
+                            .product__item
+                                .item__number.size-5
+                                    |№ по каталогу
+                                .item__color.size-5
+                                    |Белый
+                        .product__size
+                            p.size-4
+                                | Объем
+                            .product__calculator
+                                img(src="/src/assets/images/calculator.svg")
+                                a.size-5(href="#")
+                                    | Калькулятор
+                        form.product__form
+                            .input__wrap
+                                .input__item
+                                    button.minus(type="button")
+                                        i.fas.fa-minus
+                                    .quantity
+                                        input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                    button.plus(type="button")
+                                        i.fas.fa-plus
+                                .input__info
+                                    .info
+                                        ul
+                                            li
+                                                div.size-5
+                                                    |0.35 л
+                                                div
+                                                div.size-5.info__price
+                                                    |600 ₽
+                            .input__wrap
+                                .input__item
+                                    button.minus(type="button")
+                                        i.fas.fa-minus
+                                    .quantity
+                                        input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                    button.plus(type="button")
+                                        i.fas.fa-plus
+                                .input__info
+                                    .info
+                                        ul
+                                            li
+                                                div.size-5
+                                                    | 0.35 л
+                                                div
+                                                div.size-5.info__price
+                                                    | 600 ₽
+                            .input__wrap
+                                .input__item
+                                    button.minus(type="button")
+                                        i.fas.fa-minus
+                                    .quantity
+                                        input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                    button.plus(type="button")
+                                        i.fas.fa-plus
+                                .input__info
+                                    .info
+                                        ul
+                                            li
+                                                div.size-5
+                                                    | 0.35 л
+                                                div
+                                                div.size-5.info__price
+                                                    | 600 ₽
+                            .input__wrap
+                                .input__item
+                                    button.minus(type="button")
+                                        i.fas.fa-minus
+                                    .quantity
+                                        input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                    button.plus(type="button")
+                                        i.fas.fa-plus
+                                .input__info
+                                    .info
+                                        ul
+                                            li
+                                                div.size-5
+                                                    | 0.35 л
+                                                div
+                                                div.size-5.info__price
+                                                    | 600 ₽
+                            .form__discaunt
+                                .discount
+                                    ul
+                                        li
+                                            div.size-5
+                                                |Ваша скидка: 3%
+                                            div
+                                            div.size-5.discount__info
+                                                |–153 ₽
+                            .form__total
+                                div.size-4
+                                    |Итого
+                                .total__price.size-2
+                                    |6 630  ₽
+                            .product__count.size-5
+                                |за 3,20 л
+                            .form__submit
+                                button.btn-primary.size-4
+                                    img(src="/src/assets/images/basket-mobile.svg")
+                                    |В корзину
+
+        include ../common/all-products
+        include ../common/footer

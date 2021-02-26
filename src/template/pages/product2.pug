@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+
+    body
+        include ../common/mixins
+        include ../common/header
+        .wrapper
+            h2.size-2
+                | HB EXPERT Blue
+            .product__wrapper
+                .product__content
+                    .product__slider
+                        .slider-nav
+                            .thumbs
+                                .thumb
+                                    img(src="/src/assets/images/tassel1.svg")
+                                .thumb
+                                    img(src="/src/assets/images/tassel2.svg")
+                        #product__carousel.owl-carousel.product__slid
+                            .slide
+                                img(src="/src/assets/images/tassel.png")
+                            .slide.slide2
+                                img(src="/src/assets/images/tassel.png")
+                    .content__wrap.tassle__content
+                        .content__title
+                            h2.size-3
+                                |Стоимость от 100 ₽
+                        .content__text.size-5
+                            p
+                                | КИСТЬ HARRIS EXPERT BLUE™
+                                |
+                                | Синтетические волокна предназначены для работы со всеми типами красок и лаков на водной основе.
+                                | Двухкомпонентная ручка предназначена для удобства работы.
+                                | Ободок из нержавеющей стали.
+
+                .product__asside
+                    .aside__wrap.tassle__wrap
+                        .product__title__wrap
+                            p.size-4
+                                |Количество
+                        form.product__form
+                            .input__wrap
+                                .input__item
+                                    button.minus(type="button")
+                                        i.fas.fa-minus
+                                    .quantity
+                                        input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                    button.plus(type="button")
+                                        i.fas.fa-plus
+                                .input__info
+                                    .info
+                                        ul
+                                            li
+                                                div.size-5
+                                                    |12 мм
+                                                div
+                                                div.size-5.info__price
+                                                    |600 ₽
+                            .input__wrap
+                                .input__item
+                                    button.minus(type="button")
+                                        i.fas.fa-minus
+                                    .quantity
+                                        input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                    button.plus(type="button")
+                                        i.fas.fa-plus
+                                .input__info
+                                    .info
+                                        ul
+                                            li
+                                                div.size-5
+                                                    | 25 мм
+                                                div
+                                                div.size-5.info__price
+                                                    | 600 ₽
+                            .form__discaunt
+                                .discount
+                                    ul
+                                        li
+                                            div.size-5
+                                                |Ваша скидка: 3%
+                                            div
+                                            div.size-5.discount__info
+                                                |–153 ₽
+                            .form__total
+                                div.size-4
+                                    |Итого
+                                .total__price.size-2
+                                    |6 630  ₽
+                            .form__submit
+                                button.btn-primary.size-4
+                                    img(src="/src/assets/images/basket-mobile.svg")
+                                    |В корзину
+
+        include ../common/all-products
+        include ../common/footer

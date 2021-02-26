@@ -134,3 +134,14 @@ let navBar = document.querySelector('.nav-bar');
 toggleButton.addEventListener('click', function () {
     navBar.classList.toggle('toggle');
 });
+
+$(document).ready(function() {
+    $('#product__carousel').owlCarousel({
+        items: 1,
+        dots: true,
+        dotsContainer: '.slider-nav .thumbs',
+    })
+});
+$('.thumb').click(function(){
+    $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
+});

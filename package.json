@@ -17,6 +17,7 @@
     "pug": "^3.0.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",

@@ -252,6 +252,7 @@
 }
 .toggle .toggle__open__mobile {
   display: block;
+  height: 100vh;
 }
 
 .nav-list {
@@ -333,4 +334,5 @@
 
 .logo__mobile {
   color: #fff;
+  display: flex;
 }
