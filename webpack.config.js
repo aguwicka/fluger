@@ -98,7 +98,7 @@ module.exports = {
     filename: "./product2.html",
     noErrorOnMissing: true
   }),
-  new HtmlWebPackPlugin({
+ new HtmlWebPackPlugin({
     template: "./src/template/pages/cart.pug",
     filename: "./cart.html",
     noErrorOnMissing: true
@@ -108,7 +108,7 @@ module.exports = {
       // both options are optional
       filename: "[name].css",
       chunkFilename: "[id].css"
-    }),
+  }),
   new CopyWebpackPlugin([
     { from: './src/assets/images', to: './assets/images' , noErrorOnMissing: true },
     { from: './src/assets/fonts', to: './assets/fonts' , noErrorOnMissing: true },
