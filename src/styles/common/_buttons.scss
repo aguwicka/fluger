@@ -63,3 +63,13 @@ button.btn {
     justify-content: center;
     margin-top: 4rem;
 }
+.btn--blue{
+    background: $color2;
+    color: #fff;
+    padding: .9rem 3.2rem;
+    display: inline-flex;
+    font-size: 2rem;
+    @include bp-md{
+        font-size: 1.6rem;
+    }
+}
