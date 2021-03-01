@@ -1,0 +1,185 @@
+.cart-top {
+  margin-bottom:20px;
+  display: flex;
+    justify-content: space-between;
+  .cart-top__title {
+    line-height: 1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    color: #333333;
+  }
+  & .cart-top__steps {
+    display: flex;
+    counter-reset: step;
+    overflow: hidden;
+    & .steps__step {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      width: 150px;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-bottom: 2px dashed #DDDDDD;
+        top: 5px;    
+        left: -45%;
+        z-index: 1;
+      }
+      &.active:after {
+        border-bottom: 2px dashed #429471;
+      }
+      &:first-child:after {
+        content: none;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      &__circle {
+        width: 16px;
+        height: 16px;
+        background-color: #DDDDDD;
+        display: block;
+        border-radius:50%;
+        margin-bottom:3px;
+        position: relative;
+        z-index: 2;
+      }
+      &.active .steps__step__circle {
+        background-color: #429471;
+      }
+      &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.3;
+        text-align: center;
+        color: #A2A2A2;
+      }
+      &.active .steps__step__title {
+        color: #333333;
+      }
+    }
+  }
+}
+.cart__content {
+  .cart__table {
+    width: 100%;
+    border-collapse: collapse;
+    .table__head {
+      background: #EBEBEB;
+      margin-bottom:15px;
+      .table__head-row {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        .table__row__title {
+          width: 44.93%;
+        }
+        td {
+          padding-top:23px;
+          padding-bottom:20px;
+        }
+      }
+      
+    }
+    .table__row__title {
+      /*width:44.93%;*/
+      padding-left:23px;
+    }
+    .table__row__color {
+      /*width:10%;*/
+      text-align:center;
+    }
+    .table__row__count-and-price {
+      /*width:33.33%;*/
+      padding-left:11px;
+    }
+    .table__row__summ {
+     /* width:16.66%;*/
+      text-align:center;
+    }
+    .table__body {
+      border-top: 15px solid whitesmoke;
+      .table__body-row {
+        background-color: #fff;
+        .table__row__title {
+          display:flex;
+          .row__title__text-content {
+            margin-left: 26px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            .text-content__title {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 24px;
+              line-height: 26px;
+              letter-spacing: 0.01em;
+              color: #192C5A;
+              margin-bottom:6px;
+            }
+            .text-content__subtitle {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 21px;
+              letter-spacing: 0.01em;
+              color: #333333;
+            }
+          }
+        }
+        .table__row__color {
+          .row__color-coloblock {
+            margin-bottom:10px;
+            display: flex;
+            justify-content: center;
+            .row__color-coloblock-item {
+              width:64px;
+              height:64px;
+              position:relative;
+              z-index:2;
+              display:block;
+              border-radius: 50%;
+              background: #FFFFFF;
+              box-shadow: 0px 1px 2px rgba(25, 44, 90, 0.25);
+              &:before {
+                content:'';
+                width:58.35px;
+                height:58.35px;
+                position:absolute;
+                background: #FFFFFF;
+                box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.4);
+                left:50%;
+                top:50%;
+                z-index:3;
+                transform:translate(-50%, -50%);
+                border-radius: 50%;
+              }
+            }
+          }
+          .row__color-colortitle{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            color: #757575;
+          }
+        }
+        td {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

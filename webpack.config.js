@@ -88,27 +88,27 @@ module.exports = {
     filename: "./contacts.html",
     noErrorOnMissing: true
   }),
-    new HtmlWebPackPlugin({
-      template: "./src/template/pages/product1.pug",
-      filename: "./product1.html",
-      noErrorOnMissing: true
-    }),
-    new HtmlWebPackPlugin({
-      template: "./src/template/pages/product2.pug",
-      filename: "./product2.html",
-      noErrorOnMissing: true
-    }),
-    new HtmlWebPackPlugin({
-      template: "./src/template/pages/checkout.pug",
-      filename: "./checkout.html",
-      noErrorOnMissing: true
-    }),
+  new HtmlWebPackPlugin({
+    template: "./src/template/pages/product1.pug",
+    filename: "./product1.html",
+    noErrorOnMissing: true
+  }),
+  new HtmlWebPackPlugin({
+    template: "./src/template/pages/product2.pug",
+    filename: "./product2.html",
+    noErrorOnMissing: true
+  }),
+ new HtmlWebPackPlugin({
+    template: "./src/template/pages/cart.pug",
+    filename: "./cart.html",
+    noErrorOnMissing: true
+  }),
   new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
       filename: "[name].css",
       chunkFilename: "[id].css"
-    }),
+  }),
   new CopyWebpackPlugin([
     { from: './src/assets/images', to: './assets/images' , noErrorOnMissing: true },
     { from: './src/assets/fonts', to: './assets/fonts' , noErrorOnMissing: true },

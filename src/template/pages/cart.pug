@@ -1,0 +1,100 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+
+    body
+        include ../common/mixins
+        include ../common/header
+        .main-wrapper
+            .cart-wrapper
+                .cart-top
+                    h1.cart-top__title
+                        | Ваша корзина
+                    .cart-top__steps
+                        .steps__step.active
+                            span.steps__step__circle
+                            span.steps__step__title
+                                | Корзина
+                        .steps__step.active
+                            span.steps__step__circle
+                            span.steps__step__title
+                                | Оформление заказа
+                        .steps__step
+                            span.steps__step__circle
+                            span.steps__step__title
+                                | Оплата
+                .cart__content
+                    table.cart__table
+                        thead.table__head
+                            tr.table__head-row
+                                td.table__row__title
+                                    | Товар
+                                td.table__row__color
+                                    | Цвет
+                                td.table__row__count-and-price
+                                    | Количество и цена
+                                td.table__row__summ
+                                    | Итого
+                        tbody.table__body
+                            tr.table__body-row
+                                td.table__row__title
+                                    .row__title__image
+                                        img(src="/src/assets/images/product-cart-1.png")
+                                    .row__title__text-content
+                                        .text-content__title
+                                            | FLUGGER Dekso-plast MS 15
+                                        .text-content__subtitle
+                                            | Краска антигрибковая
+                                td.table__row__color
+                                    .row__color-coloblock
+                                        span.row__color-coloblock-item.red
+                                    .row__color-colortitle
+                                        | №5 Подложка <br>(под зелёные/<br>жёлтые цвета)
+                                td.table__row__count-and-price
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                            input(name="count" value="2")
+                                            .plus
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 0,70 л
+                                            .price-per-one
+                                                | 1 400 &#8381;
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                            input(name="count" value="1")
+                                            .plus
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 2,80 л
+                                            .price-per-one
+                                                | 3 830 &#8381;
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                            input(name="count" value="0")
+                                            .plus
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 9,10 л
+                                            .price-per-one
+                                                | 11 910 &#8381;
+                                td.table__row__summ
+                                    .row__summ__prices
+                                        .row__summ__price
+                                            | 10 440 &#8381;
+                                        .row__summ__oldprice
+                                            | 12 640 &#8381;
+                                        .row__summ__allsumm
+                                            | за 7,10 л
+                                    .row__summ__del
+                                        a(href="#")
+                                            img(src="/src/assets/images/delete.svg")
+                                        
+        include ../common/footer
