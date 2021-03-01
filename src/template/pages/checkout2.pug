@@ -1,0 +1,127 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+
+    body
+        include ../common/mixins
+        include ../common/header
+        .main-wrapper
+            .title__wrapper
+                h2.size-2
+                    |Ваш заказ №3458
+                ul
+                    li.size-6
+                        div.order1
+                            span
+                            |Ваша корзина
+                        div.order2
+                            span
+                            |Оформление заказа
+                        div.order3
+                            span
+                            |Оплата
+
+            .checkout__wrapper
+                .checkout__content
+                    h3.size-4
+                        |Данные заказа
+                    form.checkout__form
+                        .checkout__input__wrap.checkout__data
+                            .form__item
+                                .form__item__input
+                                    p.size-5
+                                        |Получатель
+                                    h4.size-5
+                                        |Иванов Александр
+                                .form__item__input
+                                    p.size-5
+                                        | Доставка
+                                    h4.size-5
+                                        | Курьером в г. Новосибирск
+                            .form__item
+                                .form__item__input
+                                    p.size-5
+                                        | E-mail
+                                    a(href="#").size-5
+                                        | ivanov@mail.ru
+                                .form__item__input
+                                    p.size-5
+                                        | Адрес
+                                    h4.size-5
+                                        | ул. Татьяны Снежиной 28–45
+                            .form__item
+                                .form__item__input
+                                    p.size-5
+                                        | Телефон
+                                    a(href="tel:+7 (910) 123-45-67").size-5
+                                        | +7 (910) 123-45-67
+                                .form__item__input
+                                    p.size-5
+                                        | Оплата
+                                    h4.size-5
+                                        | Банковской картой
+                        .checkout__comment
+                            span.size-5
+                                |Комментарий к заказу
+                            p.size-5
+                                |Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что консультация с широким активом способствует подготовки и реализации дальнейших направлений развития.
+                            a.btn-primary.size-4(href="#")
+                                |Оплатить — 61 180 ₽
+                .checkout__info
+                    .info__wrapper
+                        .info__title
+                            h4.size-4
+                                |Содержание заказа
+                            a.size-5(href="#")
+                                |Изменить
+                        .info__product.size-5
+                            .info__product__wrap
+                                .name
+                                    |FLUGGER Dekso-plast MS 15
+                                .desc.size-6
+                                    |7,10 л, цвет Белый
+                            .info__product__price
+                                |10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .name
+                                    | FLUGGER Dekso-plast MS 15
+                                .desc.size-6
+                                    | 7,10 л, цвет Белый
+                            .info__product__price
+                                | 10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .name
+                                    | FLUGGER Dekso-plast MS 15
+                                .desc.size-6
+                                    | 7,10 л, цвет Белый
+                            .info__product__price
+                                | 10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .delivery
+                                    | Доставка
+                                .desc.size-6
+                                    | Курьером по Новосибирску
+                            .info__product__price
+                                | 10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .discount__checkout
+                                    | Ваша скидка: 3 %
+                            .info__product__price.item__sale__price
+                                | –153 ₽
+                        .form__total
+                            div.size-4
+                                | Итого
+                            .total__price.size-2
+                                | 6 630  ₽
+                        .product__count.size-5
+                            | за 3,20 л
+
+        include ../common/footer

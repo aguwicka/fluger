@@ -14,7 +14,7 @@ html(lang="en")
                 h2.size-2
                     |Оформление заказа
                 ul
-                    li.size-5
+                    li.size-6
                         div.order1
                             span
                             |Ваша корзина
@@ -30,11 +30,173 @@ html(lang="en")
                     h3.size-4
                         |Получатель заказа
                     form.checkout__form
+                        .checkout__input__wrap
+                            .form__item
+                                .form__item__input.item__left
+                                    p.size-5
+                                        |Фамилия *
+                                    input(type="text" name="surname")
+                                .form__item__input.item__right
+                                    p.size-5
+                                        | Имя *
+                                    input(type="text" name="name")
+                            .form__item
+                                .form__item__input.item__left
+                                    p.size-5
+                                        | Фамилия *
+                                    input(type="text" name="mail")
+                                .form__item__input.item__right
+                                    p.size-5
+                                        | Имя *
+                                    input(type="text" name="phone")
+                    h3.checkout__title.size-4
+                        |Доставка
+                    .checkout__input__wrap
                         .form__item
-                            .form__item__input
-                                p
-                                input(type="text", name="")
+                            .form__item__input.item__left
+                                p.size-5
+                                    | Город *
+                                input(type="text" name="city" placeholder="Новосибирск, Новосибирская область, Россия")
+                        p.size-5
+                            |Способ доставки *
+                            .form__item
+                                .form__item__input.radio__input
+                                    input#city1(type="radio" name="check__city" checked)
+                                    label(for="city1")
+                                        .delivery__content.size-6
+                                            span
+                                                |Курьером по Новосибирску
+                                            p
+                                                |Доставка осуществляется в течение трех дней, не считая день заказа. Выходные не учитываются.
+                                            p
+                                                |Срок доставки до 3 дней
+                                            p
+                                                |Стоимость
+                                                span
+                                                    | 0 ₽
+                                .form__item__input.radio__input
+                                    input#city2(type="radio" name="check__city" checked)
+                                    label(for="city2")
+                                        .delivery__content.size-6
+                                            span
+                                                | Курьером по Новосибирску
+                                            p
+                                                | Доставка осуществляется в течение трех дней, не считая день заказа. Выходные не учитываются.
+                                            p
+                                                | Срок доставки до 3 дней
+                                            p
+                                                |Стоимость
+                                                span
+                                                    | 0 ₽
+                            .form__item
+                                .form__item__input.input__address
+                                    p.size-5
+                                        | Адрес *
+                                    input(type="text" name="address")
+                                .form__item__input.input__index
+                                    p.size-5
+                                        | Индекс *
+                                    input(type="text" name="index")
+                    h3.checkout__title.size-4
+                        |Платежная система
+                    .checkout__input__wrap
+                        .form__item
+                            .form__item__input.payment__input
+                                input#cards.input-hidden(type="radio" name="payment")
+                                label(for="cards")
+                                    img(src="/src/assets/images/024-credit-card.svg")
+                                    p.size-5
+                                        | Банковской картой
+                                        | онлайн
+                            .form__item__input.payment__input
+                                input#pay.input-hidden(type="radio" name="payment")
+                                label(for="pay")
+                                    img(src="/src/assets/images/021-payment.svg")
+                                    p.size-5
+                                        | Оплата при
+                                        | получении
+                            .form__item__input.payment__input
+                                input#check.input-hidden(type="radio" name="payment")
+                                label(for="check")
+                                    img(src="/src/assets/images/003-checking.svg")
+                                    p.size-5
+                                        | Счет для
+                                        | юридических лиц
+                        .payment__desc.size-5
+                            p
+                                | К оплате принимаются банковские карты Visa, MasterCard, Maestro и МИР.
+                                | После оплаты заказа вы получите чек.
+                        .warning__field.size-5
+                            img(src="/src/assets/images/warning-filled.svg")
+                            p
+                                |Оформить заказ на колерованную краску возможно только по предоплате.
+                    .form__item
+                        .form__item__input.input__comment
+                            p.checkout__title.size-5
+                                | Комментарий к заказу
+                            textarea(rows="5")
+                    .aside-filters-input-wrap.checkout__accept
+                        input#accept.aside-filters-input(type="checkbox" name="accept")
+                        label.aside-filters-label.size-6(for="accept")
+                            p
+                                | Я согласен(а) с правилами доставки и понимаю что не смогу отказаться от цветных красок, поскольку они
+                                | были заколерованы специально для меня *
+                    .input__submit
+                        a.btn-primary.size-4(href="#")
+                            |Оформить
+                        p.size-5
+                            |* Обязательно заполните поля со звездочкой
                 .checkout__info
-
+                    .info__wrapper
+                        .info__title
+                            h4.size-4
+                                |Содержание заказа
+                            a.size-5(href="#")
+                                |Изменить
+                        .info__product.size-5
+                            .info__product__wrap
+                                .name
+                                    |FLUGGER Dekso-plast MS 15
+                                .desc.size-6
+                                    |7,10 л, цвет Белый
+                            .info__product__price
+                                |10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .name
+                                    | FLUGGER Dekso-plast MS 15
+                                .desc.size-6
+                                    | 7,10 л, цвет Белый
+                            .info__product__price
+                                | 10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .name
+                                    | FLUGGER Dekso-plast MS 15
+                                .desc.size-6
+                                    | 7,10 л, цвет Белый
+                            .info__product__price
+                                | 10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .delivery
+                                    | Доставка
+                                .desc.size-6
+                                    | Курьером по Новосибирску
+                            .info__product__price
+                                | 10 440 ₽
+                        .info__product.size-5
+                            .info__product__wrap
+                                .discount__checkout
+                                    | Ваша скидка: 3 %
+                            .info__product__price.item__sale__price
+                                | –153 ₽
+                        .form__total
+                            div.size-4
+                                | Итого
+                            .total__price.size-2
+                                | 6 630  ₽
+                        .product__count.size-5
+                            | за 3,20 л
 
         include ../common/footer

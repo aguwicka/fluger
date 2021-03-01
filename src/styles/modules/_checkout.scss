@@ -11,6 +11,9 @@
     justify-content: space-between;
   }
 }
+.checkout__title {
+  margin-top: 3rem;
+}
 .order1 {
   padding-right: 4.7rem;
   display: flex;
@@ -68,7 +71,10 @@
 }
 
 .checkout__wrapper {
+  margin-top: 2rem;
+  padding-bottom: 7rem;
   display: flex;
+  justify-content: space-between;
 }
 
 .checkout__content {
@@ -78,5 +84,259 @@
 
   h3 {
     margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+  }
+}
+.checkout__input__wrap {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+.form__item {
+  display: flex;
+}
+.form__item__input {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    color: $color4;
+    margin-bottom: .4rem;
+  }
+
+  input {
+    padding: 1rem 0 1rem 1.2rem;
+    background: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+  }
+  input[name="name"] {
+    margin-right: 0;
+  }
+}
+.item__left {
+  margin-right: 2.4rem;
+}
+.radio__input {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+
+  label {
+    display: flex;
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+  /* simulate radiobutton appearance using pseudoselector */
+  input[type="radio"] + label:before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 1.8rem;
+    height: 1rem;
+    padding: 3px;
+    margin-right: 1rem;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #DDDDDD;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  /* appearance of checked radiobutton */
+  input[type="radio"]:checked + label:before {
+    background-color: $color2;
+  }
+
+}
+.delivery__content {
+  span {
+    color: $color1;
+  }
+  p {
+    margin-top: 1.5rem;
+    color: $color6;
+    &:last-child {
+      margin-top: 0;
+    }
+
+    span {
+      margin-left: .5rem;
+      color: $color6;
+      font-weight: 700;
+    }
+  }
+}
+.input__address {
+  margin-right: 2.4rem;
+  flex-basis: 66.6%;
+}
+.input__index {
+  flex-basis: 33.3%;
+}
+
+.payment__input {
+  &:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+  .input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  input[type=radio] + label {
+    padding: 1.5rem 1rem 1.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    transition: 300ms all;
+    cursor: pointer;
+  }
+
+  input[type=radio] + label>img {
+    margin-right: 1.2rem;
+  }
+
+  input[type=radio]:checked + label {
+    border: 1px solid $color2;
+  }
+  input[type=radio]:checked + label>p {
+    color: $color1;
+    font-weight: 700;
+  }
+  input[type=radio] + label:hover {
+    border: 1px solid $color6;
+  }
+}
+.payment__desc {
+  margin-top: 2rem;
+  padding: 1.5rem 2.8rem 1.5rem 2rem;
+  display: flex;
+  background: #F5F5F5;
+  border: 1px solid #F5F5F5;
+  border-radius: 2px;
+  position: relative;
+  &:before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-color: #F5F5F5;
+    border-top: solid 1px #F5F5F5;
+    border-left: solid 1px #F5F5F5;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -1.1rem;
+    left: 10rem;
+  }
+}
+.warning__field {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 1.35rem;
+  }
+  p {
+    color: $color5;
+    font-weight: 700;
+  }
+}
+.input__comment {
+  textarea {
+    resize: none;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+  }
+}
+.checkout__accept {
+  .aside-filters-input ~ .aside-filters-label {
+    align-items: flex-start;
+  }
+}
+.input__submit {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  .btn-primary {
+    margin-right: 2.4rem;
+    padding: .9rem 3.2rem;
+    border-radius: 4px;
+    color: #fff;
+  }
+  p {
+    color: $color4;
+  }
+}
+
+
+.checkout__info {
+  flex-basis: 30%;
+}
+.info__wrapper {
+  padding: 2.5rem 3rem 3rem 3rem;
+  background: #fff;
+}
+.info__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    margin: 0;
+  }
+
+  a {
+    color: #A2A2A2;
+    border-bottom: 1px dashed #A2A2A2;
+  }
+}
+.info__product {
+  padding-top: 1.5rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DDDDDD;
+
+  .name {
+    color: $color3;
+  }
+  .desc {
+    color: $color6;
+  }
+  .item__sale__price {
+    color: $color5;
+  }
+}
+
+.checkout__data {
+  .form__item {
+    margin-bottom: 2rem;
+  }
+  h4 {
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+.checkout__comment {
+  margin-top: 3.2rem;
+  span {
+    color: $color4;
+  }
+  p {
+    margin-bottom: 5.6rem;
+  }
+  .btn-primary {
+    padding: .9rem 3.2rem;
+    color: #fff;
+    border-radius: 4px;
   }
 }
