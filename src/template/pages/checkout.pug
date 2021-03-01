@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+
+    body
+        include ../common/mixins
+        include ../common/header
+        .main-wrapper
+            .title__wrapper
+                h2.size-2
+                    |Оформление заказа
+                ul
+                    li.size-5
+                        div.order1
+                            span
+                            |Ваша корзина
+                        div.order2
+                            span
+                            |Оформление заказа
+                        div.order3
+                            span
+                            |Оплата
+
+            .checkout__wrapper
+                .checkout__content
+                    h3.size-4
+                        |Получатель заказа
+                    form.checkout__form
+                        .form__item
+                            .form__item__input
+                                p
+                                input(type="text", name="")
+                .checkout__info
+
+
+        include ../common/footer
