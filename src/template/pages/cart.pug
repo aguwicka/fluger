@@ -46,20 +46,26 @@ html(lang="en")
                                         img(src="/src/assets/images/product-cart-1.png")
                                     .row__title__text-content
                                         .text-content__title
-                                            | FLUGGER Dekso-plast MS 15
+                                            a(href="#")
+                                                | FLUGGER Dekso-plast MS 15
                                         .text-content__subtitle
                                             | Краска антигрибковая
                                 td.table__row__color
                                     .row__color-coloblock
-                                        span.row__color-coloblock-item.red
+                                        span.row__color-coloblock-item
+                                            .color_block
+                                            .color_change(style={'color': '#fff'})
+                                                | Изменить
                                     .row__color-colortitle
                                         | №5 Подложка <br>(под зелёные/<br>жёлтые цвета)
                                 td.table__row__count-and-price
                                     .count-and-price__wrap
                                         .row__count-and-price__input
                                             .minus
+                                                include ../../assets/images/cart-minus.svg
                                             input(name="count" value="2")
                                             .plus
+                                                include ../../assets/images/cart-plus.svg
                                         .row__count-and-price__text
                                             .volume
                                                 | 0,70 л
@@ -68,8 +74,10 @@ html(lang="en")
                                     .count-and-price__wrap
                                         .row__count-and-price__input
                                             .minus
+                                                include ../../assets/images/cart-minus.svg
                                             input(name="count" value="1")
                                             .plus
+                                                include ../../assets/images/cart-plus.svg
                                         .row__count-and-price__text
                                             .volume
                                                 | 2,80 л
@@ -78,8 +86,10 @@ html(lang="en")
                                     .count-and-price__wrap
                                         .row__count-and-price__input
                                             .minus
+                                                include ../../assets/images/cart-minus.svg
                                             input(name="count" value="0")
                                             .plus
+                                                include ../../assets/images/cart-plus.svg
                                         .row__count-and-price__text
                                             .volume
                                                 | 9,10 л
@@ -92,9 +102,166 @@ html(lang="en")
                                         .row__summ__oldprice
                                             | 12 640 &#8381;
                                         .row__summ__allsumm
-                                            | за 7,10 л
+                                            .row__summ__allsumm__for
+                                                | за
+                                            .row__summ__allsumm__value
+                                                | 7,10 л
                                     .row__summ__del
                                         a(href="#")
                                             img(src="/src/assets/images/delete.svg")
-                                        
+                            tr.table__body-row
+                                td.table__row__title
+                                    .row__title__image
+                                        img(src="/src/assets/images/product-cart-1.png")
+                                    .row__title__text-content
+                                        .text-content__title
+                                            a(href="#")
+                                                | FLUGGER Dekso 25
+                                        .text-content__subtitle
+                                            | Краска антигрибковая
+                                td.table__row__color
+                                    .row__color-coloblock
+                                        span.row__color-coloblock-item
+                                            .color_block(style={'background-color': '#CF2520'})
+                                            .color_change(style={'color': '#fff'})
+                                                | Изменить
+                                    .row__color-colortitle
+                                        | Красный<br>FL P1533
+                                td.table__row__count-and-price
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                                include ../../assets/images/cart-minus.svg
+                                            input(name="count" value="2")
+                                            .plus
+                                                include ../../assets/images/cart-plus.svg
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 0,75 л
+                                            .price-per-one
+                                                | 1 330 &#8381;
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                                include ../../assets/images/cart-minus.svg
+                                            input(name="count" value="1")
+                                            .plus
+                                                include ../../assets/images/cart-plus.svg
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 2,80 л
+                                            .price-per-one
+                                                | 4 140 &#8381;
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                                include ../../assets/images/cart-minus.svg
+                                            input(name="count" value="0")
+                                            .plus
+                                                include ../../assets/images/cart-plus.svg
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 9,10 л
+                                            .price-per-one
+                                                | 12 710 &#8381;
+                                td.table__row__summ
+                                    .row__summ__prices
+                                        .row__summ__price
+                                            | 17 740 &#8381;
+                                        .row__summ__oldprice
+                                            | 18 640 &#8381;
+                                        .row__summ__allsumm
+                                            .row__summ__allsumm__for
+                                                | за
+                                            .row__summ__allsumm__value
+                                                | 11,40 л
+                                    .row__summ__del
+                                        a(href="#")
+                                            img(src="/src/assets/images/delete.svg")
+                            tr.table__body-row
+                                td.table__row__title
+                                    .row__title__image
+                                        img(src="/src/assets/images/product-cart-1.png")
+                                    .row__title__text-content
+                                        .text-content__title
+                                            a(href="#")
+                                                | FLUGGER Dekso 5
+                                        .text-content__subtitle
+                                            | Краска антигрибковая
+                                td.table__row__color
+                                    .row__color-coloblock
+                                        span.row__color-coloblock-item
+                                            .color_block(style={'background-color': '#429471'})
+                                            .color_change(style={'color': '#fff'})
+                                                | Изменить
+                                    .row__color-colortitle
+                                        | Зеленый<br>FL P1533
+                                td.table__row__count-and-price
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                                include ../../assets/images/cart-minus.svg
+                                            input(name="count" value="2")
+                                            .plus
+                                                include ../../assets/images/cart-plus.svg
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 0,70 л
+                                            .price-per-one
+                                                | 1 400 &#8381;
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                                include ../../assets/images/cart-minus.svg
+                                            input(name="count" value="1")
+                                            .plus
+                                                include ../../assets/images/cart-plus.svg
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 2,80 л
+                                            .price-per-one
+                                                | 3 830 &#8381;
+                                    .count-and-price__wrap
+                                        .row__count-and-price__input
+                                            .minus
+                                                include ../../assets/images/cart-minus.svg
+                                            input(name="count" value="0")
+                                            .plus
+                                                include ../../assets/images/cart-plus.svg
+                                        .row__count-and-price__text
+                                            .volume
+                                                | 9,10 л
+                                            .price-per-one
+                                                | 11 910 &#8381;
+                                td.table__row__summ
+                                    .row__summ__prices
+                                        .row__summ__price
+                                            | 10 440 &#8381;
+                                        .row__summ__oldprice
+                                            | 12 640 &#8381;
+                                        .row__summ__allsumm
+                                            .row__summ__allsumm__for
+                                                | за
+                                            .row__summ__allsumm__value
+                                                | 7,10 л
+                                    .row__summ__del
+                                        a(href="#")
+                                            img(src="/src/assets/images/delete.svg")
+                        tfoot.table__foot
+                            tr.table__foot-row
+                                td.table__row__title
+                                td.table__row__color
+                                td.table__row__count-and-price
+                                    .btn.btn--green
+                                        | Оформить заказ
+                                td.table__row__summ.table__row__allsumm
+                                    .allsumm__wrap
+                                        .allsumm__price
+                                            | 60 680 &#8381;
+                                        .allsumm__volume-wrap
+                                            .allsumm__volume__for
+                                                | за
+                                            .allsumm__volume__value
+                                                | 7,10 л
+
         include ../common/footer

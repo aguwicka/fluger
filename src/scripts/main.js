@@ -145,3 +145,19 @@ $(document).ready(function() {
 $('.thumb').click(function(){
     $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
 });
+
+$(document).on('click', '.row__count-and-price__input .minus', function(){
+  var $input = $(this).closest('.row__count-and-price__input').find('input');
+  var count = parseInt($input.val()) - 1;
+  count = count < 1 ? 1 : count;
+  $input.val(count);
+  $input.change();
+  return false;
+});
+
+$(document).on('click', '.row__count-and-price__input .plus', function(){
+  var $input = $(this).closest('.row__count-and-price__input').find('input');
+  $input.val(parseInt($input.val()) + 1);
+  $input.change();
+  return false;
+});
