@@ -146,10 +146,24 @@ $('.thumb').click(function(){
     $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
 });
 
+$(document).ready(function(){
+  $('.row__count-and-price__input').each(function(){
+    let colunt = $(this).find('input').val();
+    if (colunt == 0) {
+      $(this).closest('.count-and-price__wrap').addClass('null');
+    }
+  });
+})
+
 $(document).on('click', '.row__count-and-price__input .minus', function(){
   var $input = $(this).closest('.row__count-and-price__input').find('input');
   var count = parseInt($input.val()) - 1;
-  count = count < 1 ? 1 : count;
+  count = count < 0 ? 0 : count;
+  if (count == 0) {
+    $(this).closest('.count-and-price__wrap').addClass('null');
+  } else {
+    $(this).closest('.count-and-price__wrap').removeClass('null');
+  }
   $input.val(count);
   $input.change();
   return false;
@@ -158,6 +172,9 @@ $(document).on('click', '.row__count-and-price__input .minus', function(){
 $(document).on('click', '.row__count-and-price__input .plus', function(){
   var $input = $(this).closest('.row__count-and-price__input').find('input');
   $input.val(parseInt($input.val()) + 1);
+  if ($input.val() > 0) {
+    $(this).closest('.count-and-price__wrap').removeClass('null');
+  }
   $input.change();
   return false;
 });
