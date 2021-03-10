@@ -212,14 +212,16 @@ header
                                 | Каталог товаров
                 .mobile__wrap
                     .mobile__locate
-                        img(src="/src/assets/images/Geotag-mobile.svg")
+                        a.location-modal.location__modal__mobile(href="#location")
+                            img(src="/src/assets/images/Geotag-mobile.svg")
                         a.location-modal.location__modal__mobile.size-5(href="#location")
                             |г. Новосибирск
-                        a.size-5(href="#")
+                        a.size-5.location-modal(href="#location")
                             |Изменить
                     .mobile__phone
-                        img(src="/src/assets/images/phone-mobile.svg")
-                        a.size-5(href="#")
+                        a(href="tel:88002146777")
+                            img(src="/src/assets/images/phone-mobile.svg")
+                        a.size-5(href="tel:88002146777")
                             | 8 800 214-67-77
                         a.call-us-modal.phone__mobile.size-5(href="#call-us")
                             | Заказать звонок

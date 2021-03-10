@@ -129,15 +129,21 @@ html(lang="en")
                           input.aside-filters-input(type="checkbox" value="Новинки" name="base" id="tag-2")
                           label.aside-filters-label(for="tag-2") Новинки
                       a.btn.btn--green(href="#") Применить фильтр
-                .catalog__content
+                .catalog__content.catalog__content-sec-levl
                     h2.size-2.catalog_content__name
                         |Для влажных помещений
                     .catalog-sort-wrap
-                      label(for="select-tag") Сортировать по:
+                      label(for="select-tag") Сортировать
                       .select-wrap
                         select(name="select-tag" id="select-tag" class="select")
-                          option(val="for-pop") По популярности
-                          option(val="for-name") По названию
+                          option(val="for-pop-asc", data-image="/src/assets/images/sort-down.svg")
+                            |Сначала популярные
+                          option(val="for-pop-desc", data-image="/src/assets/images/sort-down.svg")
+                            |Сначала не популярные
+                          option(val="for-price-asc", data-image="/src/assets/images/sort-down.svg")
+                            |Сначала дорогие
+                          option(val="for-price-asc", data-image="/src/assets/images/sort-down.svg")
+                            |Сначала дешевые
                     .catalog-sec-lev-top
                       a.sorting-modal(href="#sorting-modal") Фильтр (4)
                       .white-popup-block.mfp-hide#sorting-modal

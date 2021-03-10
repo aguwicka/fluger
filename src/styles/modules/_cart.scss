@@ -1,3 +1,8 @@
+.cart-wrapper-container {
+  @media screen and (max-width:991px) {
+    padding: 0 1.6rem;
+  }
+}
 .cart-wrapper {
   .main-wrapper {
     @media screen and (max-width:991px) {
@@ -132,6 +137,11 @@
             border-top: 15px solid whitesmoke;
             background-color: #fff;
             vertical-align: top;
+            &:first-child {
+              @media screen and (max-width:991px) {
+                border-top: 0 solid whitesmoke;
+              }
+            }
             @media screen and (max-width:991px) {
               display:flex;
               flex-wrap: wrap;
@@ -272,7 +282,7 @@
               padding: 20px 0 20px 11px;
               /*width: 34%;*/
               @media screen and (max-width:991px) {
-                padding: 6px 0 8px 16px;
+                padding: 6px 16px 8px 16px;
                 width: 100%;
               }
               .count-and-price__wrap {
@@ -358,7 +368,7 @@
                     width: 135px;
                   }
                   @media screen and (max-width:991px) {
-                    width: 150px;
+                    width: 100%;
                   }
                   & .volume {
                     font-style: normal;
@@ -371,7 +381,7 @@
                     width: 100%;
                     overflow: hidden;
                     &:after {
-                      content: '...........................';
+                      content: '....................................................................................................................................................................';
                       display: inline-block;
                       color: #A2A2A2;
                       overflow: hidden;

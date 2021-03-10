@@ -125,6 +125,9 @@
   .check__title {
     color: $color4;
   }
+  @include bp-md {
+    padding-bottom: 0;
+  }
 }
 .form__item {
   display: flex;
@@ -149,6 +152,14 @@
     background: #fff;
     border: 1px solid #DDDDDD;
     border-radius: 2px;
+    
+    &:focus {
+      outline-color: -webkit-focus-ring-color;
+      outline-style: auto;
+      outline-width: 1px;
+      appearance: none;
+      outline-color: rgb(0, 0, 0);
+    }
   }
   input[name="name"] {
     margin-right: 0;
@@ -299,6 +310,9 @@
     top: -1.1rem;
     left: 10rem;
   }
+  @include bp-md {
+    display: none;
+  }
 }
 .warning__field {
   margin-top: 2rem;
@@ -311,6 +325,12 @@
   p {
     color: $color5;
     font-weight: 700;
+  }
+  @include bp-md {
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    align-items: flex-start;
   }
 }
 .input__comment {
@@ -408,6 +428,9 @@
   }
   p {
     margin-bottom: 5.6rem;
+    @include bp-md {
+      margin-bottom:0;
+    }
   }
   .btn-primary {
     padding: .9rem 3.2rem;

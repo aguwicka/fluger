@@ -12,6 +12,7 @@
   "license": "appserivce",
   "dependencies": {
     "imagemin-pngquant": "^5.0.1",
+    "jquery-mobile": "^1.5.0-alpha.1",
     "magnific-popup": "^1.1.0",
     "owl.carousel": "^2.3.4",
     "pug": "^3.0.0",

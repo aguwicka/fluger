@@ -11,7 +11,7 @@ html(lang="en")
         include ../common/header
         .main-wrapper
             include ../common/prev.pug
-            h2.size-2
+            h2.size-2.title__product
                 | FLUGGER Interior High Finish 90
             .product__wrapper
                 .product__content
@@ -28,9 +28,9 @@ html(lang="en")
                             .slide
                                 img(src="/src/assets/images/product-image.png")
                             .slide.slide2
-                                img(src="/src/assets/images/product-image.png")
+                                img(src="/src/assets/images/sub2.png")
                             .slide.slide3
-                                img(src="/src/assets/images/product-image.png")
+                                img(src="/src/assets/images/sub3.png")
                     .content__title.content__title__mobile
                         h2.size-3
                             | Стоимость 267 ₽ / м
@@ -44,7 +44,10 @@ html(lang="en")
                                     a.size-5(href="#")
                                         | Палитра
                             .product__color
-                                img(src="/src/assets/images/white-circle.svg")
+                                .product__color-coloblock
+                                    .color_block
+                                    .color_change(style={'color': '#192C5A'})
+                                        |Изменить
                                 .product__item
                                     .item__number.size-5
                                         | № по каталогу
@@ -146,6 +149,10 @@ html(lang="en")
                                     button.btn-primary.size-4
                                         img(src="/src/assets/images/basket-mobile.svg")
                                         | В корзину
+                    .badge__img.badge__mobile
+                                img(src="/src/assets/images/badge1.svg")
+                                img(src="/src/assets/images/badge2.svg")
+                                img(src="/src/assets/images/badge3.svg")
                     .content__wrap
                         .content__title
                             h2.size-3
@@ -234,7 +241,10 @@ html(lang="en")
                                 a.size-5(href="#")
                                     |Палитра
                         .product__color
-                            img(src="/src/assets/images/white-circle.svg")
+                            .product__color-coloblock
+                                .color_block
+                                .color_change(style={'color': '#192C5A'})
+                                    |Изменить
                             .product__item
                                 .item__number.size-5
                                     |№ по каталогу
@@ -337,5 +347,5 @@ html(lang="en")
                                     img(src="/src/assets/images/basket-mobile.svg")
                                     |В корзину
 
-        include ../common/all-products
+        include ../common/all-products-last
         include ../common/footer
