@@ -15,33 +15,116 @@ input[type=number] {
 }
 .product__content {
   max-width: 66%;
+  @include bp-md {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.content__title__mobile {
+  display: none !important;
+  @include bp-md {
+    margin-top: 4rem;
+    display: flex !important;
+  }
+
+  h2 {
+    @include bp-md {
+      margin-top: 0;
+      margin-bottom: 0;
+      display: block !important;
+      font-size: 2rem;
+    }
+  }
 }
 .product__slider {
   display: flex;
+  @include bp-md {
+    flex-wrap: wrap;
+  }
 }
 .slider-nav {
   margin-right: 4rem;
+  @include bp-md {
+    margin-top: 1rem;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.thumbs {
+  @include bp-md {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.thumb {
+  transition: .3s;
+  cursor: url("/src/assets/images/pointing.svg"), pointer !important;
+  &:hover {
+    opacity: .3;
+    cursor: pointer;
+  }
+  img{
+    @include bp-md {
+      width: 5.4rem;
+      height: 5.4rem;
+    }
+  }
 }
 .thumb:not(:last-child) {
   margin-bottom: 2rem;
+  @include bp-md{
+    margin-bottom: 0;
+    margin-right: 1.6rem;
+  }
 }
 #product__carousel {
   width: 80%;
+  @include bp-md{
+    width: 100%;
+    overflow: hidden;
+    order: -1;
+  }
 }
 #product__carousel .owl-item img {
   width: auto;
+  @include bp-md {
+    width: 100%;
+  }
 }
 
 
-
+.product__aside {
+  @include bp-md {
+    display: none;
+  }
+}
+.mobile__product__aside {
+  display: none;
+  @include bp-md {
+    margin-top: 2.4rem;
+    display: block;
+  }
+}
 
 .aside__wrap {
   padding: 2.5rem 3rem 4rem 3rem;
   background: #fff;
   border-radius: 2px;
+  @include bp-md {
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .tassle__wrap {
   width: 36rem;
+  @include bp-md {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .tassle__content {
   margin-bottom: 7.2rem;
@@ -81,6 +164,9 @@ input[type=number] {
     padding: 1rem 16rem 1rem 1rem;
     border: 1px solid #DDDDDD;
     border-radius: 2px;
+    @include bp-md {
+      padding-right: 10rem;
+    }
   }
 }
 
@@ -224,6 +310,12 @@ input[type=number] {
     border: 0;
     border-radius: 4px;
     color: #fff;
+    font: 400 2rem $mainFont;
+    @include bp-md {
+      width: 100%;
+      justify-content: center;
+      font: 400 1.6rem $mainFont;
+    }
 
     img {
       margin-right: 1rem;
@@ -236,6 +328,16 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include bp-md {
+    margin-top: 3.2rem;
+    display: none;
+  }
+
+  h2 {
+    @include bp-md {
+      display: none;
+    }
+  }
 
   img {
     margin-left: 1.6rem;
@@ -263,22 +365,39 @@ input[type=number] {
   padding-bottom: 3rem;
   display: flex;
   border-bottom: 1px solid #DDDDDD;
+  @include bp-md {
+    flex-wrap: wrap;
+  }
 }
 
 .char__left {
   margin-right: 4.2rem;
   width: 55%;
+  @include bp-md {
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #DDDDDD;
+  }
 }
 .table__wrap {
   border: 1px solid #DDDDDD;
   border-radius: 2px 2px 0px 0px;
-
+  @include bp-md {
+    border: 0;
+  }
 }
 .table__item {
   padding: 1.5rem 4.8rem 1.5rem 1.5rem;
   display: flex;
+  @include bp-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
   &:not(:last-child) {
     border-bottom: 1px solid #DDDDDD;
+    @include bp-md {
+      border-bottom: 0;
+    }
   }
 
   &__name {
@@ -299,6 +418,9 @@ input[type=number] {
 }
 .char__right {
   width: 40%;
+  @include bp-md {
+    width: 100%;
+  }
 }
 .accessories__wrap {
   display: flex;

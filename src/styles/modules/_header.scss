@@ -62,6 +62,7 @@
     background: #EBEBEB;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
+    cursor: pointer;
 
     @include bp-lg {
       width: 40rem;
@@ -72,13 +73,19 @@
       border: 0;
       outline: 0;
       cursor: pointer;
+      img {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
     }
 
     .search__input {
+      width: 100%;
       border: 0;
       outline: 0;
       background: transparent;
       cursor: pointer;
+      font: 400 2rem $mainFont;
     }
   }
 
@@ -137,6 +144,9 @@
       font-size: 1.4rem;
       padding-left: 8px;
     }
+  }
+  &__active {
+    color: $color1;
   }
 }
 .header__mobile {
@@ -306,7 +316,7 @@
 }
 .mobile__wrap {
   background: #F5F5F5;
-  padding: 4.7rem 2rem;
+  padding: 4.7rem 1.8rem;
 }
 .mobile__locate {
   display: flex;
@@ -315,8 +325,12 @@
   img {
     margin-right: 1rem;
   }
-  span {
+  .location__modal__mobile {
     margin-right: 1.6rem;
+    border-bottom: 0;
+  }
+  a {
+    border-bottom: 1px dashed #333;
   }
 }
 .mobile__phone {
@@ -328,11 +342,20 @@
     margin-right: 1rem;
   }
   a {
-    margin-right: 1.6rem;
+    &:not(:last-child) {
+      margin-right: 1.6rem;
+    }
+  }
+  .phone__mobile {
+    border-bottom: 1px dashed #333;
   }
 }
 
 .logo__mobile {
   color: #fff;
   display: flex;
+}
+
+a, button, input, textarea {
+  cursor: url("/src/assets/images/pointing.svg"), pointer !important;
 }

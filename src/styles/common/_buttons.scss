@@ -54,8 +54,14 @@ button.btn {
     padding: .9rem 3.2rem;
     display: inline-flex;
     font-size: 2rem;
+
+    &:hover {
+        background: #028260;
+    }
     @include bp-md{
+        margin-right: 1.6rem;
         font-size: 1.6rem;
+        width: 100%;
     }
 }
 .btnwrap--green{

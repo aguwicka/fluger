@@ -9,9 +9,12 @@ html(lang="en")
     body
         include ../common/mixins
         include ../common/header
-        .wrapper
+        .main-wrapper
+            include ../common/prev.pug
+            h2.size-2.catalog_content__name.mob__name
+                | Для работы в помещениях
             .catalog__wrapper
-                section
+                section.catalog__aside
                     aside
                         h4.size-5.catalog__name
                             |Для работы в помещениях

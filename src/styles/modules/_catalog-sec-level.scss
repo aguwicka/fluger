@@ -341,3 +341,19 @@
 		display: none;	
 	}
 }
+
+.sorting__wrapper {
+	h3 {
+		font-weight: 700;
+	}
+	h3:not(:first-child) {
+		margin-top: 3.2rem;
+	}
+}
+
+.sort__wrap {
+	display: flex;
+	&__right {
+		margin-left: auto;
+	}
+}

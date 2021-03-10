@@ -9,7 +9,8 @@ html(lang="en")
     body
         include ../common/mixins
         include ../common/header
-        .wrapper
+        .main-wrapper
+            include ../common/prev.pug
             h2.size-2
                 | FLUGGER Interior High Finish 90
             .product__wrapper
@@ -30,6 +31,121 @@ html(lang="en")
                                 img(src="/src/assets/images/product-image.png")
                             .slide.slide3
                                 img(src="/src/assets/images/product-image.png")
+                    .content__title.content__title__mobile
+                        h2.size-3
+                            | Стоимость 267 ₽ / м
+                    .product__aside.mobile__product__aside
+                        .aside__wrap
+                            .product__title__wrap
+                                p.size-4
+                                    | Цвет
+                                .product__palette
+                                    img(src="/src/assets/images/Palette.svg")
+                                    a.size-5(href="#")
+                                        | Палитра
+                            .product__color
+                                img(src="/src/assets/images/white-circle.svg")
+                                .product__item
+                                    .item__number.size-5
+                                        | № по каталогу
+                                    .item__color.size-5
+                                        | Белый
+                            .product__size
+                                p.size-4
+                                    | Объем
+                                .product__calculator
+                                    img(src="/src/assets/images/calculator.svg")
+                                    a.size-5(href="#")
+                                        | Калькулятор
+                            form.product__form
+                                .input__wrap
+                                    .input__item
+                                        button.minus(type="button")
+                                            i.fas.fa-minus
+                                        .quantity
+                                            input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                        button.plus(type="button")
+                                            i.fas.fa-plus
+                                    .input__info
+                                        .info
+                                            ul
+                                                li
+                                                    div.size-5
+                                                        | 0.35 л
+                                                    div
+                                                    div.size-5.info__price
+                                                        | 600 ₽
+                                .input__wrap
+                                    .input__item
+                                        button.minus(type="button")
+                                            i.fas.fa-minus
+                                        .quantity
+                                            input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                        button.plus(type="button")
+                                            i.fas.fa-plus
+                                    .input__info
+                                        .info
+                                            ul
+                                                li
+                                                    div.size-5
+                                                        | 0.35 л
+                                                    div
+                                                    div.size-5.info__price
+                                                        | 600 ₽
+                                .input__wrap
+                                    .input__item
+                                        button.minus(type="button")
+                                            i.fas.fa-minus
+                                        .quantity
+                                            input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                        button.plus(type="button")
+                                            i.fas.fa-plus
+                                    .input__info
+                                        .info
+                                            ul
+                                                li
+                                                    div.size-5
+                                                        | 0.35 л
+                                                    div
+                                                    div.size-5.info__price
+                                                        | 600 ₽
+                                .input__wrap
+                                    .input__item
+                                        button.minus(type="button")
+                                            i.fas.fa-minus
+                                        .quantity
+                                            input.qty.input-text(type="number" value="2" inputmode="numeric")
+                                        button.plus(type="button")
+                                            i.fas.fa-plus
+                                    .input__info
+                                        .info
+                                            ul
+                                                li
+                                                    div.size-5
+                                                        | 0.35 л
+                                                    div
+                                                    div.size-5.info__price
+                                                        | 600 ₽
+                                .form__discaunt
+                                    .discount
+                                        ul
+                                            li
+                                                div.size-5
+                                                    | Ваша скидка: 3%
+                                                div
+                                                div.size-5.discount__info
+                                                    | –153 ₽
+                                .form__total
+                                    div.size-4
+                                        | Итого
+                                    .total__price.size-2
+                                        | 6 630  ₽
+                                .product__count.size-5
+                                    | за 3,20 л
+                                .form__submit
+                                    button.btn-primary.size-4
+                                        img(src="/src/assets/images/basket-mobile.svg")
+                                        | В корзину
                     .content__wrap
                         .content__title
                             h2.size-3
@@ -108,7 +224,7 @@ html(lang="en")
                                     a.size-5(href="#")
                                         | Интерьерная акриловая краска.docx
 
-                .product__asside
+                .product__aside
                     .aside__wrap
                         .product__title__wrap
                             p.size-4

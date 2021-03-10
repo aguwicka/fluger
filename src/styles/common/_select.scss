@@ -99,3 +99,34 @@
 .select-items div:hover, .same-as-selected {
 	background-color: none; 
 }
+
+//select2 styles
+.select-wrap .select2-container--default .select2-selection--single {
+	border: 1px solid #DDDDDD;
+	border-radius: 2px;
+	font-size: 1.6rem;
+}
+.select-wrap .select2-container .select2-selection--single {
+	height: 4rem;
+}
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 3.7rem;
+}
+.select-wrap .select2-container {
+	width: 20rem !important;
+}
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__arrow {
+	right: 15px;
+}
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border: solid $color1;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 5px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+.select-wrap .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: inherit;
+	border-width: 0 2px 2px 0;
+}

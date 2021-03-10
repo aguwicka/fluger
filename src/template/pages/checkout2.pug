@@ -10,6 +10,7 @@ html(lang="en")
         include ../common/mixins
         include ../common/header
         .main-wrapper
+            include ../common/prev.pug
             .title__wrapper
                 h2.size-2
                     |Ваш заказ №3458
@@ -18,16 +19,16 @@ html(lang="en")
                         div.order1
                             span
                             |Ваша корзина
-                        div.order2
+                        div.order2.active__order
                             span
                             |Оформление заказа
-                        div.order3
+                        div.order3.order__active
                             span
                             |Оплата
 
             .checkout__wrapper
                 .checkout__content
-                    h3.size-4
+                    h3.size-3
                         |Данные заказа
                     form.checkout__form
                         .checkout__input__wrap.checkout__data
@@ -123,5 +124,8 @@ html(lang="en")
                                 | 6 630  ₽
                         .product__count.size-5
                             | за 3,20 л
+                .input__submit.aside__submit
+                    a.btn-primary.size-4(href="#")
+                        | Оплатить
 
         include ../common/footer

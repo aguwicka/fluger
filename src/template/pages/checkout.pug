@@ -10,6 +10,7 @@ html(lang="en")
         include ../common/mixins
         include ../common/header
         .main-wrapper
+            include ../common/prev.pug
             .title__wrapper
                 h2.size-2
                     |Оформление заказа
@@ -18,7 +19,7 @@ html(lang="en")
                         div.order1
                             span
                             |Ваша корзина
-                        div.order2
+                        div.order2.order__active
                             span
                             |Оформление заказа
                         div.order3
@@ -27,7 +28,7 @@ html(lang="en")
 
             .checkout__wrapper
                 .checkout__content
-                    h3.size-4
+                    h3.size-3
                         |Получатель заказа
                     form.checkout__form
                         .checkout__input__wrap
@@ -43,13 +44,13 @@ html(lang="en")
                             .form__item
                                 .form__item__input.item__left
                                     p.size-5
-                                        | Фамилия *
+                                        | Email *
                                     input(type="text" name="mail")
                                 .form__item__input.item__right
                                     p.size-5
-                                        | Имя *
+                                        | Телефон *
                                     input(type="text" name="phone")
-                    h3.checkout__title.size-4
+                    h3.checkout__title.size-3
                         |Доставка
                     .checkout__input__wrap
                         .form__item
@@ -57,10 +58,10 @@ html(lang="en")
                                 p.size-5
                                     | Город *
                                 input(type="text" name="city" placeholder="Новосибирск, Новосибирская область, Россия")
-                        p.size-5
+                        p.size-5.check__title
                             |Способ доставки *
                             .form__item
-                                .form__item__input.radio__input
+                                .form__item__input.radio__input.first__radio__item
                                     input#city1(type="radio" name="check__city" checked)
                                     label(for="city1")
                                         .delivery__content.size-6
@@ -97,7 +98,7 @@ html(lang="en")
                                     p.size-5
                                         | Индекс *
                                     input(type="text" name="index")
-                    h3.checkout__title.size-4
+                    h3.checkout__title.size-3
                         |Платежная система
                     .checkout__input__wrap
                         .form__item
@@ -198,5 +199,8 @@ html(lang="en")
                                 | 6 630  ₽
                         .product__count.size-5
                             | за 3,20 л
+                .input__submit.aside__submit
+                    a.btn-primary.size-4(href="#")
+                        | Оплатить
 
         include ../common/footer

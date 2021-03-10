@@ -1,5 +1,5 @@
 $(function () {
-  $('.location-modal, .call-us-modal, .login-modal').magnificPopup({
+  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal').magnificPopup({
     type: 'inline',
     preloader: false,
     modal: true
@@ -153,7 +153,7 @@ $(document).ready(function(){
       $(this).closest('.count-and-price__wrap').addClass('null');
     }
   });
-})
+});
 
 $(document).on('click', '.row__count-and-price__input .minus', function(){
   var $input = $(this).closest('.row__count-and-price__input').find('input');
@@ -177,4 +177,8 @@ $(document).on('click', '.row__count-and-price__input .plus', function(){
   }
   $input.change();
   return false;
+});
+
+$(document).ready(function() {
+    $('.select').select2();
 });

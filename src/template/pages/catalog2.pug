@@ -10,13 +10,16 @@ html(lang="en")
         include ../common/mixins
         include ../common/header
         .main-wrapper.catalog-sec-lev
+            include ../common/prev.pug
+            h2.size-2.catalog_content__name.mob__name
+              | Для работы в помещениях
             .catalog__wrapper
                 section
                     aside.aside-menu
                         h4.size-5.catalog__name
                             |Для работы в помещениях
                         ul.menu__catalog
-                            li.menu__catalog__item
+                            li.menu__catalog__item.menu__catalog__active
                                 a.size-6(href="#")
                                     |Для влажных помещений
                             li.menu__catalog__item
@@ -136,7 +139,74 @@ html(lang="en")
                           option(val="for-pop") По популярности
                           option(val="for-name") По названию
                     .catalog-sec-lev-top
-                      a(href="#") Фильтр (4)
+                      a.sorting-modal(href="#sorting-modal") Фильтр (4)
+                      .white-popup-block.mfp-hide#sorting-modal
+                        .location__wrapper.sorting__wrapper
+                          .tittle__wrap
+                            h1.size-4
+                              | Фильтр
+                            a.popup-modal-dismiss
+                              img(src="/src/assets/images/Close-thick.svg")
+                          form
+                            h3.size-5
+                              |Свойства
+                            .sort__wrap
+                              .sort__wrap__left
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Адгезионная" name="properties" id="prop-1" checked)
+                                  label.aside-filters-label(for="prop-1")
+                                    |Адгезионная
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Антибактериальная" name="properties" id="prop-2")
+                                  label.aside-filters-label(for="prop-2")
+                                    | Антибактериальная
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Блокирующие пятна" name="properties" id="prop-3" checked)
+                                  label.aside-filters-label(for="prop-3")
+                                    | Блокирующие пятна
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Влагостойкая" name="properties" id="prop-4")
+                                  label.aside-filters-label(for="prop-4")
+                                    | Блокирующие пятна
+                              .sort__wrap__right
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Водоустойчивая" name="properties" id="prop-5")
+                                  label.aside-filters-label(for="prop-5")
+                                    | Водоустойчивая
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Декоративная" name="properties" id="prop-6" checked)
+                                  label.aside-filters-label(for="prop-6")
+                                    | Декоративная
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Резистентная" name="properties" id="prop-7")
+                                  label.aside-filters-label(for="prop-7")
+                                    | Резистентная
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Универсальная" name="properties" id="prop-8")
+                                  label.aside-filters-label(for="prop-8")
+                                    | Универсальная
+                            h3.size-5
+                              |Основа
+                            .sort__wrap
+                              .sort__wrap__left
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Акриловая" name="prop" id="propid-1" checked)
+                                  label.aside-filters-label(for="propid-1")
+                                    | Акриловая
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Латексная" name="prop" id="propid-2")
+                                  label.aside-filters-label(for="propid-2")
+                                    | Латексная
+                              .sort__wrap__right
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Латексная" name="prop" id="propid-5")
+                                  label.aside-filters-label(for="propid-5")
+                                    | Латексная
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Эмульсионно-силикатная" name="prop" id="propid-6" checked)
+                                  label.aside-filters-label(for="propid-6")
+                                    | Эмульсионно-силикатная
+                            input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
                       a(href="#") По популярности
                     .catalog-products
                       .catalog-products__item

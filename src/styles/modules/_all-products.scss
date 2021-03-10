@@ -69,6 +69,9 @@
 }
 .all-products{
 	margin-top: 6.4rem;
+	@include bp-md {
+		margin-top: 10.4rem;
+	}
 }
 .all-products.owl-theme .owl-nav button{
 	border: 0.2rem solid $color2;

@@ -5,6 +5,14 @@
 
   h2 {
     margin: 0;
+    @include bp-md {
+      font-size: 2.6rem;
+    }
+  }
+  ul {
+    @include bp-md {
+      display: none;
+    }
   }
   li {
     display: flex;
@@ -23,10 +31,10 @@
   &:before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 99%;
     left: 41%;
     top: 25%;
-    border-bottom: 1px dotted $color2;
+    border-bottom: 3px dotted $color2;
   }
   span {
     width: 1.6rem;
@@ -45,15 +53,15 @@
   &:before {
     content: '';
     position: absolute;
-    width: 65%;
-    left: 41%;
+    width: 67%;
+    left: 38%;
     top: 25%;
-    border-bottom: 1px dotted #DDDDDD;
+    border-bottom: 3px dotted #DDDDDD;
   }
   span {
     width: 1.6rem;
     height: 1.6rem;
-    background: $color3;
+    background: $color2;
     border-radius: 50%;
   }
 }
@@ -69,33 +77,62 @@
     border-radius: 50%;
   }
 }
+.order__active {
+  span {
+    background: $color3;
+  }
 
+}
+.active__order {
+  &:before {
+    border-bottom: 3px dotted $color2;
+  }
+}
 .checkout__wrapper {
   margin-top: 2rem;
   padding-bottom: 7rem;
   display: flex;
   justify-content: space-between;
+  @include bp-md {
+    margin-right: -1.6rem;
+    margin-left: -1.6rem;
+    flex-wrap: wrap;
+  }
 }
 
 .checkout__content {
   padding: 2.5rem 3.2rem 6rem 3.2rem;
   width: 66%;
   background: #fff;
+  @include bp-md {
+    width: 100%;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+  }
 
   h3 {
     margin: 0;
-    margin-top: 3rem;
     margin-bottom: 2.5rem;
     font-weight: 700;
+    &:not(:first-child) {
+      margin-top: 3rem;
+    }
   }
 }
 .checkout__input__wrap {
   padding-bottom: 4rem;
   border-bottom: 1px solid #DDDDDD;
+  .check__title {
+    color: $color4;
+  }
 }
 .form__item {
   display: flex;
+  @include bp-md {
+    flex-wrap: wrap;
+  }
 }
+
 .form__item__input {
   margin-bottom: 2rem;
   display: flex;
@@ -117,8 +154,16 @@
     margin-right: 0;
   }
 }
+.first__radio__item {
+  @include bp-md {
+    margin-bottom: 0;
+  }
+}
 .item__left {
   margin-right: 2.4rem;
+  @include bp-md {
+    margin-right: 0;
+  }
 }
 .radio__input {
   margin-top: 1rem;
@@ -128,6 +173,9 @@
   label {
     display: flex;
     cursor: pointer;
+    @include bp-md {
+      align-items: center;
+    }
   }
 
   input[type="radio"] {
@@ -147,6 +195,9 @@
     border: 1px solid #DDDDDD;
     background-color: #fff;
     border-radius: 50%;
+    @include bp-md {
+      height: 1.8rem;
+    }
   }
 
   /* appearance of checked radiobutton */
@@ -162,6 +213,9 @@
   p {
     margin-top: 1.5rem;
     color: $color6;
+    @include bp-md {
+      display: none;
+    }
     &:last-child {
       margin-top: 0;
     }
@@ -176,14 +230,24 @@
 .input__address {
   margin-right: 2.4rem;
   flex-basis: 66.6%;
+  @include bp-md {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
 }
 .input__index {
   flex-basis: 33.3%;
+  @include bp-md {
+    flex-basis: 100%;
+  }
 }
 
 .payment__input {
   &:not(:last-child) {
     margin-right: 2.4rem;
+    @include bp-md {
+      margin-right: 0;
+    }
   }
   .input-hidden {
     position: absolute;
@@ -265,6 +329,9 @@
   margin-top: 4rem;
   display: flex;
   align-items: center;
+  @include bp-md {
+    display: none;
+  }
   .btn-primary {
     margin-right: 2.4rem;
     padding: .9rem 3.2rem;
@@ -279,10 +346,18 @@
 
 .checkout__info {
   flex-basis: 30%;
+  @include bp-md {
+    padding-top: 1rem;
+    flex-basis: 100%;
+  }
 }
 .info__wrapper {
   padding: 2.5rem 3rem 3rem 3rem;
   background: #fff;
+  @include bp-md {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
 .info__title {
   display: flex;
@@ -338,5 +413,21 @@
     padding: .9rem 3.2rem;
     color: #fff;
     border-radius: 4px;
+    @include bp-md {
+      display: none;
+    }
+  }
+}
+.aside__submit {
+  display: none;
+  @include bp-md {
+    display: flex;
+    width: 100%;
+    .btn-primary {
+      margin-right: 1.6rem;
+      margin-left: 1.6rem;
+      width: 100%;
+      text-align: center;
+    }
   }
 }

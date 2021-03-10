@@ -161,7 +161,7 @@ header
                     li.breadcrumbs__item
                         a.size-6(href="#")
                             | Каталог товаров
-                    li.breadcrumbs__item.breadcrumbs__acitve
+                    li.breadcrumbs__item.breadcrumbs__active
                         a.size-6(href="#")
                             | Для работы в помещениях
 
@@ -191,20 +191,21 @@ header
                 .mobile__wrap
                     .mobile__locate
                         img(src="/src/assets/images/Geotag-mobile.svg")
-                        span.size-5
+                        a.location-modal.location__modal__mobile.size-5(href="#location")
                             |г. Новосибирск
                         a.size-5(href="#")
                             |Изменить
                     .mobile__phone
-                        img(src="/src/assets/images/Phone.svg")
+                        img(src="/src/assets/images/phone-mobile.svg")
                         a.size-5(href="#")
                             | 8 800 214-67-77
-                        a.size-5(href="#")
+                        a.call-us-modal.phone__mobile.size-5(href="#call-us")
                             | Заказать звонок
         a(src="").size-5.logo__mobile
             img(src="/src/assets/images/mobile-img.svg")
         .mobile__left
-            img(src="/src/assets/images/Person.svg").person__mobile
+            a.login-modal(href="#login-modal")
+                img(src="/src/assets/images/Person.svg").person__mobile
             img(src="/src/assets/images/basket-mobile.svg")
     form.search__form.search__mobile
         .search__wrap

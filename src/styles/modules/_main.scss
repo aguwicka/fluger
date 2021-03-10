@@ -142,7 +142,7 @@ body{
 	}
 }
 .mainpage-news__inner{
-	margin: -1.2rem;
+	//margin: -1.2rem;
 	display: flex;
 	@include bp-md{
 		margin:0;
@@ -199,6 +199,7 @@ body{
 	margin-top: 0.5rem;
 	margin-bottom: 1rem;
 	&:hover{
+		color: #152248;
 		text-decoration: underline;
 	}
 	@include bp-md{

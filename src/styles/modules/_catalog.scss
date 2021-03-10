@@ -1,6 +1,22 @@
 .catalog__wrapper {
   display: flex;
   padding-bottom: 5.6rem;
+  @include bp-md {
+    flex-wrap: wrap;
+  }
+}
+.mob__name {
+  display: none;
+  @include bp-md {
+    display: block !important;
+    margin-bottom: 2.5rem !important;
+    font-size: 2.6rem;
+  }
+}
+.catalog__aside {
+  @include bp-md {
+    width: 100%;
+  }
 }
 aside {
   margin-right: 3.2rem;
@@ -10,11 +26,19 @@ aside {
   flex-direction: column;
   background: #fff;
   border-radius: 2px;
+  @include bp-md {
+    margin-right: 0;
+    width: 100%;
+    background: transparent;
+  }
 }
 .catalog__name {
   margin: 0;
   padding-right: 1.6rem;
   color: $color3;
+  @include bp-md {
+    display: none;
+  }
 }
 .menu__catalog {
   margin-top: 1.5rem;
@@ -22,6 +46,14 @@ aside {
 
   &__item {
     padding-bottom: 1rem;
+    @include bp-md {
+      padding-top: 1.3rem;
+      padding-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-bottom: 1px solid #DDDDDD;
+    }
 
     &:hover a{
       text-decoration: underline;
@@ -32,6 +64,31 @@ aside {
       font-size: 1.4rem;
       padding-right: 8px;
       color: $color3;
+      @include bp-md {
+        content: none;
+      }
+    }
+    @include bp-md {
+      &:after {
+        content: "";
+        width: 1.4rem;
+        height: 1.4rem;
+        position: absolute;
+        right: 0;
+        background-image: url(/src/assets/images/arrow-small.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  &__active {
+    color: $color3;
+    font-weight: 700;
+    &:before {
+      content: '>';
+      font-weight: 700;
     }
   }
 }
@@ -45,6 +102,9 @@ aside {
 
 .catalog_content__name {
   margin: 0;
+  @include bp-md {
+    display: none;
+  }
 }
 .catalog__products {
   margin-top: 2.4rem;
@@ -55,10 +115,13 @@ aside {
     margin-bottom: 2.4rem;
     display: flex;
     align-items: flex-end;
-    width: 29rem;
+    width: calc(33% - 1.4rem);
     height: 20rem;
     border-radius: 2px;
     background-image: url('/src/assets/images/catalog-image.png');
+    @include bp-md {
+      width: 100%;
+    }
     &:nth-child(2) {
       background-image: url('/src/assets/images/grunt.png');
     }
@@ -83,6 +146,9 @@ aside {
 
     &:not(:nth-child(3n)) {
       margin-right: 1.4rem;
+      @include bp-md {
+        margin-right: 0;
+      }
     }
 
     p {

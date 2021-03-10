@@ -32,6 +32,9 @@
 	margin: 1rem;
 	margin-bottom: 0;
 }
+.footer__col-about {
+	margin-left: 0;
+}
 
 //about block
 .footer__about-link--policy,
@@ -57,7 +60,8 @@
 //ref block
 .footer__ref-link--tel{
 	font-family: $boldFont;
-	color: $color6; 
+	color: $color6;
+	font-size: 1.8rem;
 }
 .footer__ref-text--adress{
 	max-width: 17rem;
