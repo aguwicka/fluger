@@ -48,6 +48,28 @@ header
                                                 |Телефон
                                             input.input__primary.size-5(type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __")
                                     input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
+                        .white-popup-block.mfp-hide#question
+                            .call__us__wrapper
+                                .tittle__wrap
+                                    h1.size-3
+                                        | Задайте свой вопрос
+                                    a.popup-modal-dismiss
+                                        img(src="/src/assets/images/Close-thick.svg")
+                                form.form__call
+                                    .call__wrapper
+                                        .call__input.name__input__wrap
+                                            p.input__label.size-5
+                                                |Ваше имя
+                                            input.input__primary.size-5(type="text" name="name" placeholder="Имя")
+                                        .call__input
+                                            p.input__label.size-5
+                                                |Телефон
+                                            input.input__primary.size-5(type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __")
+                                        .call__textarea
+                                            p.input__label.size-5
+                                                |Ваш вопрос
+                                            textarea.input__primary.size-5(name="message" placeholder="Ваш вопрос")
+                                    input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
                 .header__wrap__login
                     img(src="/src/assets/images/Person.svg")
                     a.login-modal.size-5(href="#login-modal")

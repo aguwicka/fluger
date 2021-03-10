@@ -64,12 +64,21 @@
 }
 .call__wrapper {
   display: flex;
-  @include bp-md {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.call__textarea {
+  width: 100%;
+  textarea {
+    min-height:72px;
+    resize: none;
   }
 }
 .call__input {
   flex: 1;
+  margin-bottom:24px;
   @include bp-md {
     margin-top: 2.4rem;
     flex: auto;

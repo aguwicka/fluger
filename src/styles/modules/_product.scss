@@ -206,7 +206,12 @@ input[type=number] {
   max-width: 12rem;
   border: 1px solid #DDDDDD;
   border-radius: 2px;
-
+  svg {
+    fill: #192C5A!important;
+    path {
+      fill: #192C5A!important;
+    } 
+  }
   button {
     border: 0;
     background: transparent;
