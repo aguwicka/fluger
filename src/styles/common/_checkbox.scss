@@ -47,4 +47,16 @@
   }
   .aside-filters-input-wrap{
     margin-bottom: 0.5rem;
+    /*&:nth-child(even) {
+      @include bp-md { 
+      }
+    }
+    &:nth-child(odd) {
+      @include bp-md { 
+        
+      }
+    }*/
+    @include bp-md { 
+      min-width: 50%;
+    }
   }

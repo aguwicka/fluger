@@ -325,7 +325,9 @@
 		@include bp-md{
 			flex: inherit;
     		max-width: inherit;
-
+		}
+		@media screen and (max-width:340px) {
+			font-size: 1.3rem;
 		}
 	}
 	@include bp-md{
@@ -334,7 +336,7 @@
 		margin: 0 0 1.5rem 0;
 		justify-content: space-between;
 	}
-	a:after{
+	a.filters-modal:after{
 		position: absolute;	
 		left: 0;	
 		top: .3rem;
@@ -345,6 +347,12 @@
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
+	}
+	a.sorting-modal {
+		img {
+			vertical-align: middle;
+			margin-right: 8px;
+		}
 	}
 	a:nth-child(2):after{
 		width: 1.6rem;	
@@ -372,7 +380,8 @@
 
 .sort__wrap {
 	display: flex;
-	&__right {
+	flex-wrap: wrap;
+	&__column:last-child {
 		margin-left: auto;
 	}
 }

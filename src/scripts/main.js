@@ -1,5 +1,5 @@
 $(function () {
-  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal').magnificPopup({
+  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .filters-modal').magnificPopup({
     type: 'inline',
     preloader: false,
     removalDelay: 500, 
@@ -130,7 +130,7 @@ $(function () {
     //slider on main page
     slidersOnMainP();
 
-  });
+});
 
 //toggle mobile menu
 let toggleButton = document.querySelector('.toggle-menu');
@@ -190,7 +190,7 @@ $(document).on('click', '.row__count-and-price__input .plus', function(){
 });
 
 $(document).ready(function() {
-    $('.select').select2({
+    $('.select-sort').select2({
       minimumResultsForSearch: -1,
       templateResult: function (item) {
         var $span = $("<img src='" + $(item.element).data('image') + "'/> <span>" + item.text + "</span>");
@@ -202,13 +202,33 @@ $(document).ready(function() {
         return $span;
       }
     });
+    $('.select-sort').change(function(){
+      let val_select = $('.select-sort').find(":selected").val();
+      let image_select = $('.select-sort').find(":selected").data('image');
+      $('.sorting-selected-js span').text(val_select);
+      $('.sorting-selected-js img').text(image_select);
+    });
 });
 
+$(function () {
+  $(document).on('click', '.mobile-sort-item-js' , function() {
+    let sort_name = $(this).data('sortname');
+    let sort_image = $(this).data('sortimage');
+    //let sort_val = $(this).data('val');
+    $('.sorting-selected-js span').text(sort_name);
+    $('.sorting-selected-js img').attr('src' , sort_image);
+    //console.log(sort_val);
+    $('.select-sort').val(sort_name);
+    $('.select-sort').trigger('change');
+    $.magnificPopup.close();
+  })
+});
+/*
 $('body').on('swipeup swipedown', function(){
   if ($(window).width() < 993) {
     $.magnificPopup.close();
   }
-});
+});*/
 
 (function () {
   // initializes touch and scroll events
