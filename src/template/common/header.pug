@@ -191,9 +191,9 @@ header
                 .mobile__wrap
                     .mobile__locate
                         img(src="/src/assets/images/Geotag-mobile.svg")
-                        a.location-modal.location__modal__mobile.size-5(href="#location")
-                            |г. Новосибирск
                         a.size-5(href="#")
+                            |г. Новосибирск
+                        a.location-modal.location__modal__mobile.size-5(href="#location")
                             |Изменить
                     .mobile__phone
                         img(src="/src/assets/images/phone-mobile.svg")
@@ -206,7 +206,10 @@ header
         .mobile__left
             a.login-modal(href="#login-modal")
                 img(src="/src/assets/images/Person.svg").person__mobile
-            img(src="/src/assets/images/basket-mobile.svg")
+            a.basket__mobile(href="#")
+                img(src="/src/assets/images/basket-mobile.svg")
+                .basket__count
+                    |3
     form.search__form.search__mobile
         .search__wrap
             button.search__button

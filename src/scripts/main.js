@@ -1,5 +1,5 @@
 $(function () {
-  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal').magnificPopup({
+  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .category-modal , .palette__modal,.color__modal').magnificPopup({
     type: 'inline',
     preloader: false,
     modal: true
@@ -181,4 +181,16 @@ $(document).on('click', '.row__count-and-price__input .plus', function(){
 
 $(document).ready(function() {
     $('.select').select2();
+});
+
+$(document).ready(function() {
+    $(".color__items").each(function(indx, el) {
+        $(".img__item", el).click(function() {
+            let color__attribute = $(this).find(".item__name", el).text();
+            let color__data = $(this).find(".cat__palette", el).data("color");
+            $("#input__val").val(color__attribute);
+            $("#color__style").css("background", color__data);
+        })
+
+    });
 });

@@ -10,74 +10,85 @@ html(lang="en")
         include ../common/mixins
         include ../common/header
         .main-wrapper
-            include ../common/prev.pug
-            h2.size-2.catalog_content__name.mob__name
-                | Для работы в помещениях
-            .catalog__wrapper
-                section.catalog__aside
-                    aside
-                        h4.size-5.catalog__name
-                            |Для работы в помещениях
-                        ul.menu__catalog
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    |Для влажных помещений
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    | Для грунтования
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    | Для дерева и мебели
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    | Для металла
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    | Для пола
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    | Для потолка
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    | Для стен
-                            li.menu__catalog__item
-                                a.size-6(href="#")
-                                    | Для шпатлевания
-                        a.size-5.catalog__link(href="#")
-                            |Для декора и дизайна
-                        a.size-5.catalog__link(href="#")
-                            | Для работы на улице
-                        a.size-5.catalog__link(href="#")
-                            | Инструменты и материалы
+          include ../common/prev.pug
+          .catalogp-menu
+            h1.catalogp-title Каталог
+            .catalogp-menu__row
+              .catalogp-menu__col
+                .catalogp-menu__item
+                  .catalogp-menu__item-img(style="background-image: url(/src/assets/images/main-pr2.jpg);")
+                    .catalogp-menu__item-img-inner
+                      a.catalogp-menu__item-title-link(href="#")
+                        h4.catalogp-menu__item-title Для работы в помещениях
+                  ul.catalogp-menu__item-list
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для влажных помещений
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для грунтования
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для дерева и мебели
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для металла
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для пола
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для потолка
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для стен
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для шпатлевания
+                  a.btn.catalogp-menu__link-bottom.btn--green Просмотреть всё
+              .catalogp-menu__col
+                .catalogp-menu__item
+                  .catalogp-menu__item-img(style="background-image: url(/src/assets/images/main-pr1.jpg);")
+                    .catalogp-menu__item-img-inner
+                      a.catalogp-menu__item-title-link(href="#")
+                        h4.catalogp-menu__item-title Для декора и дизайна
+                  ul.catalogp-menu__item-list
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для защиты дерева
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для защиты металла
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Для защиты фасада
+                  a.btn.catalogp-menu__link-bottom.btn--green Просмотреть всё
+              .catalogp-menu__col
+                .catalogp-menu__item
+                  .catalogp-menu__item-img(style="background-image: url(/src/assets/images/main-pr3.jpg);")
+                    .catalogp-menu__item-img-inner
+                      a.catalogp-menu__item-title-link(href="#")
+                        h4.catalogp-menu__item-title Для работы на улице
+                  ul.catalogp-menu__item-list
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Валики
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Веера — цветовые решения
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Инструмент
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Рабочая одежда
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Ленты малярные
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Чистящие средства
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Трафарет
+                  a.btn.catalogp-menu__link-bottom.btn--green Просмотреть всё
+              .catalogp-menu__col
+                .catalogp-menu__item
+                  .catalogp-menu__item-img(style="background-image: url(/src/assets/images/main-pr4.jpg);")
+                    .catalogp-menu__item-img-inner
+                      a.catalogp-menu__item-title-link(href="#")
+                        h4.catalogp-menu__item-title Инструменты и материалы
+                  ul.catalogp-menu__item-list
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Покраска
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Оштукатуривание
+                    li.catalogp-menu__item-li
+                      a.catalogp-menu__item-link(href="") Выезд консультанта на объект
+                  a.btn.catalogp-menu__link-bottom.btn--green Просмотреть всё
 
-                .catalog__content
-                    h2.size-2.catalog_content__name
-                        |Для работы в помещениях
-                    .catalog__products
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                | Для влажных
-                                br
-                                | помещений
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                |Для грунтования
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                |Для дерева и мебели
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                |Для металла
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                |Для пола
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                |Для потолка
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                |Для стен
-                        a(href="#").catalog__products__item
-                            p.size-3
-                                |Для шпатлевания
+        include ../common/all-products
+        include ../common/all-products
         include ../common/footer

@@ -110,6 +110,9 @@ aside {
   margin-top: 2.4rem;
   display: flex;
   flex-wrap: wrap;
+  @include bp-md {
+    display: none;
+  }
 
   &__item {
     margin-bottom: 2.4rem;
