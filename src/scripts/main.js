@@ -1,5 +1,5 @@
 $(function () {
-  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .filters-modal').magnificPopup({
+  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .category-modal , .palette__modal,.color__modal').magnificPopup({
     type: 'inline',
     preloader: false,
     removalDelay: 500, 
@@ -314,3 +314,29 @@ $('body').on('swipeup swipedown', function(){
       });
   
   })();
+
+$(document).ready(function() {
+    $(".color__items").each(function (indx, el) {
+        $(".img__item", el).click(function () {
+            let color__attribute = $(this).find(".item__name", el).text();
+            let color__data = $(this).find(".cat__palette", el).data("color");
+            $("#input__val").val(color__attribute);
+            $("#color__style").css("background", color__data);
+        });
+    });
+});
+
+$('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});

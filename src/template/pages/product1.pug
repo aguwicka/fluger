@@ -11,7 +11,7 @@ html(lang="en")
         include ../common/header
         .main-wrapper
             include ../common/prev.pug
-            h2.size-2.title__product
+            h2.size-2
                 | FLUGGER Interior High Finish 90
             .product__wrapper
                 .product__content
@@ -28,9 +28,9 @@ html(lang="en")
                             .slide
                                 img(src="/src/assets/images/product-image.png")
                             .slide.slide2
-                                img(src="/src/assets/images/sub2.png")
+                                img(src="/src/assets/images/product-image.png")
                             .slide.slide3
-                                img(src="/src/assets/images/sub3.png")
+                                img(src="/src/assets/images/product-image.png")
                     .content__title.content__title__mobile
                         h2.size-3
                             | Стоимость 267 ₽ / м
@@ -44,10 +44,7 @@ html(lang="en")
                                     a.size-5(href="#")
                                         | Палитра
                             .product__color
-                                .product__color-coloblock
-                                    .color_block
-                                    .color_change(style={'color': '#192C5A'})
-                                        |Изменить
+                                img(src="/src/assets/images/white-circle.svg")
                                 .product__item
                                     .item__number.size-5
                                         | № по каталогу
@@ -149,10 +146,6 @@ html(lang="en")
                                     button.btn-primary.size-4
                                         img(src="/src/assets/images/basket-mobile.svg")
                                         | В корзину
-                    .badge__img.badge__mobile
-                                img(src="/src/assets/images/badge1.svg")
-                                img(src="/src/assets/images/badge2.svg")
-                                img(src="/src/assets/images/badge3.svg")
                     .content__wrap
                         .content__title
                             h2.size-3
@@ -238,18 +231,203 @@ html(lang="en")
                                 |Цвет
                             .product__palette
                                 img(src="/src/assets/images/Palette.svg")
-                                a.size-5(href="#")
+                                a.size-5.category-modal(href="#category-modal")
                                     |Палитра
+                                .white-popup-block.mfp-hide#category-modal
+                                    .category__wrapper
+                                        .tittle__wrap
+                                            h1.size-3
+                                                | Выберите каталог цветов
+                                            a.popup-modal-dismiss
+                                                img(src="/src/assets/images/Close-thick.svg")
+                                        .category__items
+                                            a.cat__item.palette__modal(href="#palette__modal")
+                                                h4.size-5
+                                                    | Flugger 900
+                                                p.size-6
+                                                    | Дизайнерские цвета
+                                            a.cat__item.palette__modal(href="#palette__modal")
+                                                h4.size-5
+                                                    | Flugger 900
+                                                p.size-6
+                                                    | Дизайнерские цвета
+                                            a.cat__item.palette__modal(href="#palette__modal")
+                                                h4.size-5
+                                                    | Flugger 900
+                                                p.size-6
+                                                    | Дизайнерские цвета
+                                            a.cat__item.palette__modal(href="#palette__modal")
+                                                h4.size-5
+                                                    | Flugger 900
+                                                p.size-6
+                                                    | Дизайнерские цвета
+                                            a.cat__item.palette__modal(href="#palette__modal")
+                                                h4.size-5
+                                                    | Flugger 900
+                                                p.size-6
+                                                    | Дизайнерские цвета
+                                            a.cat__item.palette__modal(href="#palette__modal")
+                                                h4.size-5
+                                                    | Flugger 900
+                                                p.size-6
+                                                    | Дизайнерские цвета
+                                .white-popup-block.mfp-hide#palette__modal
+                                    .category__wrapper.palette__wrapper
+                                        .tittle__wrap
+                                            h1.size-3
+                                                | Выберите палитру
+                                            a.popup-modal-dismiss
+                                                img(src="/src/assets/images/Close-thick.svg")
+                                        .modal__search-wrap
+                                            a.back__modal.category-modal(href="#category-modal")
+                                                img(src="/src/assets/images/back-modal.svg")
+                                                span.size-5
+                                                    | Назад к выбору каталога
+                                            .search__modal-wrap
+                                                form
+                                                    .search-wrap
+                                                        button.modal__button
+                                                            img(src="/src/assets/images/search-modal.svg")
+                                                        input.modal__search(type="search" placeholder="Поиск по номеру")
+                                        .palette__items
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            a.cat__item.color__modal(href="#color__modal")
+                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                        .modal__warning
+                                            img(src="/src/assets/images/warning-modal.svg")
+                                            p.size-6
+                                                | Внимание: реальные цвета могут немного отличаться, от видимых на экране всвязи с искажением цветов мониторами.
+                                .white-popup-block.mfp-hide#color__modal
+                                    .category__wrapper.palette__wrapper
+                                        .tittle__wrap
+                                            h1.size-3
+                                                | Выберите цвет
+                                            a.popup-modal-dismiss
+                                                img(src="/src/assets/images/Close-thick.svg")
+                                        .modal__search-wrap
+                                            a.back__modal.palette__modal(href="#palette__modal")
+                                                img(src="/src/assets/images/back-modal.svg")
+                                                span.size-5
+                                                    | Назад к выбору каталога
+                                            .search__modal-wrap
+                                                form
+                                                    .search-wrap
+                                                        button.modal__button
+                                                            img(src="/src/assets/images/search-modal.svg")
+                                                        input.modal__search(type="search" placeholder="Поиск по номеру")
+                                        .color__items
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg" data-color="#000")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+
+                                        .modal__warning
+                                            img(src="/src/assets/images/warning-modal.svg")
+                                            p.size-6
+                                                | Внимание: реальные цвета могут немного отличаться, от видимых на экране всвязи с искажением цветов мониторами.
                         .product__color
-                            .product__color-coloblock
-                                .color_block
-                                .color_change(style={'color': '#192C5A'})
-                                    |Изменить
+                            .row__color-coloblock.product__color-row
+                                span.row__color-coloblock-item
+                                    #color__style.color_block(style="background: #FFFFFF;")
                             .product__item
                                 .item__number.size-5
                                     |№ по каталогу
-                                .item__color.size-5
-                                    |Белый
+                                input#input__val.item__color.size-5(type="search" placeholder="Белый")
                         .product__size
                             p.size-4
                                 | Объем
@@ -347,5 +525,5 @@ html(lang="en")
                                     img(src="/src/assets/images/basket-mobile.svg")
                                     |В корзину
 
-        include ../common/all-products-last
+        include ../common/all-products
         include ../common/footer
