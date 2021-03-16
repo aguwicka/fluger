@@ -3,7 +3,12 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+.title__product {
+  @include bp-md {
+    line-height: 120%;
+    font-size: 26px;
+  }
+}
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -49,6 +54,14 @@ input[type=number] {
     margin-right: 0;
     width: 100%;
   }
+  .thumbs {
+    .thumb {
+      border:2px solid transparent;
+    }
+    .thumb.active {
+      border:2px solid #192C5A;
+    }
+  }
 }
 .thumbs {
   @include bp-md {
@@ -80,6 +93,9 @@ input[type=number] {
 }
 #product__carousel {
   width: 80%;
+  @media screen and (max-width:1250px) {
+    width: 70%;
+  }
   @include bp-md{
     width: 100%;
     overflow: hidden;
@@ -87,7 +103,9 @@ input[type=number] {
   }
 }
 #product__carousel .owl-item img {
-  width: auto;
+  width: 100%;
+    max-width: 100%;
+    height: auto;
   @include bp-md {
     width: 100%;
   }
@@ -114,20 +132,28 @@ input[type=number] {
   @include bp-md {
     margin-left: -1.6rem;
     margin-right: -1.6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 }
 .tassle__wrap {
   width: 36rem;
   @include bp-md {
     width: 100%;
-    margin-right: 0;
     margin-left: 0;
+    margin-right: 0;
   }
 }
 .tassle__content {
   margin-bottom: 7.2rem;
+  @include bp-md {
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+  }
+  .content__text {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
 .product__title__wrap {
   display: flex;
@@ -255,7 +281,12 @@ input[type=number] {
   max-width: 12rem;
   border: 1px solid #DDDDDD;
   border-radius: 2px;
-
+  svg {
+    fill: #192C5A!important;
+    path {
+      fill: #192C5A!important;
+    } 
+  }
   button {
     border: 0;
     background: transparent;
@@ -397,6 +428,10 @@ input[type=number] {
   margin-top: 4.5rem;
   margin-bottom: 2rem;
   color: $color4;
+  @include bp-md {
+    /*padding-left: 1.6rem;
+    padding-right: 1.6rem;*/
+  }
   p {
     line-height: 2rem;
   }
@@ -482,6 +517,9 @@ input[type=number] {
 }
 .product__document {
   padding-bottom: 7.4rem;
+  @include bp-md {
+    padding-bottom: 0;
+  }
 }
 .docs__item {
   padding: 1rem 0 1rem 1.5rem;
@@ -498,5 +536,64 @@ input[type=number] {
   a {
     color: $color2;
     text-decoration: underline;
+  }
+}
+.badge__mobile {
+  display:none;
+  img {
+    margin-right:16px;
+    width:64px;
+  }
+  @include bp-md {
+    display:block;
+    margin-top: 32px;
+  }
+}
+.product__color-coloblock {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(25,44,90, .25);
+  transition: border .05s;
+  cursor: pointer;
+  margin-right: 15px;
+  &:hover {
+    border: 1px solid #192C5A;
+  }
+  .color_block {
+    content: '';
+    width: 58.35px;
+    height: 58.35px;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, .4);
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  &:hover {
+    .color_change {
+      display: block;
+    }
+  }
+  .color_change {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #FFFFFF;
   }
 }

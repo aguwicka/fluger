@@ -48,6 +48,28 @@ header
                                                 |Телефон
                                             input.input__primary.size-5(type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __")
                                     input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
+                        .white-popup-block.mfp-hide#question
+                            .call__us__wrapper
+                                .tittle__wrap
+                                    h1.size-3
+                                        | Задайте свой вопрос
+                                    a.popup-modal-dismiss
+                                        img(src="/src/assets/images/Close-thick.svg")
+                                form.form__call
+                                    .call__wrapper
+                                        .call__input.name__input__wrap
+                                            p.input__label.size-5
+                                                |Ваше имя
+                                            input.input__primary.size-5(type="text" name="name" placeholder="Имя")
+                                        .call__input
+                                            p.input__label.size-5
+                                                |Телефон
+                                            input.input__primary.size-5(type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __")
+                                        .call__textarea
+                                            p.input__label.size-5
+                                                |Ваш вопрос
+                                            textarea.input__primary.size-5(name="message" placeholder="Ваш вопрос")
+                                    input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
                 .header__wrap__login
                     img(src="/src/assets/images/Person.svg")
                     a.login-modal.size-5(href="#login-modal")
@@ -190,14 +212,16 @@ header
                                 | Каталог товаров
                 .mobile__wrap
                     .mobile__locate
-                        img(src="/src/assets/images/Geotag-mobile.svg")
-                        a.size-5(href="#")
-                            |г. Новосибирск
+                        a.location-modal.location__modal__mobile(href="#location")
+                            img(src="/src/assets/images/Geotag-mobile.svg")
                         a.location-modal.location__modal__mobile.size-5(href="#location")
+                            |г. Новосибирск
+                        a.size-5.location-modal(href="#location")
                             |Изменить
                     .mobile__phone
-                        img(src="/src/assets/images/phone-mobile.svg")
-                        a.size-5(href="#")
+                        a(href="tel:88002146777")
+                            img(src="/src/assets/images/phone-mobile.svg")
+                        a.size-5(href="tel:88002146777")
                             | 8 800 214-67-77
                         a.call-us-modal.phone__mobile.size-5(href="#call-us")
                             | Заказать звонок
@@ -206,10 +230,7 @@ header
         .mobile__left
             a.login-modal(href="#login-modal")
                 img(src="/src/assets/images/Person.svg").person__mobile
-            a.basket__mobile(href="#")
-                img(src="/src/assets/images/basket-mobile.svg")
-                .basket__count
-                    |3
+            img(src="/src/assets/images/basket-mobile.svg")
     form.search__form.search__mobile
         .search__wrap
             button.search__button

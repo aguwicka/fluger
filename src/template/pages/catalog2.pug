@@ -79,7 +79,6 @@ html(lang="en")
                         .aside-filters-input-wrap
                           input.aside-filters-input(type="checkbox" value="Универсальная" name="properties" id="properties-7")
                           label.aside-filters-label(for="properties-7") Универсальная
-
                       .aside-filters-inner
                         span.aside-filters-title Основа
                         .aside-filters-input-wrap
@@ -94,7 +93,6 @@ html(lang="en")
                         .aside-filters-input-wrap
                           input.aside-filters-input(type="checkbox" value="Эмульсионно-силикатная" name="base" id="base-4")
                           label.aside-filters-label(for="base-4") Эмульсионно-силикатная
-
                       .aside-filters-inner
                         span.aside-filters-title Степень глянца
                         .aside-filters-input-wrap
@@ -109,7 +107,6 @@ html(lang="en")
                         .aside-filters-input-wrap
                           input.aside-filters-input(type="checkbox" value="Полуматовая" name="base" id="gloss-deg-4")
                           label.aside-filters-label(for="gloss-deg-4") Полуматовая
-
                       .aside-filters-inner
                         span.aside-filters-title Класс истирания
                         .aside-filters-input-wrap
@@ -118,8 +115,6 @@ html(lang="en")
                         .aside-filters-input-wrap
                           input.aside-filters-input(type="checkbox" value="Класс 2" name="base" id="erase-class-2")
                           label.aside-filters-label(for="erase-class-2") Класс 2
-
-
                       .aside-filters-inner
                         span.aside-filters-title Метка
                         .aside-filters-input-wrap
@@ -129,21 +124,27 @@ html(lang="en")
                           input.aside-filters-input(type="checkbox" value="Новинки" name="base" id="tag-2")
                           label.aside-filters-label(for="tag-2") Новинки
                       a.btn.btn--green(href="#") Применить фильтр
-                .catalog__content
+                .catalog__content.catalog__content-sec-levl
                     h2.size-2.catalog_content__name
                         |Для влажных помещений
                     .catalog-sort-wrap
-                      label(for="select-tag") Сортировать по:
+                      label(for="select-tag") Сортировать
                       .select-wrap
-                        select(name="select-tag" id="select-tag" class="select")
-                          option(val="for-pop") По популярности
-                          option(val="for-name") По названию
+                        select(name="select-tag" id="select-tag" class="select-sort")
+                          option(val="for-pop-asc", data-image="/src/assets/images/sort-down.svg")
+                            |Сначала популярные
+                          option(val="for-pop-desc", data-image="/src/assets/images/sort-up.svg")
+                            |Сначала не популярные
+                          option(val="for-price-asc", data-image="/src/assets/images/sort-down.svg")
+                            |Сначала дорогие
+                          option(val="for-price-asc", data-image="/src/assets/images/sort-up.svg")
+                            |Сначала дешевые
                     .catalog-sec-lev-top
-                      a.sorting-modal(href="#sorting-modal") Фильтр (4)
-                      .white-popup-block.mfp-hide#sorting-modal
+                      a.filters-modal(href="#filters-modal") Фильтр (4)
+                      .white-popup-block.mfp-hide#filters-modal
                         .location__wrapper.sorting__wrapper
                           .tittle__wrap
-                            h1.size-4
+                            .size-4.tittle__wrap--title
                               | Фильтр
                             a.popup-modal-dismiss
                               img(src="/src/assets/images/Close-thick.svg")
@@ -151,7 +152,6 @@ html(lang="en")
                             h3.size-5
                               |Свойства
                             .sort__wrap
-                              .sort__wrap__left
                                 .aside-filters-input-wrap
                                   input.aside-filters-input(type="checkbox" value="Адгезионная" name="properties" id="prop-1" checked)
                                   label.aside-filters-label(for="prop-1")
@@ -168,7 +168,6 @@ html(lang="en")
                                   input.aside-filters-input(type="checkbox" value="Влагостойкая" name="properties" id="prop-4")
                                   label.aside-filters-label(for="prop-4")
                                     | Блокирующие пятна
-                              .sort__wrap__right
                                 .aside-filters-input-wrap
                                   input.aside-filters-input(type="checkbox" value="Водоустойчивая" name="properties" id="prop-5")
                                   label.aside-filters-label(for="prop-5")
@@ -188,7 +187,6 @@ html(lang="en")
                             h3.size-5
                               |Основа
                             .sort__wrap
-                              .sort__wrap__left
                                 .aside-filters-input-wrap
                                   input.aside-filters-input(type="checkbox" value="Акриловая" name="prop" id="propid-1" checked)
                                   label.aside-filters-label(for="propid-1")
@@ -197,7 +195,6 @@ html(lang="en")
                                   input.aside-filters-input(type="checkbox" value="Латексная" name="prop" id="propid-2")
                                   label.aside-filters-label(for="propid-2")
                                     | Латексная
-                              .sort__wrap__right
                                 .aside-filters-input-wrap
                                   input.aside-filters-input(type="checkbox" value="Латексная" name="prop" id="propid-5")
                                   label.aside-filters-label(for="propid-5")
@@ -206,8 +203,65 @@ html(lang="en")
                                   input.aside-filters-input(type="checkbox" value="Эмульсионно-силикатная" name="prop" id="propid-6" checked)
                                   label.aside-filters-label(for="propid-6")
                                     | Эмульсионно-силикатная
-
-                      a(href="#") По популярности
+                            h3.size-5
+                              |Степень глянца
+                            .sort__wrap
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Глянцевая" checked="checked" name="base" id="gloss-deg-1")
+                                  label.aside-filters-label(for="gloss-deg-1") Глянцевая
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Матовая" name="base" id="gloss-deg-2")
+                                  label.aside-filters-label(for="gloss-deg-2") Матовая
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Полуглянцевая" checked="checked" name="base" id="gloss-deg-3")
+                                  label.aside-filters-label(for="gloss-deg-3") Полуглянцевая
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Полуматовая" name="base" id="gloss-deg-4")
+                                  label.aside-filters-label(for="gloss-deg-4") Полуматовая
+                            h3.size-5
+                              |Класс истирания
+                            .sort__wrap
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Класс 1" checked="checked" name="base" id="erase-class-1")
+                                  label.aside-filters-label(for="erase-class-1") Класс 1
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Класс 2" name="base" id="erase-class-2")
+                                  label.aside-filters-label(for="erase-class-2") Класс 2
+                            h3.size-5
+                              |Метка
+                            .sort__wrap
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Популярные" name="base" id="tag-1")
+                                  label.aside-filters-label(for="tag-1") Популярные
+                                .aside-filters-input-wrap
+                                  input.aside-filters-input(type="checkbox" value="Новинки" name="base" id="tag-2")
+                                  label.aside-filters-label(for="tag-2") Новинки
+                            
+                            input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
+                      a.sorting-modal.sorting-selected-js(href="#sort-modal")
+                        img(src="/src/assets/images/sort-down.svg")
+                        span
+                          |Сначала популярные
+                      .white-popup-block.mfp-hide#sort-modal
+                        .location__wrapper.sorting__wrapper
+                          .tittle__wrap
+                            .size-4.tittle__wrap--title
+                              | Сортировка
+                            a.popup-modal-dismiss
+                              img(src="/src/assets/images/Close-thick.svg")
+                          .sort-mobile-wrapper
+                            a.mobile-sort-item-js(href="#", data-sortname="Сначала популярные", data-sortimage="/src/assets/images/sort-down.svg", data-val="for-pop-asc")
+                              img(src="/src/assets/images/sort-down.svg")
+                              |Сначала популярные
+                            a.mobile-sort-item-js(href="#", data-sortname="Сначала не популярные", data-sortimage="/src/assets/images/sort-up.svg", data-val="for-pop-desc")
+                              img(src="/src/assets/images/sort-up.svg")
+                              |Сначала не популярные
+                            a.mobile-sort-item-js(href="#", data-sortname="Сначала дорогие", data-sortimage="/src/assets/images/sort-down.svg", data-val="for-price-asc")
+                              img(src="/src/assets/images/sort-down.svg")
+                              |Сначала дорогие
+                            a.mobile-sort-item-js(href="#", data-sortname="Сначала дешевые", data-sortimage="/src/assets/images/sort-up.svg", data-val="for-price-asc")
+                              img(src="/src/assets/images/sort-up.svg")
+                              |Сначала дешевые
                     .catalog-products
                       .catalog-products__item
                         .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog1.png')")

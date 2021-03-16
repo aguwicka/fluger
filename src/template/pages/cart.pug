@@ -11,6 +11,8 @@ html(lang="en")
         include ../common/header
         .cart-wrapper
             .main-wrapper
+                .cart-wrapper-container
+                    include ../common/prev.pug
                 .cart-top
                     h1.cart-top__title
                         | Ваша корзина
@@ -18,8 +20,8 @@ html(lang="en")
                         .steps__step.active
                             span.steps__step__circle
                             span.steps__step__title
-                                | Корзина
-                        .steps__step.active
+                                | Ваша корзина
+                        .steps__step
                             span.steps__step__circle
                             span.steps__step__title
                                 | Оформление заказа
@@ -48,17 +50,17 @@ html(lang="en")
                                     .row__title__text-content
                                         .text-content__title
                                             a(href="#")
-                                                | FLUGGER Dekso-plast MS 15
+                                                |FLUGGER Dekso-plast MS 15
                                         .text-content__subtitle
-                                            | Краска антигрибковая
+                                            |Краска антигрибковая
                                             .text-content__subtitle__colormobiletext
-                                                | №5 Подложка <br>(под зелёные/ <br>жёлтые цвета)
+                                                |№5 Подложка <br>(под зелёные/ <br>жёлтые цвета)
                                 td.table__row__color
                                     .row__color-coloblock
                                         span.row__color-coloblock-item
                                             .color_block
                                             .color_change(style={'color': '#192C5A'})
-                                                | Изменить
+                                                |Изменить
                                     .row__color-colortitle
                                         | №5 Подложка <br>(под зелёные/ <br>жёлтые цвета)
                                 td.table__row__count-and-price

@@ -184,12 +184,18 @@
     background: #EBEBEB;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
+    min-height: 44px;
   }
   .search__button {
     background: transparent;
     border: 0;
     outline: 0;
     cursor: pointer;
+    order: 1;
+    padding-right: 8px;
+    img {
+      width: 28px;
+    }
   }
 
   .search__input {
@@ -198,6 +204,8 @@
     background: transparent;
     cursor: pointer;
     width: 90%;
+    padding-left: 11px;
+    font-size: 16px;
   }
   .search__mobile {
     display: block;
@@ -334,13 +342,16 @@
   display: flex;
   align-items: center;
 
-  img {
+  & > img {
     margin-right: 1rem;
   }
   .location__modal__mobile {
     margin-left: 1.6rem;
     border-bottom: 0;
     border-bottom: 1px dashed #333;
+    &:first-child {
+      margin-right: 1rem;
+    }
   }
 }
 .mobile__phone {
@@ -348,12 +359,15 @@
   display: flex;
   align-items: center;
 
-  img {
+  & > img {
     margin-right: 1rem;
   }
   a {
     &:not(:last-child) {
       margin-right: 1.6rem;
+    }
+    &:first-child {
+      margin-right: 1rem;
     }
   }
   .phone__mobile {

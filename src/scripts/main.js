@@ -1,8 +1,12 @@
 $(function () {
-  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .category-modal , .palette__modal,.color__modal').magnificPopup({
+  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .filters-modal').magnificPopup({
     type: 'inline',
     preloader: false,
-    modal: true
+    removalDelay: 500, 
+    midClick: true,
+    modal: true,
+    fixedContentPos: true,
+    mainClass: 'my-mfp-zoom-in'
   });
   $(document).on('click', '.popup-modal-dismiss', function (e) {
     e.preventDefault();
@@ -126,13 +130,19 @@ $(function () {
     //slider on main page
     slidersOnMainP();
 
-  });
+});
 
 //toggle mobile menu
 let toggleButton = document.querySelector('.toggle-menu');
 let navBar = document.querySelector('.nav-bar');
 toggleButton.addEventListener('click', function () {
     navBar.classList.toggle('toggle');
+    if (navBar.classList.contains('toggle')) {
+      $('body').css('overflow', 'hidden');
+    } else {
+      $('body').css('overflow', '');
+    }
+    
 });
 
 $(document).ready(function() {
@@ -180,17 +190,127 @@ $(document).on('click', '.row__count-and-price__input .plus', function(){
 });
 
 $(document).ready(function() {
-    $('.select').select2();
-});
-
-$(document).ready(function() {
-    $(".color__items").each(function(indx, el) {
-        $(".img__item", el).click(function() {
-            let color__attribute = $(this).find(".item__name", el).text();
-            let color__data = $(this).find(".cat__palette", el).data("color");
-            $("#input__val").val(color__attribute);
-            $("#color__style").css("background", color__data);
-        })
-
+    $('.select-sort').select2({
+      minimumResultsForSearch: -1,
+      templateResult: function (item) {
+        var $span = $("<img src='" + $(item.element).data('image') + "'/> <span>" + item.text + "</span>");
+        return $span;
+      },
+      templateSelection: function (item) {
+        //console.log(item.element.dataset.image);
+        var $span = $("<img src='"+ item.element.dataset.image +"'/> <span>" + item.text + "</span>");
+        return $span;
+      }
+    });
+    $('.select-sort').change(function(){
+      let val_select = $('.select-sort').find(":selected").val();
+      let image_select = $('.select-sort').find(":selected").data('image');
+      $('.sorting-selected-js span').text(val_select);
+      $('.sorting-selected-js img').text(image_select);
     });
 });
+
+$(function () {
+  $(document).on('click', '.mobile-sort-item-js' , function() {
+    let sort_name = $(this).data('sortname');
+    let sort_image = $(this).data('sortimage');
+    //let sort_val = $(this).data('val');
+    $('.sorting-selected-js span').text(sort_name);
+    $('.sorting-selected-js img').attr('src' , sort_image);
+    //console.log(sort_val);
+    $('.select-sort').val(sort_name);
+    $('.select-sort').trigger('change');
+    $.magnificPopup.close();
+  })
+});
+/*
+$('body').on('swipeup swipedown', function(){
+  if ($(window).width() < 993) {
+    $.magnificPopup.close();
+  }
+});*/
+
+(function () {
+  // initializes touch and scroll events
+      var supportTouch = $.support.touch,
+          scrollEvent = "touchmove scroll",
+          touchStartEvent = supportTouch ? "touchstart" : "mousedown",
+          touchStopEvent = supportTouch ? "touchend" : "mouseup",
+          touchMoveEvent = supportTouch ? "touchmove" : "mousemove";
+  
+      // handles swipeup and swipedown
+      $.event.special.swipeupdown = {
+          setup: function () {
+              var thisObject = this;
+              var $this = $(thisObject);
+  
+              $this.bind(touchStartEvent, function (event) {
+                  var data = event.originalEvent.touches ?
+                          event.originalEvent.touches[ 0 ] :
+                          event,
+                      start = {
+                          time: (new Date).getTime(),
+                          coords: [ data.pageX, data.pageY ],
+                          origin: $(event.target)
+                      },
+                      stop;
+  
+                  function moveHandler(event) {
+                      if (!start) {
+                          return;
+                      }
+  
+                      var data = event.originalEvent.touches ?
+                          event.originalEvent.touches[ 0 ] :
+                          event;
+                      stop = {
+                          time: (new Date).getTime(),
+                          coords: [ data.pageX, data.pageY ]
+                      };
+  
+                      // prevent scrolling
+                      if (Math.abs(start.coords[1] - stop.coords[1]) > 10) {
+                          event.preventDefault();
+                      }
+                  }
+  
+                  $this
+                      .bind(touchMoveEvent, moveHandler)
+                      .one(touchStopEvent, function (event) {
+                          $this.unbind(touchMoveEvent, moveHandler);
+                          if (start && stop) {
+                              if (stop.time - start.time < 1000 &&
+                                  Math.abs(start.coords[1] - stop.coords[1]) > 30 &&
+                                  Math.abs(start.coords[0] - stop.coords[0]) < 75) {
+                                  start.origin
+                                      .trigger("swipeupdown")
+                                      .trigger(start.coords[1] > stop.coords[1] ? "swipeup" : "swipedown");
+                              }
+                          }
+                          start = stop = undefined;
+                      });
+              });
+          }
+      };
+  
+  //Adds the events to the jQuery events special collection
+      $.each({
+          swipedown: "swipeupdown",
+          swipeup: "swipeupdown"
+      }, function (event, sourceEvent) {
+          $.event.special[event] = {
+              setup: function () {
+                  $(this).bind(sourceEvent, $.noop);
+              }
+          };
+          //Adds new events shortcuts
+          $.fn[ event ] = function( fn ) {
+              return fn ? this.bind( event, fn ) : this.trigger( event );
+          };
+          // jQuery < 1.8
+          if ( $.attrFn ) {
+              $.attrFn[ event ] = true;
+          }
+      });
+  
+  })();
