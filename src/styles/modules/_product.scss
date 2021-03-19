@@ -631,6 +631,7 @@ input[type=number] {
 .palette-color {
   .img__item {
     max-width: 33%;
+    flex-basis: 30%;
     &:not(:nth-child(8n+8)) {
       margin-right: 0;
     }

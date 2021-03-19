@@ -18,7 +18,7 @@ body{
 //mainpage-products
 .mainpage-products__item{
 	border-radius: 2px;
-	flex: 0 0 calc(50% - 2.4rem);
+	flex-basis:calc(50% - 2.4rem);
 	max-width: calc(50% - 2.4rem);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -34,6 +34,7 @@ body{
 .mainpage-products{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin: -1.2rem;
 	padding-bottom: 8rem;
 	@include bp-md{

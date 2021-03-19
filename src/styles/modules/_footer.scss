@@ -8,6 +8,9 @@
 	max-width: 1440px;
 	margin: auto;
 	padding: 0 12rem;
+	@include bp-md {
+		padding: 0 1.6rem;
+	}
 }
 .footer__row{
 	display: flex;
