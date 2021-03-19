@@ -1,5 +1,5 @@
 $(function () {
-  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .category-modal , .palette__modal,.color__modal').magnificPopup({
+  $('.location-modal, .call-us-modal, .login-modal, .sorting-modal, .category-modal , .palette__modal,.color__modal, .filters-modal').magnificPopup({
     type: 'inline',
     preloader: false,
     removalDelay: 500, 

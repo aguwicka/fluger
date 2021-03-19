@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+    body
+        include ../common/mixins
+        include ../common/header
+        .main-wrapper
+            include ../common/prev.pug
+
+            section
+                aside
+                    h2.pre-palette
+                        | Подбор цвета
+                    h4.size-4.palette__name
+                        | Выберите каталог цветов
+                    ul.menu__catalog.palette-first
+                        li.menu__catalog__item
+                            a.size-6.palette-active(href="#")
+                                | Моя палитра
+                                p
+                                    | Избранные цвета
+                        li.menu__catalog__item
+                            a.size-6(href="#")
+                                | Flugger 900
+                                p
+                                    | Дизайнерские цвета
+                        li.menu__catalog__item
+                            a.size-6(href="#")
+                                | Flugger 900
+                                p
+                                    | Избранные цвета
+                        li.menu__catalog__item
+                            a.size-6(href="#")
+                                | Flugger 900
+                                p
+                                    | Избранные цвета
+                        li.menu__catalog__item
+                            a.size-6(href="#")
+                                | Для пола
+                                p
+                                    | Flugger 900
+                        li.menu__catalog__item
+                            a.size-6(href="#")
+                                | Для потолка
+                                p
+                                    | Flugger 900
+                        li.menu__catalog__item
+                            a.size-6(href="#")
+                                | Для стен
+                                p
+                                    | Flugger 900
+                        li.menu__catalog__item
+                            a.size-6(href="#")
+                                | Для шпатлевания
+                                p
+                                    |Flugger 900
+        include ../common/footer.pug

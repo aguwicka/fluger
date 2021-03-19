@@ -220,6 +220,7 @@
     .mobile__left {
       margin-left: auto;
       display: flex;
+      align-items: center;
       .person__mobile {
         margin-right: 3.1rem;
       }
@@ -275,7 +276,7 @@
   margin-top: 1rem;
   display: none;
   position: absolute;
-  background: #fff;
+  background: #F5F5F5;
   width: 100%;
   z-index: 10;
   left: 0;
@@ -287,6 +288,7 @@
 
 .nav-list {
   list-style: none;
+  background: #fff;
 }
 
 .nav-list-item {
@@ -388,4 +390,16 @@ a, button, input, textarea {
 
 input , textarea {
   cursor: revert !important;
+}
+
+.desktop-d {
+  @include bp-md {
+    display: none;
+  }
+}
+.mobile-d {
+  display: none;
+  @include bp-md {
+    display: block;
+  }
 }

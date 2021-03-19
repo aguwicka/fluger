@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        block title
+            title webpack Project
+    body
+        include ../common/mixins
+        include ../common/header
+        .main-wrapper
+            include ../common/prev.pug
+
+            section
+                h2.pre-palette
+                    |Flugger 696
+                h4.size-4.palette__name
+                    | Выберите палитру
+                .palette-wrap
+                    a.palette-item(href="#")
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+                    .palette-item
+                        img(src="/src/assets/images/cat-bg.svg")
+
+        include ../common/footer.pug

@@ -44,12 +44,13 @@ html(lang="en")
                                     a.size-5(href="#")
                                         | Палитра
                             .product__color
-                                img(src="/src/assets/images/white-circle.svg")
+                                .row__color-coloblock.product__color-row
+                                    span.row__color-coloblock-item
+                                        #color__styles.color_block(style="background: #FFFFFF;")
                                 .product__item
                                     .item__number.size-5
                                         | № по каталогу
-                                    .item__color.size-5
-                                        | Белый
+                                    input#input__value.item__color.size-5(type="search" placeholder="Белый")
                             .product__size
                                 p.size-4
                                     | Объем
