@@ -11,18 +11,17 @@
   }
 }
 .contact-info {
-  display:grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  display:flex;
   margin-bottom: 64px;
   @media screen and (max-width:768px) {
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
     margin-bottom: 48px;
   }
   &__inquiry-office {
-    padding-right: 16.6%;
-    @media screen and (max-width:500px) {
-      padding-right: 0;
-      margin-bottom:48px;
+    flex-basis: 41%;
+    margin-right: 10.2rem;
+    @include bp-md {
+      flex-basis: 100%;
     }
     &__title {
       font-family: PT Sans;
@@ -87,13 +86,11 @@
 
   }
   &__imgblock {
+    flex-basis: 30%;
     padding-top:15px;
-    @media screen and (max-width:500px) {
-      padding-top: 0;
-      margin-bottom: 24px;
-      &:last-child {
-        margin-bottom: 0;
-      }
+    @include bp-md {
+      flex-basis: 100%;
+      margin-top: 2.4rem;
     }
     &__item {
       &__image{
