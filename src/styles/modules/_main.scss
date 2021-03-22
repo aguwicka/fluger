@@ -95,8 +95,7 @@ body{
 	}
 	.mainpage-aboutus__text-wrap,
 	.mainpage-aboutus__img-wrap{
-		flex: 0 0 calc(50% - 2.4rem);
-		max-width: calc(50% - 2.4rem);
+		flex-basis: 50%;
 		margin: 1.2rem;
 		@include bp-md{
 			flex: 0 0 calc(100% - 2.4rem);

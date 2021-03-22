@@ -181,9 +181,11 @@
   display: flex;
   flex-direction: row;
 
+
   label {
     display: flex;
     cursor: pointer;
+    position: relative;
     @include bp-md {
       align-items: center;
     }
@@ -195,10 +197,11 @@
   /* simulate radiobutton appearance using pseudoselector */
   input[type="radio"] + label:before {
     content: "";
-    /* create custom radiobutton appearance */
     display: inline-block;
-    width: 1.8rem;
-    height: 1rem;
+    position: absolute;
+    /* create custom radiobutton appearance */
+    width: 1.1rem;
+    height: 1.1rem;
     padding: 3px;
     margin-right: 1rem;
     /* background-color only for content */
@@ -206,9 +209,6 @@
     border: 1px solid #DDDDDD;
     background-color: #fff;
     border-radius: 50%;
-    @include bp-md {
-      height: 1.8rem;
-    }
   }
 
   /* appearance of checked radiobutton */
@@ -218,6 +218,7 @@
 
 }
 .delivery__content {
+  margin-left: 3.2rem;
   span {
     color: $color1;
   }
@@ -342,6 +343,7 @@
   }
 }
 .checkout__accept {
+  cursor: pointer;
   .aside-filters-input ~ .aside-filters-label {
     align-items: flex-start;
   }
