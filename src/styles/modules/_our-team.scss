@@ -1,5 +1,8 @@
 .our-team-wrap {
 	margin-bottom:124px;
+	@include bp-md {
+		margin-bottom: 0;
+	}
 	&__title {
 		font-family: PT Sans;
 		font-style: normal;

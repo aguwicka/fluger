@@ -24,21 +24,13 @@ $(function () {
   });
 });
 
-$("body").on('focusin', "input[name='tel'], input[name='login_tel']", function () {
+$("body").on('focusin', "input[name='tel'], input[name='login_tel'], input[name='phone']", function () {
   $(this).inputmask('mask', { mask: "+79{*}", greedy: false});
 });
 
+
+
 function slidersOnMainP(){
- $(".mainpage-carousel").owlCarousel({
-  loop: false,
-  items:1,
-  center: true, 
-  nav: false,
-  dots: true,
-  autoplay: true,
-  autoHeight: true,
-  margin: 20,
-});
  $(".mainpage-news__inner").owlCarousel({
   responsive:{
     0:{
@@ -131,6 +123,7 @@ $(function () {
     slidersOnMainP();
 
 });
+
 
 //toggle mobile menu
 let toggleButton = document.querySelector('.toggle-menu');
@@ -340,3 +333,21 @@ $('.plus').click(function () {
     $input.change();
     return false;
 });
+
+//palette hover class
+$('.popup__color-item').hover(
+    function(){$(this).toggleClass('active__palette');}
+);
+
+import  Slider from './slider';
+
+
+$(() => {
+    console.log('12345');
+    Slider.getInstance('banner', '.banner .slider.owl-carousel');
+});
+
+
+
+
+

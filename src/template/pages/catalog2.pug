@@ -16,7 +16,7 @@ html(lang="en")
             .catalog__wrapper
                 section
                     aside.aside-menu
-                        h4.size-5.catalog__name
+                        h4.size-5.catalog__name.catalog__name-lvl2
                             |Для работы в помещениях
                         ul.menu__catalog
                             li.menu__catalog__item.menu__catalog__active
@@ -125,7 +125,7 @@ html(lang="en")
                           label.aside-filters-label(for="tag-2") Новинки
                       a.btn.btn--green(href="#") Применить фильтр
                 .catalog__content.catalog__content-sec-levl
-                    h2.size-2.catalog_content__name
+                    h1.size-2.catalog_content__name
                         |Для влажных помещений
                     .catalog-sort-wrap
                       label(for="select-tag") Сортировать
@@ -237,7 +237,7 @@ html(lang="en")
                                   input.aside-filters-input(type="checkbox" value="Новинки" name="base" id="tag-2")
                                   label.aside-filters-label(for="tag-2") Новинки
                             
-                            input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
+                            input.btn.btn-primary.btn-call.size-4(type="submit" value="Применить фильтр")
                       a.sorting-modal.sorting-selected-js(href="#sort-modal")
                         img(src="/src/assets/images/sort-down.svg")
                         span
@@ -264,7 +264,9 @@ html(lang="en")
                               |Сначала дешевые
                     .catalog-products
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog1.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Dekso-plast MS 15
                           span.catalog-products__small-title Краска антигрибковая
@@ -285,7 +287,9 @@ html(lang="en")
                             .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog2.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Dekso 25
                           span.catalog-products__small-title Краска антигрибковая
@@ -305,7 +309,9 @@ html(lang="en")
                             .catalog-products__price 2 500  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog3.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Dekso 5
                           span.catalog-products__small-title Краска антигрибковая
@@ -326,7 +332,9 @@ html(lang="en")
                             .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog4.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Flutex 5
                           span.catalog-products__small-title Краска антигрибковая
@@ -346,7 +354,9 @@ html(lang="en")
                             .catalog-products__price 2 500  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog5.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Interior Fix Primer
                           span.catalog-products__small-title Краска антигрибковая
@@ -367,7 +377,9 @@ html(lang="en")
                             .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog6.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Interior Stop Primer
                           span.catalog-products__small-title Краска антигрибковая
@@ -387,7 +399,9 @@ html(lang="en")
                             .catalog-products__price 2 500  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog7.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Flutex 5
                           span.catalog-products__small-title Краска антигрибковая
@@ -407,7 +421,9 @@ html(lang="en")
                             .catalog-products__price 2 500  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog7.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Flugger 30
                           span.catalog-products__small-title Краска антигрибковая
@@ -428,7 +444,9 @@ html(lang="en")
                             .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog9.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title HB Expert Yellow
                           span.catalog-products__small-title Кисть из смешанной белой щетины
@@ -438,7 +456,9 @@ html(lang="en")
                             .catalog-products__price 250  ₽
                           a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
                       .catalog-products__item
-                        .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog10.png')")
+                        .catalog-products__img-wrap
+                          img(src="/src/assets/images/pic-catalog.png")
+                          img.product__item-color(src="/src/assets/images/Palette.svg")
                         .catalog-products__text-wrap
                           h4.catalog-products__title Dekso 5
                           span.catalog-products__small-title Краска антигрибковая

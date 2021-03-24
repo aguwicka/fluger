@@ -9,10 +9,12 @@ html(lang="en")
         include ../common/mixins
         include ../common/header
         .main-wrapper
-            include ../common/prev.pug
+            .wrapper-prev
+                a.wrapper-prev__link
+                    | Назад к выбору палитры
 
             section
-                h2.pre-palette
+                h1.pre-palette
                     |Выберите цвет
                 .color__items.palette-color
                     a.img__item.popup-modal-dismiss(href="#")

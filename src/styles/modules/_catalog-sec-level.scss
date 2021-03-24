@@ -27,11 +27,7 @@ input:focus {outline: 0}
 }
 
 .catalog-products__img-wrap{
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 22rem;
-	height: 20rem;
+	position: relative;
 	@include bp-sm{
 		display: inline-block;
 		vertical-align: top;
@@ -40,7 +36,30 @@ input:focus {outline: 0}
 		max-width: 100%;
 		background-size: contain;
 	}
+	img {
+		width: 22rem;
+		@include bp-md {
+			width: 100%;
+		}
+	}
+
+	.product__item-color {
+		width: auto !important;
+		position: absolute;
+		left: 1rem;
+		bottom: 2rem;
+		display: none;
+		@include bp-md {
+			left: 0;
+			bottom: 1rem;
+		}
+	}
+	.product__item-active {
+		display: block;
+	}
 }
+
+
 .catalog-products__title{
 	color: $color2;
 	font-size: 2.4rem;
@@ -228,6 +247,12 @@ input:focus {outline: 0}
 		transition: all .2s;
 	}
 	border: .2rem solid #DDDDDD;
+	&:hover {
+		background: #152248;
+		svg {
+			fill: #fff;
+		}
+	}
 }
 .aside-filters{
 	margin-top: 1.8rem;
@@ -259,7 +284,7 @@ input:focus {outline: 0}
 	padding: 1.2rem 3rem;
 	width: 100%;
 	display: none;
-	border: .27rem solid $color3;
+	border: .2rem solid $color3;
 	border-radius: .2rem;
 	text-align: center;
 	@include bp-md{
@@ -278,17 +303,16 @@ input:focus {outline: 0}
 	a{
 		color: $color3;
 	}
-	&:after{
-		content: "";
-    position: absolute;
-    left: -0.9rem;
-    background-image: url(/src/assets/images/arrow-show.png);
-    width: 1rem;
-    height: 1.5rem;
-    bottom: 2rem;
-    z-index: 10;
-		background-size: contain;
-		background-repeat: no-repeat;
+	&:before, &:after{
+		content: '';
+		position: absolute;
+		left: -20px; bottom: 20px;
+		border: 10px solid transparent;
+		border-right: 10px solid #429471;
+	}
+	&:after {
+		border-right: 10px solid white;
+		left:-17px;
 	}
 }
 .catalog-sec-lev aside{

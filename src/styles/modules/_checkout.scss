@@ -144,7 +144,13 @@
 
   p {
     color: $color4;
+
     margin-bottom: .4rem;
+  }
+
+  span {
+    margin-left: .5rem;
+    color: #CF2520;
   }
 
   input {
@@ -164,6 +170,10 @@
   input[name="name"] {
     margin-right: 0;
   }
+}
+.span-error {
+  margin-left: .5rem;
+  color: #CF2520;
 }
 .first__radio__item {
   @include bp-md {
@@ -221,6 +231,7 @@
   margin-left: 3.2rem;
   span {
     color: $color1;
+    margin-left: 0;
   }
   p {
     margin-top: 1.5rem;
@@ -238,6 +249,9 @@
       font-weight: 700;
     }
   }
+}
+.town__input {
+  margin-right: 0;
 }
 .input__address {
   margin-right: 2.4rem;
@@ -456,4 +470,16 @@
       text-align: center;
     }
   }
+}
+
+input[name="phone"], input[name="address"]{
+  &::placeholder {
+    color: #DDDDDD;
+    font-size: 1.6rem;
+  }
+}
+
+input, textarea {
+  font: 400 1.6rem $mainFont;
+  color: #333;
 }

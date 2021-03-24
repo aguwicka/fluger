@@ -11,7 +11,7 @@ html(lang="en")
         include ../common/header
         .main-wrapper
             include ../common/prev.pug
-            h2.size-2
+            h1.size-2.product__name
                 | FLUGGER Interior High Finish 90
             .product__wrapper
                 .product__content
@@ -34,6 +34,8 @@ html(lang="en")
                     .content__title.content__title__mobile
                         h2.size-3
                             | Стоимость 267 ₽ / м
+                            sup
+                                |2
                     .product__aside.mobile__product__aside
                         .aside__wrap
                             .product__title__wrap
@@ -151,6 +153,8 @@ html(lang="en")
                         .content__title
                             h2.size-3
                                 |Стоимость 267 ₽ / м
+                                sup
+                                    |2
                             .badge__img
                                 img(src="/src/assets/images/badge1.svg")
                                 img(src="/src/assets/images/badge2.svg")
@@ -176,6 +180,8 @@ html(lang="en")
                                             |Расход
                                         .table__item__desc
                                             |167 ₽ / м
+                                            sup
+                                                |2
                                     .table__item.size-5
                                         .table__item__name
                                             | Время высыхания
@@ -291,24 +297,230 @@ html(lang="en")
                                                             img(src="/src/assets/images/search-modal.svg")
                                                         input.modal__search(type="search" placeholder="Поиск по номеру")
                                         .palette__items
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
-                                            a.cat__item.color__modal(href="#color__modal")
-                                                img.cat__palette(src="/src/assets/images/cat-bg.svg")
+                                            .popup__color-item
+                                                a.cat__item.color__modal(href="#color__modal")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1311.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1312.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1313.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1314.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1315.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1316.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1317.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1318.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1321.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1322.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1323.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1324.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1325.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1326.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1327.png")
+                                            .popup__color-item
+                                                a.cat__item.color__modal(href="#color__modal")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1311.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1312.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1313.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1314.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1315.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1316.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1317.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1318.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1321.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1322.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1323.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1324.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1325.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1326.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1327.png")
+                                            .popup__color-item
+                                                a.cat__item.color__modal(href="#color__modal")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1311.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1312.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1313.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1314.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1315.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1316.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1317.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1318.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1321.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1322.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1323.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1324.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1325.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1326.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1327.png")
+                                            .popup__color-item
+                                                a.cat__item.color__modal(href="#color__modal")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1311.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1312.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1313.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1314.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1315.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1316.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1317.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1318.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1321.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1322.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1323.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1324.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1325.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1326.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1327.png")
+                                            .popup__color-item
+                                                a.cat__item.color__modal(href="#color__modal")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1311.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1312.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1313.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1314.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1315.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1316.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1317.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1318.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1321.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1322.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1323.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1324.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1325.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1326.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1327.png")
+                                            .popup__color-item
+                                                a.cat__item.color__modal(href="#color__modal")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1311.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1312.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1313.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1314.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1315.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1316.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1317.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1318.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1321.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1322.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1323.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1324.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1325.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1326.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1327.png")
+                                            .popup__color-item
+                                                a.cat__item.color__modal(href="#color__modal")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1311.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1312.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1313.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1314.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1315.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1316.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1317.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1318.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1321.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1322.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1323.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1324.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1325.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1326.png")
+                                                    span.cat__item-segment
+                                                        img(src="/src/assets/images/fl_1327.png")
                                         .modal__warning
                                             img(src="/src/assets/images/warning-modal.svg")
                                             p.size-6
@@ -324,7 +536,7 @@ html(lang="en")
                                             a.back__modal.palette__modal(href="#palette__modal")
                                                 img(src="/src/assets/images/back-modal.svg")
                                                 span.size-5
-                                                    | Назад к выбору каталога
+                                                    | Назад к выбору палитре
                                             .search__modal-wrap
                                                 form
                                                     .search-wrap
@@ -334,6 +546,107 @@ html(lang="en")
                                         .color__items
                                             a.img__item.popup-modal-dismiss(href="#")
                                                 img.cat__palette(src="/src/assets/images/color-modal-bg.svg" data-color="#000")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss.palette__usefull(href="#")
+                                                .cat__pol__wrap
+                                                    img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                    .polette__dismiss
+                                                        img(src="/src/assets/images/ban.svg")
+                                                        p.size-6
+                                                            |Не доступен
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                                                div.item__name.size-6
+                                                    | FL P1533
+                                            a.img__item.popup-modal-dismiss(href="#")
+                                                img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
                                                 div.item__name.size-6
                                                     | FL P1533
                                             a.img__item.popup-modal-dismiss(href="#")

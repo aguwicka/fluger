@@ -133,30 +133,23 @@ aside {
     width: calc(33% - 1.4rem);
     height: 20rem;
     border-radius: 2px;
-    background-image: url('/src/assets/images/catalog-image.png');
+    position: relative;
+    transition: .3s;
+    &:before {
+      content: '';
+      display: none;
+      width: 100%;
+      height: 100%;
+      position:absolute;
+      left:0;
+      top:0;
+      background-color: rgba(25, 44, 90, .6);
+    }
+    &:hover:before {
+      display: block;
+    }
     @include bp-md {
       width: 100%;
-    }
-    &:nth-child(2) {
-      background-image: url('/src/assets/images/grunt.png');
-    }
-    &:nth-child(3) {
-      background-image: url('/src/assets/images/derevo.png');
-    }
-    &:nth-child(4) {
-      background-image: url('/src/assets/images/metal.png');
-    }
-    &:nth-child(5) {
-      background-image: url('/src/assets/images/pol.png');
-    }
-    &:nth-child(6) {
-      background-image: url('/src/assets/images/catalog-image.png');
-    }
-    &:nth-child(7) {
-      background-image: url('/src/assets/images/sten.png');
-    }
-    &:nth-child(8) {
-      background-image: url('/src/assets/images/shpatle.png');
     }
 
     &:not(:nth-child(3n)) {
@@ -171,6 +164,12 @@ aside {
       margin-bottom: 1.6rem;
       color: #fff;
       font-weight: 700;
+      z-index: 2;
     }
   }
+}
+
+.catalog__name-lvl2 {
+  color: #192C5A;
+  font-weight: 400;
 }

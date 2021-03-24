@@ -109,6 +109,7 @@ body{
 	}
 }
 .mainpage-aboutus__text{
+	margin-bottom: 2.4rem;
 	font-size: 1.6rem;
 	color: $color4;
 	max-width: 50rem;
@@ -126,7 +127,11 @@ body{
 	margin-top: 2.4rem;
 	font-size: 1.6rem;
 	color: $color2;
-	display: block;
+	&:hover {
+		border-bottom: 1px dashed #192C5A;
+		color: #192C5A;
+	}
+
 	@include bp-md{
 		font-size: 1.4rem;
 	}

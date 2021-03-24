@@ -10,7 +10,7 @@ html(lang="en")
     include ../common/header
     .main-wrapper
       include ../common/prev.pug
-      h2.size-2.catalog_content__name.mob__name
+      h1.size-2.catalog_content__name.mob__name
         | Для работы в помещениях
       .catalog__wrapper
         section.catalog__aside
@@ -52,30 +52,30 @@ html(lang="en")
           h2.size-2.catalog_content__name
             |Для работы в помещениях
           .catalog__products
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/catalog-image.png');")
               p.size-3
                 | Для влажных
                 br
                 | помещений
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/grunt.png');")
               p.size-3
                 |Для грунтования
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/derevo.png');")
               p.size-3
                 |Для дерева и мебели
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/metal.png');")
               p.size-3
                 |Для металла
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/pol.png');")
               p.size-3
                 |Для пола
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/catalog-image.png');")
               p.size-3
                 |Для потолка
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/sten.png');")
               p.size-3
                 |Для стен
-            a(href="#").catalog__products__item
+            a(href="#").catalog__products__item(style="background-image: url('/src/assets/images/shpatle.png');")
               p.size-3
                 |Для шпатлевания
 
@@ -93,105 +93,7 @@ html(lang="en")
                   option(val="for-price-asc", data-image="/src/assets/images/sort-up.svg")
                     | Сначала дешевые
             .catalog-sec-lev-top
-              a.filters-modal(href="#filters-modal") Фильтр (4)
-              .white-popup-block.mfp-hide#filters-modal
-                .location__wrapper.sorting__wrapper
-                  .tittle__wrap
-                    .size-4.tittle__wrap--title
-                      | Фильтр
-                    a.popup-modal-dismiss
-                      img(src="/src/assets/images/Close-thick.svg")
-                  form
-                    h3.size-5
-                      | Свойства
-                    .sort__wrap
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Адгезионная" name="properties" id="prop-1" checked)
-                        label.aside-filters-label(for="prop-1")
-                          | Адгезионная
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Антибактериальная" name="properties" id="prop-2")
-                        label.aside-filters-label(for="prop-2")
-                          | Антибактериальная
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Блокирующие пятна" name="properties" id="prop-3" checked)
-                        label.aside-filters-label(for="prop-3")
-                          | Блокирующие пятна
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Влагостойкая" name="properties" id="prop-4")
-                        label.aside-filters-label(for="prop-4")
-                          | Блокирующие пятна
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Водоустойчивая" name="properties" id="prop-5")
-                        label.aside-filters-label(for="prop-5")
-                          | Водоустойчивая
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Декоративная" name="properties" id="prop-6" checked)
-                        label.aside-filters-label(for="prop-6")
-                          | Декоративная
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Резистентная" name="properties" id="prop-7")
-                        label.aside-filters-label(for="prop-7")
-                          | Резистентная
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Универсальная" name="properties" id="prop-8")
-                        label.aside-filters-label(for="prop-8")
-                          | Универсальная
-                    h3.size-5
-                      | Основа
-                    .sort__wrap
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Акриловая" name="prop" id="propid-1" checked)
-                        label.aside-filters-label(for="propid-1")
-                          | Акриловая
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Латексная" name="prop" id="propid-2")
-                        label.aside-filters-label(for="propid-2")
-                          | Латексная
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Латексная" name="prop" id="propid-5")
-                        label.aside-filters-label(for="propid-5")
-                          | Латексная
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Эмульсионно-силикатная" name="prop" id="propid-6" checked)
-                        label.aside-filters-label(for="propid-6")
-                          | Эмульсионно-силикатная
-                    h3.size-5
-                      | Степень глянца
-                    .sort__wrap
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Глянцевая" checked="checked" name="base" id="gloss-deg-1")
-                        label.aside-filters-label(for="gloss-deg-1") Глянцевая
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Матовая" name="base" id="gloss-deg-2")
-                        label.aside-filters-label(for="gloss-deg-2") Матовая
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Полуглянцевая" checked="checked" name="base" id="gloss-deg-3")
-                        label.aside-filters-label(for="gloss-deg-3") Полуглянцевая
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Полуматовая" name="base" id="gloss-deg-4")
-                        label.aside-filters-label(for="gloss-deg-4") Полуматовая
-                    h3.size-5
-                      | Класс истирания
-                    .sort__wrap
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Класс 1" checked="checked" name="base" id="erase-class-1")
-                        label.aside-filters-label(for="erase-class-1") Класс 1
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Класс 2" name="base" id="erase-class-2")
-                        label.aside-filters-label(for="erase-class-2") Класс 2
-                    h3.size-5
-                      | Метка
-                    .sort__wrap
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Популярные" name="base" id="tag-1")
-                        label.aside-filters-label(for="tag-1") Популярные
-                      .aside-filters-input-wrap
-                        input.aside-filters-input(type="checkbox" value="Новинки" name="base" id="tag-2")
-                        label.aside-filters-label(for="tag-2") Новинки
-
-                    input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
-              a.sorting-modal.sorting-selected-js(href="#sort-modal")
+              a.sorting-modal.sorting-selected-js.sorting-levl1(href="#sort-modal")
                 img(src="/src/assets/images/sort-down.svg")
                 span
                   | Сначала популярные
@@ -217,7 +119,9 @@ html(lang="en")
                       | Сначала дешевые
             .catalog-products
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog1.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Dekso-plast MS 15
                   span.catalog-products__small-title Краска антигрибковая
@@ -238,7 +142,9 @@ html(lang="en")
                     .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog2.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Dekso 25
                   span.catalog-products__small-title Краска антигрибковая
@@ -258,7 +164,9 @@ html(lang="en")
                     .catalog-products__price 2 500  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog3.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Dekso 5
                   span.catalog-products__small-title Краска антигрибковая
@@ -279,7 +187,9 @@ html(lang="en")
                     .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog4.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Flutex 5
                   span.catalog-products__small-title Краска антигрибковая
@@ -299,7 +209,9 @@ html(lang="en")
                     .catalog-products__price 2 500  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog5.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Interior Fix Primer
                   span.catalog-products__small-title Краска антигрибковая
@@ -320,7 +232,9 @@ html(lang="en")
                     .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog6.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Interior Stop Primer
                   span.catalog-products__small-title Краска антигрибковая
@@ -340,7 +254,9 @@ html(lang="en")
                     .catalog-products__price 2 500  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog7.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Flutex 5
                   span.catalog-products__small-title Краска антигрибковая
@@ -360,7 +276,9 @@ html(lang="en")
                     .catalog-products__price 2 500  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog7.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Flugger 30
                   span.catalog-products__small-title Краска антигрибковая
@@ -381,7 +299,9 @@ html(lang="en")
                     .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog9.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title HB Expert Yellow
                   span.catalog-products__small-title Кисть из смешанной белой щетины
@@ -391,7 +311,9 @@ html(lang="en")
                     .catalog-products__price 250  ₽
                   a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
               .catalog-products__item
-                .catalog-products__img-wrap(style="background-image: url('/src/assets/images/catalog10.png')")
+                .catalog-products__img-wrap
+                  img(src="/src/assets/images/pic-catalog.png")
+                  img.product__item-color.product__item-active(src="/src/assets/images/Palette.svg")
                 .catalog-products__text-wrap
                   h4.catalog-products__title Dekso 5
                   span.catalog-products__small-title Краска антигрибковая
@@ -425,4 +347,4 @@ html(lang="en")
                 .next.active <svg width="13" height="23" viewBox="0 0 13 23" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11.9966L3.0969 0.993107L0.867015 3L8.96391 11.9966L0.867015 20.9931L3.0969 23L13 11.9966Z"/>
                   </svg>
-      include ../common/footer
+    include ../common/footer

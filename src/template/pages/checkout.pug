@@ -12,7 +12,7 @@ html(lang="en")
         .main-wrapper
             include ../common/prev.pug
             .title__wrapper
-                h2.size-2
+                h1.size-2
                     |Оформление заказа
                 ul
                     li.size-6
@@ -35,31 +35,43 @@ html(lang="en")
                             .form__item
                                 .form__item__input.item__left
                                     p.size-5
-                                        |Фамилия *
+                                        |Фамилия
+                                        span
+                                            |*
                                     input(type="text" name="surname")
                                 .form__item__input.item__right
                                     p.size-5
-                                        | Имя *
+                                        | Имя
+                                        span
+                                            | *
                                     input(type="text" name="name")
                             .form__item
                                 .form__item__input.item__left
                                     p.size-5
-                                        | Email *
+                                        | E-mail
+                                        span
+                                            |*
                                     input(type="text" name="mail")
                                 .form__item__input.item__right
                                     p.size-5
-                                        | Телефон *
-                                    input(type="text" name="phone")
+                                        | Телефон
+                                        span
+                                            |*
+                                    input(type="text" name="phone" placeholder="+7 (910) 123-45-67")
                     h3.checkout__title.size-3
                         |Доставка
                     .checkout__input__wrap
                         .form__item
-                            .form__item__input.item__left
+                            .form__item__input.item__left.town__input
                                 p.size-5
-                                    | Город *
+                                    | Город
+                                    span
+                                        |*
                                 input(type="text" name="city" placeholder="Новосибирск, Новосибирская область, Россия")
                         p.size-5.check__title
-                            |Способ доставки *
+                            |Способ доставки
+                            span.span-error
+                                |*
                             .form__item
                                 .form__item__input.radio__input.first__radio__item
                                     input#city1(type="radio" name="check__city" checked)
@@ -80,11 +92,11 @@ html(lang="en")
                                     label(for="city2")
                                         .delivery__content.size-6
                                             span
-                                                | Курьером по Новосибирску
+                                                | Самовывоз
                                             p
-                                                | Доставка осуществляется в течение трех дней, не считая день заказа. Выходные не учитываются.
+                                                | Вы можете самостоятельно забрать заказ из нашего магазина
                                             p
-                                                | Срок доставки до 3 дней
+                                                | Срок доставки до 1 дня
                                             p
                                                 |Стоимость
                                                 span
@@ -92,11 +104,15 @@ html(lang="en")
                             .form__item
                                 .form__item__input.input__address
                                     p.size-5
-                                        | Адрес *
-                                    input(type="text" name="address")
+                                        | Адрес
+                                        span
+                                            |*
+                                    input(type="text" name="address" placeholder="Улица, дом, квартира / офис")
                                 .form__item__input.input__index
                                     p.size-5
-                                        | Индекс *
+                                        | Индекс
+                                        span
+                                            |*
                                     input(type="text" name="index")
                     h3.checkout__title.size-3
                         |Платежная система
@@ -141,12 +157,16 @@ html(lang="en")
                         label.aside-filters-label.size-6(for="accept")
                             p
                                 | Я согласен(а) с правилами доставки и понимаю что не смогу отказаться от цветных красок, поскольку они
-                                | были заколерованы специально для меня *
+                                | были заколерованы специально для меня
+                                span.span-error
+                                    |*
                     .input__submit
                         a.btn-primary.size-4(href="#")
                             |Оформить
                         p.size-5
-                            |* Обязательно заполните поля со звездочкой
+                            span.span-error
+                                |*
+                            | Обязательно заполните поля со звездочкой
                 .checkout__info
                     .info__wrapper
                         .info__title

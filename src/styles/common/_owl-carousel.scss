@@ -44,66 +44,68 @@
 	}
 }
 
-.owl-theme .owl-dots .owl-dot span{
-	background: $color2;
-	border: 0.3rem solid #E5E5E5;
-	transition: all .2s;
-	margin: 0;
+.banner__slider {
+	padding-bottom: 4.6rem;
 }
-.owl-theme .owl-dots .owl-dot{
-	margin: 0.2rem 0.7rem;
+
+.slider {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: hidden
+}
+
+.slider.owl-loaded {
+	overflow: visible
+}
+
+.slider .owl-dots {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: url("/src/assets/images/sprite.svg#best_sell");
+}
+
+.slider .owl-dot {
+	position: relative;
+	display: block;
+	margin-right: 0;
+	width: 2.8rem;
+	height: 2.8rem;
 	outline: none;
-
-	border: 3px solid rgba(0,0,0,0);
-	border-radius: 50%;
-}
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span{
-	background: $color2;
-}
-.owl-theme .owl-dots .owl-dot.active {
-	transform: rotate(50deg);
-	border: 3px solid #DDDDDD;
-	animation-duration: 7s;
-	animation-name: circle;
-	animation-fill-mode: forwards;
-}
-.owl-theme .owl-dots .owl-dot.active ~ .owl-dot span{
-	background: #DDDDDD;
-}
-.owl-theme .owl-dots .owl-dot.active ~ .owl-dot:hover span{
-	background: $color2;
-}
-.owl-theme .owl-dots .owl-dot span{
-	width: 2rem;
-	height: 2rem;
-}
-.owl-theme .owl-nav.disabled+.owl-dots{
-	margin-top: 1rem;
-}
-.owl-carousel-custom__img{
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
-@keyframes circle {
-	0% {
-		border-top: 3px solid $color2;
-	}
-	33% {
-		border-top: 3px solid $color2;
-		border-right: 3px solid $color2;
-	}
-	66% {
-		border-top: 3px solid $color2;
-		border-right: 3px solid $color2;
-		border-bottom: 3px solid $color2;
-	}
-	100% {
-		border-top: 3px solid $color2;
-		border-right: 3px solid $color2;
-		border-bottom: 3px solid $color2;
-		border-left: 3px solid $color2;
-	}
+.slider .owl-dot:last-child {
+	margin-right: 0
+}
+
+.slider .owl-dot svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 28px;
+	height: 28px
+}
+
+.slider .owl-dot.active svg .bar {
+	stroke: #DDDDDD;
+	stroke-width: 2px
+}
+
+.slider .owl-dot.active svg .progress {
+	stroke: #192C5A;
+	stroke-width: 2px
+}
+
+.slider .owl-dot svg .dot {
+	fill: #DDDDDD;
+}
+.slider .owl-dot.active svg .dot {
+	fill: #192C5A;
 }

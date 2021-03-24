@@ -1,0 +1,13 @@
+{
+  "env": {
+    "node4": {
+      "presets": ["es2015-node4"]
+    },
+    "node5": {
+      "presets": ["es2015-node5"]
+    },
+    "development": {
+      "presets": ["es2015"]
+    }
+  }
+}
