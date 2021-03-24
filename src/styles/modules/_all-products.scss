@@ -3,9 +3,26 @@
 	background-color: #fff;
 	display: block;	
 	border-radius: 0.2rem;
-	padding: 5rem 3rem;	
+	padding: 5rem 3rem;
+	transition: .3s;
+	&:hover {
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	}
 	@include bp-md{
 		font-size: 1.4rem;
+	}
+}
+.all-product-wrap {
+	position: relative;
+	.product__item-color {
+		position: absolute;
+		display: none;
+		width: auto !important;
+		left: 1rem;
+		bottom: 2rem;
+	}
+	.product__item-active {
+		display: block;
 	}
 }
 .all-products__title{
