@@ -101,6 +101,7 @@
 .all-products.owl-theme .owl-nav .disabled{
 	border: 2px solid #DDDDDD;
 	opacity: 1;
+	pointer-events: none;
 	svg path{
 		fill: #DDDDDD;
 	}

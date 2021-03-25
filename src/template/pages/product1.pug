@@ -297,7 +297,7 @@ html(lang="en")
                                                             img(src="/src/assets/images/search-modal.svg")
                                                         input.modal__search(type="search" placeholder="Поиск по номеру")
                                         .palette__items
-                                            .popup__color-item
+                                            .popup__color-item.non-active
                                                 a.cat__item.color__modal(href="#color__modal")
                                                     span.cat__item-segment
                                                         img(src="/src/assets/images/fl_1311.png")
@@ -329,6 +329,10 @@ html(lang="en")
                                                         img(src="/src/assets/images/fl_1326.png")
                                                     span.cat__item-segment
                                                         img(src="/src/assets/images/fl_1327.png")
+                                                .non__active-palette
+                                                    img(src="/src/assets/images/ban.svg")
+                                                    p.size-6
+                                                        |Не доступен
                                             .popup__color-item
                                                 a.cat__item.color__modal(href="#color__modal")
                                                     span.cat__item-segment
@@ -536,7 +540,7 @@ html(lang="en")
                                             a.back__modal.palette__modal(href="#palette__modal")
                                                 img(src="/src/assets/images/back-modal.svg")
                                                 span.size-5
-                                                    | Назад к выбору палитре
+                                                    | Назад к выбору палитры
                                             .search__modal-wrap
                                                 form
                                                     .search-wrap
@@ -733,15 +737,76 @@ html(lang="en")
                                         .modal__warning
                                             img(src="/src/assets/images/warning-modal.svg")
                                             p.size-6
-                                                | Внимание: реальные цвета могут немного отличаться, от видимых на экране всвязи с искажением цветов мониторами.
+                                                | Внимание: реальные цвета могут немного отличаться от видимых на экране в связи с искажением цветов мониторами.
                         .product__color
                             .row__color-coloblock.product__color-row
                                 span.row__color-coloblock-item
                                     #color__style.color_block(style="background: #FFFFFF;")
-                            .product__item
+                            .product__item.product__autocomplete
                                 .item__number.size-5
                                     |№ по каталогу
                                 input#input__val.item__color.size-5(type="search" placeholder="Белый")
+                                .autocomplete(style="display:none")
+                                    .autocomplete__wrap-content
+                                        .autocomplete__content
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        |FL
+                                                    |1311
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        | FL
+                                                    | 1311
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        | FL
+                                                    | 1311
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        | FL
+                                                    | 1311
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        | FL
+                                                    | 1311
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        | FL
+                                                    | 1311
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        | FL
+                                                    | 1311
+                                            .autocomplete__item(data-id="" title="FL123")
+                                                .autocomplete__picture
+                                                    img(src="/src/assets/images/fl_1311.png")
+                                                .autocomplete__name
+                                                    span.autocomplete__search
+                                                        | FL
+                                                    | 1311
+                                        button.autocomplete__button.autocomplete__button--prev(type="button" title="Пред.")
+                                        button.autocomplete__button.autocomplete__button--next(type="button" title="След.")
                         .product__size
                             p.size-4
                                 | Объем
