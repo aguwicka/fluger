@@ -1,7 +1,8 @@
 
 .all-products__text-wrap{
 	background-color: #fff;
-	display: block;	
+	display: flex;
+	flex-direction: column;
 	border-radius: 0.2rem;
 	padding: 5rem 3rem;
 	transition: .3s;
@@ -27,6 +28,7 @@
 }
 .all-products__title{
 	font-family: 	$boldFont;
+	flex-grow: 1;
 	margin-top: 1rem;	
 	margin-bottom: 1rem;	
 	@include bp-md{

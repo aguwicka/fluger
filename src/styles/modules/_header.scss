@@ -118,6 +118,19 @@
   color: #fff;
 }
 
+.header__bottom_main {
+  padding-bottom: .6rem;
+
+  .bottom__wrap {
+    .nav {
+      border-bottom: 0;
+      li {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
 .header__bottom {
   margin: 0 auto;
   padding: 3rem 12rem;
