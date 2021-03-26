@@ -33,18 +33,22 @@ html(lang="en")
                     form.checkout__form
                         .checkout__input__wrap
                             .form__item
-                                .form__item__input.item__left
+                                .form__item__input.item__left.form__error-active
                                     p.size-5
                                         |Фамилия
                                         span
                                             |*
                                     input(type="text" name="surname")
+                                    p.size-7.input_error
+                                        |введите корректно данные
                                 .form__item__input.item__right
                                     p.size-5
                                         | Имя
                                         span
                                             | *
                                     input(type="text" name="name")
+                                    p.size-7.input_error
+                                        | введите корректно данные
                             .form__item
                                 .form__item__input.item__left
                                     p.size-5
@@ -52,12 +56,16 @@ html(lang="en")
                                         span
                                             |*
                                     input(type="text" name="mail")
+                                    p.size-7.input_error
+                                        | введите корректно данные
                                 .form__item__input.item__right
                                     p.size-5
                                         | Телефон
                                         span
                                             |*
                                     input(type="text" name="phone" placeholder="+7 (910) 123-45-67")
+                                    p.size-7.input_error
+                                        | введите корректно данные
                     h3.checkout__title.size-3
                         |Доставка
                     .checkout__input__wrap
@@ -68,6 +76,17 @@ html(lang="en")
                                     span
                                         |*
                                 input(type="text" name="city" placeholder="Новосибирск, Новосибирская область, Россия")
+                                p.size-7.input_error
+                                    | введите корректно данные
+                                .order__location-container
+                                    .order__location-scrollable.scrollable
+                                        .order__location-wrap.scrollable__wrapper
+                                            .order__location-list.scrollable__content
+                                                .order__location-element.size-6
+                                                    span.order__location-element-search
+                                                        |М
+                                                    |ожайск, Можайский район, Московская область, Россия
+
                         p.size-5.check__title
                             |Способ доставки
                             span.span-error
@@ -108,12 +127,16 @@ html(lang="en")
                                         span
                                             |*
                                     input(type="text" name="address" placeholder="Улица, дом, квартира / офис")
+                                    p.size-7.input_error.input__error-active
+                                        | введите корректно данные
                                 .form__item__input.input__index
                                     p.size-5
                                         | Индекс
                                         span
                                             |*
                                     input(type="text" name="index")
+                                    p.size-7.input_error
+                                        | введите корректно данные
                     h3.checkout__title.size-3
                         |Платежная система
                     .checkout__input__wrap
