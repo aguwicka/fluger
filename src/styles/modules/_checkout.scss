@@ -551,7 +551,7 @@ input, textarea {
 }
 
 .form__error-active {
-  input {
+  input, textarea {
     border: 1px solid #CF2520;
   }
   .input_error {
