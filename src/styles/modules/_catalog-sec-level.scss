@@ -28,6 +28,8 @@ input:focus {outline: 0}
 
 .catalog-products__img-wrap{
 	position: relative;
+	width: 22rem;
+	flex-shrink: 0;
 	@include bp-sm{
 		display: inline-block;
 		vertical-align: top;
@@ -36,13 +38,21 @@ input:focus {outline: 0}
 		max-width: 100%;
 		background-size: contain;
 	}
-	img {
-		width: 22rem;
+
+	.catalog__img-wrap {
+		position: relative;
+		display: block;
+		width: 100%;
 		height: 20rem;
-		cursor: pointer;
-		@include bp-md {
-			width: 100%;
-			height: auto;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: auto;
+			height: 100%;
 		}
 	}
 
@@ -125,6 +135,7 @@ input:focus {outline: 0}
 	flex-direction: column;
 	justify-content: space-between;
 	margin-left: auto;
+	flex-basis: 19rem;
 }
 .catalog-products__price{
 	font-size: 2.4rem;
