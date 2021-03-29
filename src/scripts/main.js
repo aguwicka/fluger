@@ -350,6 +350,15 @@ $(() => {
     Slider.getInstance('banner', '.banner .slider.owl-carousel');
 });
 
+//toggle product text
+$(document).ready(function(){
+    $(".button__close").click(function(){
+        $(".content__text").toggle();
+        $(this).text($(this).text() == 'Показать' ? 'Свернуть' : 'Показать');
+    });
+});
+
+
 
 
 

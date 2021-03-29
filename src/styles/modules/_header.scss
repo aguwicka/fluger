@@ -356,7 +356,7 @@
 }
 .mobile__wrap {
   background: #F5F5F5;
-  padding: 4.7rem 1.8rem;
+  padding: 4.7rem 0.8rem;
 }
 .mobile__locate {
   display: flex;
@@ -399,6 +399,11 @@
 
 .btn-basket-active {
   cursor: pointer;
+}
+
+.basket-non-active {
+  background: #DDDDDD;
+  pointer-events: none;
 }
 
 .logo__mobile {
