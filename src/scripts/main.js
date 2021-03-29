@@ -353,7 +353,7 @@ $(() => {
 //toggle product text
 $(document).ready(function(){
     $(".button__close").click(function(){
-        $(".content__text").toggle();
+        $('.content__text').toggleClass('content__close');
         $(this).text($(this).text() == 'Показать' ? 'Свернуть' : 'Показать');
     });
 });

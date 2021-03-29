@@ -28,6 +28,12 @@ input[type=number] {
   }
 }
 
+.content__close {
+  max-height: 22rem;
+  overflow: hidden;
+  transition: .3s;
+}
+
 .non-documentation {
   border-bottom: 0 !important;
 }
