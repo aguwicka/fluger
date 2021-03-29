@@ -412,7 +412,7 @@
   height: 2rem;
 }
 
-a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus {
+a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus,.btn-basket, .btn-basket-active {
   cursor: url("/src/assets/images/pointing.svg"), pointer !important;
 }
 
