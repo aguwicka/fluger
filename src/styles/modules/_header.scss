@@ -89,6 +89,8 @@
 
   .basket__link {
     margin-left: auto;
+    position: relative;
+    z-index: 1050;
   }
   &__basket {
     margin-left: auto;
@@ -395,13 +397,17 @@
   }
 }
 
+.btn-basket-active {
+  cursor: pointer;
+}
+
 .logo__mobile {
   color: #fff;
   display: flex;
   height: 2rem;
 }
 
-a, button, input, textarea {
+a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus {
   cursor: url("/src/assets/images/pointing.svg"), pointer !important;
 }
 

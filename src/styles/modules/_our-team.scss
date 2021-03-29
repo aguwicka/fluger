@@ -55,11 +55,10 @@
 					margin-bottom: 10px;
 				}
 				@media screen and (max-width:500px) {
-				    width: 27.7%;
+				    width: 8rem;
+					height: 8rem;
 					margin-right: 12px;
 					margin-bottom: 0;
-					flex-basis: 27.7%;
-					max-width: 27.7%;
 				}
 			}
 			&__content {

@@ -11,6 +11,9 @@
   	align-items: center;
   	user-select: none;
   }
+  .aside-filters-label-nonactive {
+    pointer-events: none;
+  }
   .aside-filters-input ~ .aside-filters-label::before {
   	content: '';
   	display: inline-block;

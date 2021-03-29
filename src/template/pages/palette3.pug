@@ -17,8 +17,13 @@ html(lang="en")
                 h1.pre-palette
                     |Выберите цвет
                 .color__items.palette-color
-                    a.img__item.popup-modal-dismiss(href="#")
-                        img.cat__palette(src="/src/assets/images/color-modal-bg.svg" data-color="#000")
+                    a.img__item.popup-modal-dismiss.palette__usefull(href="#")
+                        .cat__pol__wrap
+                            img.cat__palette(src="/src/assets/images/color-modal-bg.svg")
+                            .polette__dismiss.mobile__dismiss
+                                img(src="/src/assets/images/ban.svg")
+                                p.size-6
+                                    | Не доступен
                         div.item__name.size-6
                             | FL P1533
                     a.img__item.popup-modal-dismiss(href="#")

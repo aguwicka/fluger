@@ -128,6 +128,7 @@
         }
         .table__row__count-and-price {
           padding-left:11px;
+          width: 20%;
         }
         .table__row__summ {
           text-align:center;
@@ -582,5 +583,12 @@
         }
       }
     }
+  }
+}
+
+
+.null {
+  .minus {
+    pointer-events: none;
   }
 }

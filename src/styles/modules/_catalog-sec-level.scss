@@ -13,7 +13,7 @@ input:focus {outline: 0}
 }
 .catalog-products__item{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin-bottom: 1.5rem;
 	background: #FFFFFF;
 	border-radius: 2px;
@@ -38,13 +38,17 @@ input:focus {outline: 0}
 	}
 	img {
 		width: 22rem;
+		height: 20rem;
+		cursor: pointer;
 		@include bp-md {
 			width: 100%;
+			height: auto;
 		}
 	}
 
 	.product__item-color {
 		width: auto !important;
+		height: 3.2rem;
 		position: absolute;
 		left: 1rem;
 		bottom: 2rem;
@@ -68,6 +72,7 @@ input:focus {outline: 0}
 	margin-bottom: 0.6rem;
 	font-weight: bold;
 	font-family: 	$boldFont;
+	cursor: pointer;
 	@include bp-sm{
 		font-size: 1.6rem;	
 	}
@@ -118,6 +123,7 @@ input:focus {outline: 0}
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-left: auto;
 }
 .catalog-products__price{
 	font-size: 2.4rem;
@@ -287,6 +293,7 @@ input:focus {outline: 0}
 	border: .2rem solid $color3;
 	border-radius: .2rem;
 	text-align: center;
+	z-index: 10;
 	@include bp-md{
 		display: none;
 	}
@@ -348,10 +355,13 @@ input:focus {outline: 0}
 		display: none;
 	}
 }
+.catalog-sec-lev-top-active {
+	justify-content: flex-end !important;
+}
 .catalog-sec-lev-top{
 	display: none;	
 	background: #fff;
-	margin: 1.5rem 0;	
+	margin: 1.5rem 0;
 	a{
 		flex: 0 0 calc(50%);
 		max-width: calc(50%);

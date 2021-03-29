@@ -206,12 +206,20 @@ input[name="name"] {
   }
 }
 
+.basket-bg .mfp-container {
+  width: auto;
+  height: auto;
+  right: 0;
+  top: 13.5rem;
+  left: unset;
+}
 .basket-bg .mfp-content {
   width: 32rem !important;
 }
 .basket__wrapper {
   margin: 0 auto;
   padding: 2.4rem 0 2.4rem 0;
+  position: absolute;
   width: 32rem;
   background: #fff;
   border-radius: 2px;

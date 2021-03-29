@@ -16,8 +16,8 @@ html(lang="en")
             section
                 h1.pre-palette
                     |Выберите палитру
-                .palette-wrap
-                    .popup__color-item
+                .palette-wrap.mobile__palette-wrap
+                    .popup__color-item.non-active
                         a.cat__item.color__modal(href="#color__modal")
                             span.cat__item-segment
                                 img(src="/src/assets/images/fl_1311.png")
@@ -49,6 +49,10 @@ html(lang="en")
                                 img(src="/src/assets/images/fl_1326.png")
                             span.cat__item-segment
                                 img(src="/src/assets/images/fl_1327.png")
+                        .non__active-palette
+                            img(src="/src/assets/images/ban.svg")
+                            p.size-6
+                                |Не доступен
                     .popup__color-item
                         a.cat__item.color__modal(href="#color__modal")
                             span.cat__item-segment

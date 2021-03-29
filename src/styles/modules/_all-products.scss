@@ -12,6 +12,14 @@
 	@include bp-md{
 		font-size: 1.4rem;
 	}
+	.all-products__img {
+		width: 22rem !important;
+		height: 20rem;
+		@include bp-md {
+			width: 18rem !important;
+			height: 18rem;
+		}
+	}
 }
 .all-product-wrap {
 	position: relative;
@@ -28,15 +36,17 @@
 }
 .all-products__title{
 	font-family: 	$boldFont;
-	flex-grow: 1;
+	flex-basis: 6rem;
 	margin-top: 1rem;	
 	margin-bottom: 1rem;	
 	@include bp-md{
 		font-size: 2rem;
 	}
 }
+
 .all-products__text{
 	color: $color4;
+	flex-grow: 1;
 }
 .all-products__price{
 	margin-top: 3.2rem;	
