@@ -122,6 +122,31 @@
     margin-bottom: 0;
   }
 }
+.complete__call {
+  @include bp-md {
+    padding: 3.4rem 1.6rem 1.6rem 1.6rem;
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .tittle__wrap {
+    color: #333;
+    font-weight: 700;
+  }
+  h4 {
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+  }
+  p {
+    color: #333;
+  }
+  .name__input__wrap {
+    margin-right: 2rem;
+  }
+  .call__input {
+    flex: inherit;
+  }
+}
 .call__textarea {
   width: 100%;
   textarea {

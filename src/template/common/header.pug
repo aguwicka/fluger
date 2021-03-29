@@ -50,6 +50,23 @@ header
                                                 |Телефон
                                             input.input__primary.size-5(type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __")
                                     input.btn.btn-primary.btn-call.size-4(type="submit" value="Отправить")
+                        .white-popup-block.mfp-hide#call-us-complete
+                            .call__us__wrapper.complete__call
+                                .tittle__wrap
+                                    h2.size-3
+                                        | Заказать звонок
+                                    a.popup-modal-dismiss
+                                        img.desktop-d(src="/src/assets/images/Close-thick.svg")
+                                        img.mobile-d(src="/src/assets/images/dismiss-white.svg")
+                                .form__call
+                                    .call__wrapper
+                                        .call__input.name__input__wrap
+                                            img(src="/src/assets/images/complete.svg")
+                                        .call__input
+                                            h4.size-4
+                                                |Спасибо за обращение
+                                            p.size-6
+                                                |В ближайшее время с Вами свяжется менеджер
                         .white-popup-block.mfp-hide#question
                             .call__us__wrapper
                                 .tittle__wrap
@@ -228,7 +245,7 @@ header
                             | 8 800 214-67-77
                         a.call-us-modal.phone__mobile.size-5(href="#call-us")
                             | Заказать звонок
-        a(src="").size-5.logo__mobile
+        a(href="#").size-5.logo__mobile
             img(src="/src/assets/images/Flugger_Logo.png")
         .mobile__left
             a.login-modal(href="#login-modal")
