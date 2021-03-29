@@ -671,6 +671,7 @@ input[type=number] {
     overflow: hidden;
     transition: all .2s ease;
     cursor: pointer;
+    padding: .2rem;
 
     &-segment {
       display: block;
@@ -776,7 +777,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 9.5rem;
+    height: 9.6rem;
     background: rgba(64, 64, 64 , .7);
     z-index: 2;
 
