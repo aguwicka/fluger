@@ -14,18 +14,6 @@ $(function () {
   });
 });
 
-$('.basket__link').mouseover(function(){
-    $.magnificPopup.open({
-        type: 'inline',
-        preloader: false,
-        showCloseBtn: false,
-        closeOnBgClick : true,
-        mainClass : 'basket-bg',
-        items: {
-            src: '.main-basket' // can be a HTML string, jQuery object, or CSS selector
-        }
-    })
-});
 
 $("body").on('focusin', "input[name='tel'], input[name='login_tel'], input[name='phone']", function () {
   $(this).inputmask('mask', { mask: "+7(999) 999-9999", greedy: false});

@@ -111,8 +111,8 @@ header
                             button.search__button
                                 img(src="/src/assets/images/Search.svg")
                             input.search__input(type="search" placeholder="Поиск")
-                a.basket__link(href="#")
-                    .middle__wrap__basket
+                .basket__link
+                    a.middle__wrap__basket(href="#")
                         .basket__logo
                             img(src="/src/assets/images/Basket.svg")
                         .basket__info
@@ -120,46 +120,45 @@ header
                                 |21 920 ₽
                             .basket__info__count.size-5
                                 |3 товара
-                .white-popup-block.mfp-hide#basket-modal.main-basket
-                    .basket__wrapper
-                        form.form__basket
-                            .basket__form__wrapper
-                                .basket_items__wrapper
-                                    .item__product
-                                        a.item__product__name.size-5
-                                            |Flugger Dekso 25
-                                        span.item__product__desc.size-6
-                                            |3 л, цвет Белый
-                                    .item__price
-                                        span.item__price__value.size-5
-                                            |5 600 ₽
-                                        a.diss__item(href="#")
-                                            img(src="/src/assets/images/Close-thick.svg")
-                                .basket_items__wrapper
-                                    .item__product
-                                        a.item__product__name.size-5
-                                            | Flugger Dekso 25
-                                        span.item__product__desc.size-6
-                                            | 3 л, цвет Белый
-                                    .item__price
-                                        span.item__price__value.size-5
-                                            | 5 600 ₽
-                                        a.diss__item(href="#")
-                                            img(src="/src/assets/images/Close-thick.svg")
-                                .basket_items__wrapper
-                                    .item__product
-                                        a.item__product__name.size-5
-                                            | Flugger Dekso 25
-                                        span.item__product__desc.size-6
-                                            | 3 л, цвет Белый
-                                    .item__price
-                                        span.item__price__value.size-5
-                                            | 5 600 ₽
-                                        a.diss__item(href="#")
-                                            img(src="/src/assets/images/Close-thick.svg")
-                            .basket__submit__wrapper
-                                input.btn.btn-primary.btn-basket.size-3(type="submit" value="Оформить заказ")
-
+                    .main-basket
+                        .basket__wrapper
+                            form.form__basket
+                                .basket__form__wrapper
+                                    .basket_items__wrapper
+                                        .item__product
+                                            a.item__product__name.size-5
+                                                | Flugger Dekso 25
+                                            span.item__product__desc.size-6
+                                                | 3 л, цвет Белый
+                                        .item__price
+                                            span.item__price__value.size-5
+                                                | 5 600 ₽
+                                            a.diss__item(href="#")
+                                                img(src="/src/assets/images/Close-thick.svg")
+                                    .basket_items__wrapper
+                                        .item__product
+                                            a.item__product__name.size-5
+                                                | Flugger Dekso 25
+                                            span.item__product__desc.size-6
+                                                | 3 л, цвет Белый
+                                        .item__price
+                                            span.item__price__value.size-5
+                                                | 5 600 ₽
+                                            a.diss__item(href="#")
+                                                img(src="/src/assets/images/Close-thick.svg")
+                                    .basket_items__wrapper
+                                        .item__product
+                                            a.item__product__name.size-5
+                                                | Flugger Dekso 25
+                                            span.item__product__desc.size-6
+                                                | 3 л, цвет Белый
+                                        .item__price
+                                            span.item__price__value.size-5
+                                                | 5 600 ₽
+                                            a.diss__item(href="#")
+                                                img(src="/src/assets/images/Close-thick.svg")
+                                .basket__submit__wrapper
+                                    input.btn.btn-primary.btn-basket.size-3(type="submit" value="Оформить заказ")
         .header__bottom
             .bottom__wrap
                 nav

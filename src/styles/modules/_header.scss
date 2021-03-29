@@ -91,6 +91,15 @@
     margin-left: auto;
     position: relative;
     z-index: 1050;
+    transition: .3s;
+    &:hover .main-basket {
+      display: block;
+    }
+  }
+  .main-basket {
+    display: none;
+    position: absolute;
+    right: 0;
   }
   &__basket {
     margin-left: auto;
@@ -430,4 +439,7 @@ input , textarea {
   @include bp-md {
     display: block;
   }
+}
+.location-modal {
+  margin-left: 1rem;
 }

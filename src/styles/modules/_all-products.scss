@@ -6,6 +6,7 @@
 	border-radius: 0.2rem;
 	padding: 5rem 3rem;
 	transition: .3s;
+	flex-grow: 1;
 	&:hover {
 		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 	}
@@ -13,16 +14,17 @@
 		font-size: 1.4rem;
 	}
 	.all-products__img {
-		width: 22rem !important;
-		height: 20rem;
-		@include bp-md {
-			width: 18rem !important;
-			height: 18rem;
-		}
+		max-height: 100%;
+		width: auto;
+		height: auto;
 	}
 }
 .all-product-wrap {
 	position: relative;
+	height: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	.product__item-color {
 		position: absolute;
 		display: none;
@@ -47,6 +49,11 @@
 .all-products__text{
 	color: $color4;
 	flex-grow: 1;
+	max-height: 8rem;
+	overflow: hidden;
+}
+.all-products__price-wrap {
+	margin-top: auto;
 }
 .all-products__price{
 	margin-top: 3.2rem;	
