@@ -28,7 +28,7 @@ $('.basket__link').mouseover(function(){
 });
 
 $("body").on('focusin', "input[name='tel'], input[name='login_tel'], input[name='phone']", function () {
-  $(this).inputmask('mask', { mask: "+79{*}", greedy: false});
+  $(this).inputmask('mask', { mask: "+7(999) 999-9999", greedy: false});
 });
 
 

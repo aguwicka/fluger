@@ -38,7 +38,10 @@ html(lang="en")
                                         |Фамилия
                                         span
                                             |*
-                                    input(type="text" name="surname")
+                                    .input__wrap-icon
+                                        input(type="text" name="surname")
+                                        span.error__icon
+                                            img(src="/src/assets/images/warning-filled.svg")
                                     p.size-7.input_error
                                         |введите корректно данные
                                 .form__item__input.item__right
@@ -148,7 +151,7 @@ html(lang="en")
                                     p.size-5
                                         | Банковской картой
                                         | онлайн
-                            .form__item__input.payment__input
+                            .form__item__input.payment__input.non__active-payment
                                 input#pay.input-hidden(type="radio" name="payment")
                                 label(for="pay")
                                     img(src="/src/assets/images/021-payment.svg")

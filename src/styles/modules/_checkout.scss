@@ -557,6 +557,21 @@ input, textarea {
   .input_error {
     display: block;
   }
+  .input__wrap-icon {
+    .error__icon {
+      display: block;
+    }
+  }
+}
+
+.location-search-input {
+  &::placeholder {
+    padding-right: 2rem;
+  }
+}
+
+.non__active-payment {
+  pointer-events: none;
 }
 
 .input_error {
@@ -564,4 +579,21 @@ input, textarea {
   margin-top: .2rem;
   margin-left: .5rem;
   display: none;
+}
+
+.input__wrap-icon {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .error__icon {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    display: none;
+    img {
+      max-width: 100%;
+    }
+  }
 }
