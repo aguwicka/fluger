@@ -41,7 +41,8 @@
 	list-style-type: none;
 	padding: 2.5rem 2.5rem 5.6rem 2.5rem;
 	@include bp-md{
-		padding: 2.1rem 0 3rem;
+		padding: .8rem 0 2.4rem;
+
 	}
 }
 .catalogp-menu__item-title{
@@ -72,7 +73,9 @@
 }
 .catalogp-menu{
 	margin-bottom: 7.5rem;
+	margin-top: -2.6rem;
 	@include bp-md{
+		margin-top: 0;
 	}
 }
 .catalogp-menu__item-img{

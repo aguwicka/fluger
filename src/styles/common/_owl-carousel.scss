@@ -5,12 +5,22 @@
 	padding: 1.5rem 3.2rem;
 	font-size: 2rem;
 	display: inline-flex;
+	margin-top: auto;
 	background: $color2;
+	&:hover {
+		background: #152248;
+	}
 	@include bp-md{
 		font-size: 1.6rem;
 		width: 100%;
 	}
 }
+.mainpage-carousel__text-wrap {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 .mainpage-carousel__text{
 	display: block;
 }
@@ -43,7 +53,7 @@
 	background-repeat: no-repeat;
 	@include bp-md{
 		display: block;
-		padding: 2.5rem 5rem;
+		padding: 2.5rem 2.6rem;
 		height: 28.8rem;
 	}
 }

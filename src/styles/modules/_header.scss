@@ -10,7 +10,7 @@
   display: flex;
 
   a {
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px dashed rgba(221, 221, 221, .5);
   }
 
   &__location {
@@ -79,7 +79,7 @@
     }
 
     .search__input {
-      width: 100%;
+      width: 85%;
       border: 0;
       outline: 0;
       background: transparent;
@@ -133,7 +133,7 @@
 
 .header__bottom {
   margin: 0 auto;
-  padding: 3rem 12rem;
+  padding: 3rem 12rem 3.8rem 12rem;
   max-width: 1440px;
 }
 .bottom__wrap {
@@ -176,6 +176,9 @@
   &__item {
     color: $color4;
     padding-left: 8px;
+    &:first-child {
+      padding-left: 0;
+    }
     &:not(:last-child):after {
       content: '/';
       font-size: 1.4rem;
@@ -212,7 +215,7 @@
     background: #EBEBEB;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    min-height: 44px;
+    height: 44px;
   }
   .search__button {
     background: transparent;
@@ -423,7 +426,7 @@
   height: 2rem;
 }
 
-a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus,.btn-basket, .btn-basket-active, input[type="submit"]{
+a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus,.btn-basket, .btn-basket-active, input[type="submit"], .select2-selection{
   cursor: url("/src/assets/images/pointing.svg"), pointer !important;
 }
 
