@@ -65,6 +65,7 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     cursor: pointer;
+    min-height: 5.6rem;
 
     @include bp-lg {
       width: 40rem;
@@ -129,18 +130,6 @@
   color: #fff;
 }
 
-.header__bottom_main {
-  padding-bottom: .6rem;
-
-  .bottom__wrap {
-    .nav {
-      border-bottom: 0;
-      li {
-        padding-bottom: 0;
-      }
-    }
-  }
-}
 
 .header__bottom {
   margin: 0 auto;
@@ -160,6 +149,19 @@
 
       a {
         color: #192C5A;
+      }
+    }
+  }
+}
+
+.header__bottom_main {
+  padding-bottom: .6rem;
+
+  .bottom__wrap {
+    .nav {
+      border-bottom: 0;
+      li {
+        padding-bottom: 0;
       }
     }
   }

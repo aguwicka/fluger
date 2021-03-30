@@ -25,6 +25,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@include bp-md {
+		height: 17.8rem;
+	}
 	.product__item-color {
 		position: absolute;
 		display: none;
