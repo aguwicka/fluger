@@ -20,7 +20,7 @@
   }
 }
 .checkout__title {
-  margin-top: 3rem;
+  margin-top: 3rem !important;
 }
 .order1 {
   padding-right: 4.7rem;
@@ -114,9 +114,6 @@
     margin: 0;
     margin-bottom: 2.5rem;
     font-weight: 700;
-    &:not(:first-child) {
-      margin-top: 3rem;
-    }
   }
 }
 .checkout__input__wrap {

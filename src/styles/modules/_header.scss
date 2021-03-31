@@ -346,6 +346,7 @@
   text-decoration: none;
   position: relative;
   padding-bottom: 4px;
+  width: 100% ;
 }
 
 .nav-link::before {
@@ -381,9 +382,6 @@
   }
   .location__modal__mobile {
     border-bottom: 0;
-    &:first-child {
-      margin-right: 1rem;
-    }
   }
 }
 .change-location {
@@ -394,6 +392,7 @@
   margin-top: 3rem;
   display: flex;
   align-items: center;
+  margin-left: 1rem;
 
   & > img {
     margin-right: 1rem;
@@ -426,7 +425,7 @@
   height: 2rem;
 }
 
-a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus,.btn-basket, .btn-basket-active, input[type="submit"], .select2-selection{
+a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus,.btn-basket, .btn-basket-active, input[type="submit"], .select2-selection, .radio__input label, .payment__input, .btn-call{
   cursor: url("/src/assets/images/pointing.svg"), pointer !important;
 }
 

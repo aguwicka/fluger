@@ -39,7 +39,7 @@
 		bottom: 0;
 		@include bp-md {
 			height: 2.4rem;
-			width: 2.4rem;
+			width: 2.4rem !important;
 		}
 	}
 	.product__item-active {

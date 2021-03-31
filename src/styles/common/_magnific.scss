@@ -109,6 +109,9 @@
   width: 61.2rem;
   background: #fff;
   border-radius: 2px;
+  h3 {
+    margin: 0;
+  }
   @include bp-md {
     padding: 3.4rem 1.6rem 1.6rem 1.6rem;
     width: 100%;
@@ -166,6 +169,7 @@
   margin-top: 2.4rem;
   padding: .9rem 3.2rem;
   appearance: none;
+  border-radius: 4px;
   @include bp-md {
     margin-right: 0;
     width: 100%;

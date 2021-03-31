@@ -116,9 +116,10 @@ input:focus {outline: 0}
 	padding: 0 3rem;
 	@include bp-sm{
 		display: inline-block;
-		width: 60%;
+		width: 57%;
 		padding-right: 0;	
 	}
+
 }
 .catalog-products__filters-wrap{
 	display: flex;
