@@ -65,6 +65,7 @@ input[type=number] {
   display: flex;
   width: 530px;
   height: 530px;
+  justify-content: center;
   overflow: hidden;
   @include bp-md {
     width: 244px;
