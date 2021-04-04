@@ -198,10 +198,7 @@ input:focus {outline: 0}
 }
 .catalog-products__price-btn{
 	width: 19rem;
-	i{
-		background-image: url('/src/assets/images/Basket.png');
-		width: 24px;
-		height: 24px;
+	img{
 		margin-right: 1rem;
 	}
 }
@@ -448,4 +445,15 @@ input:focus {outline: 0}
 	&__column:last-child {
 		margin-left: auto;
 	}
+}
+.pagination-inner {
+	.next , .prev {
+		pointer-events: none;
+	}
+	.active {
+		pointer-events: inherit;
+	}
+}
+.sorting-levl1 {
+	margin-left: auto;
 }

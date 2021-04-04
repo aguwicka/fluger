@@ -58,7 +58,7 @@ html(lang="en")
                         .aside-filters-input-wrap
                           input.aside-filters-input(type="checkbox" value="Адгезионная" checked="checked" name="properties" id="properties-1")
                           label.aside-filters-label(for="properties-1") Адгезионная
-                        .aside-filters-input-wrap
+                        .aside-filters-input-wrap.aside-filters-label-nonactive
                           input.aside-filters-input(type="checkbox" value="Антибактериальная" name="properties" id="properties-2")
                           label.aside-filters-label(for="properties-2") Антибактериальная
                         .aside-filters-input-wrap
@@ -286,7 +286,10 @@ html(lang="en")
                           .catalog-products__price-inner
                             .catalog-products__price 2 500  ₽/м <sup>2</sup>
                             .catalog-products__price--cross 4 640  ₽/м <sup>2</sup>
-                          a.btn.btn--green.catalog-products__price-btn(href="") <i></i> В корзину
+                          a.btn.btn--green.catalog-products__price-btn(href="")
+                            img(src="/src/assets/images/basket-mobile.svg")
+                            span
+                              |В корзину
                       .catalog-products__item
                         .catalog-products__img-wrap
                           img(src="/src/assets/images/pic-catalog.png")
