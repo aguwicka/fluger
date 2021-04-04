@@ -34,7 +34,7 @@ export default (selectorName => {
             const render = (dot, percent) => {
                 const size = 20;
                 const centre = size / 2;
-                const radius = size * 0.7 / 2;
+                const radius = size * 0.8 / 2;
                 const startX = centre;
                 const startY = centre - radius;
 
@@ -73,7 +73,7 @@ export default (selectorName => {
                 navRewind: false,
                 dots: true,
                 dotsContainer: false,
-                loop: true,
+                loop: false,
                 autoplay: true,
                 autoplayTimeout: time * sec,
                 autoplayHoverPause: true,
@@ -109,9 +109,9 @@ export default (selectorName => {
                 });
 
             $('.owl-dot', this.selector).html(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
-                <circle class="bar" r="7" cx="10" cy="10" fill="none" stroke-dasharray="43.98" stroke-dashoffset="0"/>
+                <circle class="bar" r="8" cx="10" cy="10" fill="none" stroke-dasharray="43.98" stroke-dashoffset="0"/>
                 <path class="progress" fill="none"></path>
-                <circle class="dot" r="3.5" cx="10" cy="10"/>
+                <circle class="dot" r="5" cx="10" cy="10"/>
             </svg>`);
         }
 

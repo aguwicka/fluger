@@ -106,7 +106,7 @@ aside {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: $color2;
-  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
   @include bp-md {
     display: none;
   }

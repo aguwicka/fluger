@@ -5,7 +5,7 @@ $(function () {
     removalDelay: 500, 
     midClick: true,
     modal: true,
-    fixedContentPos: true,
+    fixedContentPos: false,
     mainClass: 'my-mfp-zoom-in'
   });
   $(document).on('click', '.popup-modal-dismiss', function (e) {
@@ -342,9 +342,19 @@ $(() => {
 $(document).ready(function(){
     $(".button__close").click(function(){
         $('.content__text').toggleClass('content__close');
-        $(this).text($(this).text() == 'Показать' ? 'Свернуть' : 'Показать');
+        $(this).text($(this).text() == 'Свернуть' ? 'Показать' : 'Свернуть');
     });
 });
+
+let parent = document.querySelector('.product__aside').parentElement;
+
+while (parent) {
+    const hasOverflow = getComputedStyle(parent).overflow;
+    if(hasOverflow !== 'visible') {
+        console.log(hasOverflow, parent);
+    }
+    parent = parent.parentElement;
+}
 
 
 

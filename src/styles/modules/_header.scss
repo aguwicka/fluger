@@ -36,6 +36,9 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+    img {
+      margin-right: .7rem;
+    }
   }
 
 }
@@ -65,7 +68,7 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     cursor: pointer;
-    min-height: 5.6rem;
+    height: 5.6rem;
 
     @include bp-lg {
       width: 40rem;
@@ -91,8 +94,8 @@
   .basket__link {
     margin-left: auto;
     position: relative;
-    z-index: 1050;
     transition: .3s;
+    margin-right: 4.5rem;
     &:hover .main-basket {
       display: block;
     }
@@ -133,7 +136,7 @@
 
 .header__bottom {
   margin: 0 auto;
-  padding: 3rem 12rem 3.8rem 12rem;
+  padding: 1.5rem 12rem 3.8rem 12rem;
   max-width: 1440px;
 }
 .bottom__wrap {

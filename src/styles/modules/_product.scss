@@ -29,7 +29,7 @@ input[type=number] {
 }
 
 .content__close {
-  max-height: 22rem;
+  max-height: inherit !important;
   overflow: hidden;
   transition: .3s;
 }
@@ -69,7 +69,7 @@ input[type=number] {
   overflow: hidden;
   @include bp-md {
     width: 244px;
-    height: 244px;
+    height: auto;
   }
 }
 .sider__item {
@@ -93,6 +93,7 @@ input[type=number] {
       width: 10rem;
       height: 10rem;
       border:2px solid transparent;
+      text-align: center;
       @include bp-md {
         width: 5.4rem;
         height: 5.4rem;
@@ -160,6 +161,8 @@ input[type=number] {
 
 
 .product__aside {
+  position: sticky;
+  right: 0;
   @include bp-md {
     display: none;
   }
@@ -173,6 +176,9 @@ input[type=number] {
 }
 
 .aside__wrap {
+  position: sticky;
+  top: 0;
+  right: 0;
   padding: 2.5rem 3rem 4rem 3rem;
   background: #fff;
   border-radius: 2px;
@@ -481,6 +487,7 @@ input[type=number] {
   margin-top: 4.5rem;
   margin-bottom: 2rem;
   color: $color4;
+  max-height: 22rem;
   @include bp-md {
     /*padding-left: 1.6rem;
     padding-right: 1.6rem;*/
@@ -822,6 +829,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .product__autocomplete {
   position: relative;
+  width: 100%;
+
+  .item__color {
+    width: 100%;
+  }
 }
 
 .autocomplete {

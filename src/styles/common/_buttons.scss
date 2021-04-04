@@ -85,6 +85,9 @@ button.btn {
     padding: .9rem 3.2rem;
     display: inline-flex;
     font-size: 2rem;
+    &:hover {
+        background: #152248;
+    }
     @include bp-md{
         font-size: 1.6rem;
     }

@@ -1,5 +1,5 @@
 .mfp-bg{
-  background: transparent !important;
+
   @include bp-md {
     background: rgba(51, 51, 51, 0.25)!important;
     backdrop-filter: blur(2px);
@@ -109,13 +109,16 @@
   width: 61.2rem;
   background: #fff;
   border-radius: 2px;
-  h3 {
+  h2 {
     margin: 0;
   }
   @include bp-md {
     padding: 3.4rem 1.6rem 1.6rem 1.6rem;
     width: 100%;
     border-radius: 12px 12px 0px 0px;
+  }
+  input[type="submit"] {
+    border-radius: 4px;
   }
 }
 .call__wrapper {
@@ -437,7 +440,7 @@ input[name="name"] {
 .search-wrap {
   display: flex;
   align-items: center;
-  padding: .8rem;
+  padding: 1.15rem;
   border: 1px solid #DDDDDD;
   border-radius: 4px;
   background: #fff;

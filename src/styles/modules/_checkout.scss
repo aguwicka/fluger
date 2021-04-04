@@ -452,6 +452,9 @@
   }
 }
 .info__wrapper {
+  position: sticky;
+  right: 0;
+  top: 0;
   padding: 2.5rem 3rem 3rem 3rem;
   background: #fff;
   @include bp-md {
