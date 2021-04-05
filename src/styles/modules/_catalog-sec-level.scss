@@ -215,6 +215,9 @@ input:focus {outline: 0}
 	align-items: center;
 	justify-content: center;
 	margin-left: auto;
+	@include bp-md {
+		margin: 0;
+	}
 }
 .pagination-btn,
 .pagination-dots,
