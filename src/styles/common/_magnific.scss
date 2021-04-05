@@ -624,3 +624,27 @@ input[name="name"] {
   background: #DDDDDD;
   border-radius: 4px;
 }
+
+#login-modal , #call-us, #location {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @include bp-md {
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    transform: translate(0);
+  }
+}
+
+body {
+  height: 100%;
+
+  &.modal {
+    height: auto;
+    @include bp-md {
+      overflow: hidden;
+    }
+  }
+}

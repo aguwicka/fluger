@@ -73,7 +73,7 @@ export default (selectorName => {
                 navRewind: false,
                 dots: true,
                 dotsContainer: false,
-                loop: false,
+                loop: true,
                 autoplay: true,
                 autoplayTimeout: time * sec,
                 autoplayHoverPause: true,

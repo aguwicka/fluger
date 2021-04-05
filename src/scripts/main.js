@@ -6,13 +6,26 @@ $(function () {
     midClick: true,
     modal: true,
     fixedContentPos: false,
-    mainClass: 'my-mfp-zoom-in'
+    fixedBgPos: false,
+    mainClass: 'my-mfp-zoom-in',
   });
   $(document).on('click', '.popup-modal-dismiss', function (e) {
     e.preventDefault();
     $.magnificPopup.close();
   });
 });
+
+$.magnificPopup.defaults.callbacks = {
+    open: function() {
+        $('body').addClass('modal');
+    },
+    close: function() {
+        // Wait until overflow:hidden has been removed from the html tag
+        setTimeout(function() {
+            $('body').removeClass('modal');
+        }, 100)
+    }
+};
 
 
 $("body").on('focusin', "input[name='tel'], input[name='login_tel'], input[name='phone']", function () {
