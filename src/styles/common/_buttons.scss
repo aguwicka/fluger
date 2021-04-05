@@ -61,7 +61,7 @@ button.btn {
     background: $color3;
     color: #fff;
     padding: .9rem 3.2rem;
-    display: inline-flex;
+    display: inline-flex !important;
     font-size: 2rem;
 
     &:hover {

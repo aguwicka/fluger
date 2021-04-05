@@ -96,6 +96,7 @@
     position: relative;
     transition: .3s;
     margin-right: 4.5rem;
+    z-index: 15;
     &:hover .main-basket {
       display: block;
     }
@@ -426,6 +427,7 @@
   color: #fff;
   display: flex;
   height: 2rem;
+  width: 10rem
 }
 
 a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus,.btn-basket, .btn-basket-active, input[type="submit"], .select2-selection, .radio__input label, .payment__input, .btn-call, .prev, .next{
