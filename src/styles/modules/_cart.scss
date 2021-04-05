@@ -590,5 +590,8 @@
 .null {
   .minus {
     pointer-events: none;
+    svg {
+      fill: #DDDDDD;
+    }
   }
 }

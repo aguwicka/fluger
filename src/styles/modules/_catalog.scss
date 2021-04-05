@@ -28,6 +28,9 @@
           &:not(:last-child) {
             padding-bottom: 1rem;
           }
+          &:last-child {
+            border-bottom: 0;
+          }
         }
       }
     }
@@ -151,6 +154,7 @@ aside {
     border-radius: 2px;
     position: relative;
     transition: .3s;
+    background-size: 100%;
     &:before {
       content: '';
       display: none;

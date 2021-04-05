@@ -36,9 +36,9 @@ input {
 
 }
 
-button.btn {
+/*button.btn {
     display: inline-block;
-}
+}*/
 
 .input__primary {
     padding: 1rem 0 1rem 1.2rem;
@@ -61,7 +61,7 @@ button.btn {
     background: $color3;
     color: #fff;
     padding: .9rem 3.2rem;
-    display: inline-flex !important;
+    display: inline-flex;
     font-size: 2rem;
 
     &:hover {
