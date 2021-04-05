@@ -592,6 +592,9 @@
     pointer-events: none;
     svg {
       fill: #DDDDDD;
+      path {
+        fill: #DDDDDD;
+      }
     }
   }
 }
