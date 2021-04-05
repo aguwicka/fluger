@@ -38,6 +38,7 @@ aside {
 }
 .catalog__name {
   margin: 0;
+  margin-top: 1rem;
   padding-right: 1.6rem;
   color: $color3;
   @include bp-md {
