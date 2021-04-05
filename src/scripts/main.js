@@ -346,16 +346,6 @@ $(document).ready(function(){
     });
 });
 
-let parent = document.querySelector('.product__aside').parentElement;
-
-while (parent) {
-    const hasOverflow = getComputedStyle(parent).overflow;
-    if(hasOverflow !== 'visible') {
-        console.log(hasOverflow, parent);
-    }
-    parent = parent.parentElement;
-}
-
 
 
 
