@@ -28,10 +28,10 @@
           &:not(:last-child) {
             padding-bottom: 1rem;
           }
-          &:last-child {
-            border-bottom: 0;
-          }
         }
+      }
+      &:last-child {
+        border-bottom: 0;
       }
     }
   }
