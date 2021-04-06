@@ -57,7 +57,7 @@ input:focus {outline: 0}
 			width: auto;
 			height: 100%;
 			@include bp-md {
-				width: 100%;
+				width: auto;
 			}
 		}
 	}
