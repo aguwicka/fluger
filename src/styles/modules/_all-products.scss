@@ -120,7 +120,7 @@
 .all-products{
 	margin-top: 6.4rem;
 	@include bp-md {
-		margin-top: 10.4rem;
+		margin-top: 1.7rem;
 	}
 }
 .all-products.owl-theme .owl-nav button{
@@ -153,6 +153,7 @@
 	top: -6.4rem;
 	@include bp-md{
 		font-size: 2.6rem;
+		position: initial;
 	}
 }
 .all-products__wrap{
@@ -190,7 +191,7 @@
 			padding-bottom: 8rem;
 			@include bp-md{
 				padding-bottom: 0rem;
-    			margin-top: 4.4rem;
+    			margin-top: 0rem;
 			}
 		}
 	}
