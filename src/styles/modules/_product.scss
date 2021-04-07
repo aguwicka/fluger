@@ -28,11 +28,14 @@ input[type=number] {
   }
 }
 
-.content__close {
-  max-height: inherit !important;
-  overflow: hidden;
-  transition: .3s;
+.content__wrap {
+  .content__close {
+    max-height: 10rem;
+    overflow: hidden;
+    transition: .3s;
+  }
 }
+
 
 .non-documentation {
   border-bottom: 0 !important;
@@ -66,6 +69,7 @@ input[type=number] {
   width: 530px;
   height: 530px;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
   @include bp-md {
     width: 244px;
@@ -492,7 +496,7 @@ input[type=number] {
   margin-top: 4.5rem;
   margin-bottom: 2rem;
   color: $color4;
-  max-height: 22rem;
+  max-height: inherit;
   @include bp-md {
     /*padding-left: 1.6rem;
     padding-right: 1.6rem;*/

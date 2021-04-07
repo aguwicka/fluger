@@ -266,6 +266,7 @@ input:focus {outline: 0}
 }
 .pagination .prev,
 .pagination .next{
+	flex-shrink: 0;
 	svg{
 		fill: #DDDDDD;
 		transition: all .2s;

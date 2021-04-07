@@ -15,7 +15,7 @@
     max-width: 80%;
   }
 }
-.catalog__aside {
+.catalog__aside, .catalog__content-first-level {
   .aside-wrap {
     li {
       border-bottom: 1px solid #DDDDDD;
@@ -57,7 +57,6 @@ aside {
 }
 .catalog__name {
   margin: 0;
-  margin-top: 1rem;
   padding-right: 1.6rem;
   color: $color3;
   @include bp-md {
