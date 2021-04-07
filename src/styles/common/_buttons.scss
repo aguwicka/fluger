@@ -63,6 +63,7 @@ input {
     padding: .9rem 3.2rem;
     display: inline-flex;
     font-size: 2rem;
+    cursor: url("/src/assets/images/pointing.svg"), pointer !important;
 
     &:hover {
         background: #028260;

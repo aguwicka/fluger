@@ -426,9 +426,9 @@
 .logo__mobile {
   color: #fff;
   display: flex;
+  justify-content: flex-start;
   height: 2rem;
   width: 10rem;
-  margin-right: auto;
 }
 
 a, button, input, textarea, input[type="checkbox"], input[type="radio"], .aside-filters-input ~ .aside-filters-label::before, .plus, .minus,.btn-basket, .btn-basket-active, input[type="submit"], .select2-selection, .radio__input label, .payment__input, .btn-call, .prev, .next, .thumb{

@@ -196,3 +196,15 @@
 		}
 	}
 }
+
+.all-products__wrap-title_desktop {
+	@include bp-md {
+		display: none !important;
+	}
+}
+.all-products__wrap-title_mobile {
+	display: none;
+	@include bp-md {
+		display: block !important;
+	}
+}

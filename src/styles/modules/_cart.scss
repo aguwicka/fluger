@@ -597,4 +597,13 @@
       }
     }
   }
+  .info {
+    li {
+      div {
+        &:first-child {
+          color: #DDDDDD;
+        }
+      }
+    }
+  }
 }

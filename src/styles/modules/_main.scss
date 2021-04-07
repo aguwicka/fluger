@@ -119,6 +119,7 @@ body{
 	@include bp-md{
 		max-width: 100%;
 		font-size: 1.4rem;
+		margin-bottom: 0;
 	}
 }
 .mainpage-aboutus__img{
@@ -172,7 +173,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	@include bp-md{
-		height: 12.4rem;
+		height: 17rem;
 	}
 }
 .mainpage-news__img-inner{

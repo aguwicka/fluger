@@ -137,7 +137,7 @@ input[type=number] {
   }
   &:hover:before {
     display: block;
-    cursor: pointer;
+    cursor: url("/src/assets/images/pointing.svg"), pointer !important;
   }
 }
 .thumb:not(:last-child) {
