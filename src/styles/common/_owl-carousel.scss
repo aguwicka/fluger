@@ -48,17 +48,26 @@
 .mainpage-carousel__img{
 	display: flex;
 	align-items: center;
-	padding: 8rem 10rem;
 	height: 48rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 	@include bp-md{
 		display: block;
-		padding: 2.5rem 2.6rem;
 		height: 28.8rem;
 	}
 }
 
+.mainpage-carousel__mobile {
+	display: none;
+	@include bp-md {
+		display: block;
+	}
+}
+.mainpage-carousel__desktop {
+	@include bp-md {
+		display: none;
+	}
+}
 .banner__slider {
 	padding-bottom: 4.6rem;
 }
