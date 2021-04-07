@@ -61,9 +61,11 @@
 	display: none;
 	@include bp-md {
 		display: block;
+		width: 100%;
 	}
 }
 .mainpage-carousel__desktop {
+	width: 100%;
 	@include bp-md {
 		display: none;
 	}
