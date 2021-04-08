@@ -24,10 +24,18 @@
       ul {
         li {
           border: 0;
-          padding-top: 1rem;
-          border-bottom: 1px solid #DDDDDD;
-          &:last-child {
+          padding-top: 0;
+          &:not(:last-child) {
+            padding-bottom: 1rem;
+          }
+          @include bp-md {
+            padding-top: 1rem;
             border-bottom: 1px solid #DDDDDD;
+          }
+          &:last-child {
+            @include bp-md {
+              border-bottom: 1px solid #DDDDDD;
+            }
           }
         }
       }
