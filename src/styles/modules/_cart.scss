@@ -600,8 +600,9 @@
   .info {
     li {
       div {
-        &:first-child {
-          color: #DDDDDD;
+          color: #A2A2A2;
+        &:nth-child(2) {
+          border-bottom: 1px dotted #A2A2A2;
         }
       }
     }
