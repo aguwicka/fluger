@@ -57,6 +57,9 @@
 }
 
 .all-products__text{
+	display: -webkit-box;
+	-webkit-line-clamp: 4; // количество строк
+	-webkit-box-orient: vertical;
 	color: $color4;
 	flex-grow: 1;
 	max-height: 8rem;
