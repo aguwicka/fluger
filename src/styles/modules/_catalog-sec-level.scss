@@ -28,7 +28,7 @@ input:focus {outline: 0}
 
 .catalog-products__img-wrap{
 	position: relative;
-	width: 22rem;
+	width: 20rem;
 	flex-shrink: 0;
 	@include bp-sm{
 		display: inline-block;
@@ -197,7 +197,7 @@ input:focus {outline: 0}
 	}
 }
 .catalog-products__price-btn{
-	width: 19rem;
+	width: 20rem;
 	img{
 		margin-right: 1rem;
 	}

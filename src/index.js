@@ -1,4 +1,4 @@
-//import 'babel-polyfill';
+import 'babel-polyfill';
 import html from "./template/pages/index.pug"
 // Import styles
 import style from "./styles/main.scss";

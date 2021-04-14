@@ -325,9 +325,15 @@
   }
 }
 .input__index {
-  flex-basis: 33.3%;
+  width: 33.3%;
+  .input__wrap-icon {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
   @include bp-md {
-    flex-basis: 100%;
+    width: 100%;
   }
 }
 

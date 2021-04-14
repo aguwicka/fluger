@@ -166,8 +166,6 @@ input[type=number] {
 
 
 .product__aside {
-  position: sticky;
-  right: 0;
   @include bp-md {
     display: none;
   }
@@ -554,7 +552,7 @@ input[type=number] {
   }
 
   &__name {
-    width: 40%;
+    width: 45%;
     color: $color4;
   }
 
