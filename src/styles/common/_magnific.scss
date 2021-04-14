@@ -47,6 +47,7 @@
     /*width: 32rem;*/
     width: 100%;
     border-radius: 12px 12px 0px 0px;
+    max-height: 100vh;
   }
 }
 .tittle__wrap {
@@ -655,4 +656,5 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  overflow: scroll;
 }
