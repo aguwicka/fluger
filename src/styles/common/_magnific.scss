@@ -654,8 +654,13 @@ body {
 #filters-modal {
   position: fixed;
   left: 0;
-  bottom: 0;
+  top: 0rem;
   width: 100%;
   overflow: scroll;
   background: #fff;
+  .sorting__wrapper {
+    @include bp-xxxs {
+      padding-top: 8.4rem;
+    }
+  }
 }
